@@ -19,6 +19,7 @@ This repository is a growing portfolio of original study notes, authorized lab e
 | --- | --- | --- | --- |
 | Intro to Academy | 0 | Completed — 8/8 | [Study notes](01-Intro-to-Academy/README.md) · [Exercises](01-Intro-to-Academy/Exercises.md) |
 | Learning Process | 0 | Completed — 20/20 | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
+| Linux Fundamentals | 0 | In progress — lesson 1 studied | [Module index](03-Linux-Fundamentals/README.md) |
 
 **Current checkpoint:** Learning Process, Learning Process completed. Next: Linux Fundamentals.
 
@@ -44,6 +45,7 @@ The roadmap is a personal study plan, not a claim of completed training or profe
 | --- | --- |
 | [01 — Intro to Academy](01-Intro-to-Academy/README.md) | Eight lessons, credits, Pwnbox and authorized lab exercises |
 | [02 — Learning Process](02-Learning-Process/README.md) | Learning methodology, mindset, documentation and ROQ |
+| [03 — Linux Fundamentals](03-Linux-Fundamentals/README.md) | Linux architecture and filesystem fundamentals |
 | [Linux cheatsheet](cheatsheets/linux-basics.md) | Commands actually practiced |
 | [Achievements](achievements/README.md) | Verified learning milestones |
 
