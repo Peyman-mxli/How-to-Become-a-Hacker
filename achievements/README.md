@@ -10,4 +10,6 @@
 | 2026-11-23 | Learning Process, sections 1–20 | Completed |
 | 2026-11-23 | Philomath badge | Earned |
 
+| 2026-11-24 | Linux Fundamentals, sections 1–30 | Completed — HTB dashboard confirmed |
+
 Module completion badges are not professional certifications. No certification or bug bounty award is claimed here.
