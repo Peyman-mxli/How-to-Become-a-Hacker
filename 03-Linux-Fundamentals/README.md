@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 12/30 lessons studied; final Section 12 answer accepted
+**Status:** In progress — 13/30 lessons studied; section 13 has no mandatory exercises
 **Started:** November 23, 2026
 
 ## Lessons
@@ -18,6 +18,7 @@
 10. [Find Files and Directories](10-Find-Files-and-Directories.md) — three answers verified
 11. [File Descriptors and Redirections](11-File-Descriptors-and-Redirections.md) — both answers verified
 12. [Filter Contents](12-Filter-Contents.md) — final answer accepted
+13. [Regular Expressions](13-Regular-Expressions.md) — optional exercises
 
 ## Learning objectives
 
