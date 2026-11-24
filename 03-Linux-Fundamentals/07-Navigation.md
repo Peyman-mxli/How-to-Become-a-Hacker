@@ -105,3 +105,31 @@ This method is more efficient when a directory contains many files because unrel
 Answer: **.bash_history**
 
 Method 1 was verified by actual terminal output. Method 2 is an alternative expected to produce the same filename; its execution has not yet been confirmed. Bash normally saves command history in this file, although its location can be customized. Always submit the requested result rather than the command used to find it.
+
+## Question 2 — Two methods, why and how
+
+The question requests the index (inode) number of the sudoers file in /etc. An inode identifies a file within its filesystem.
+
+### Method 1 — Verified
+~~~bash
+ls -i /etc/sudoers
+~~~
+- ls lists file information.
+- -i requests the inode number.
+- /etc/sudoers selects the exact file requested.
+
+Actual lab output:
+~~~text
+147627 /etc/sudoers
+~~~
+Read the first field, not the filename. Answer: **147627**.
+
+### Method 2 — Alternative
+~~~bash
+stat -c '%i' /etc/sudoers
+~~~
+- stat retrieves file metadata.
+- -c selects a custom output format.
+- %i requests only the inode number.
+
+Expected output: 147627. This alternative has not yet been executed in the lab. It avoids displaying unrelated metadata. Inode numbers can differ across filesystems and lab instances.
