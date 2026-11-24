@@ -155,4 +155,8 @@ The numbered output revealed three external protocol-relative URL strings (two f
 grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | grep -v '^//' | cut -d'?' -f1 | cut -d'#' -f1 | sort -u | wc -l
 ~~~
 
-grep -v excludes matching lines; ^// matches the protocol-relative candidates, all of which were external in the observed list. This is specific to this dataset: same-domain protocol-relative URLs would need normalization rather than exclusion. cut -d selects a delimiter and -f1 retains the first field, stripping queries and fragments. sort -u deduplicates paths and wc -l counts the results. Expected count from the observed list: 33, including the root path. Actual execution and HTB acceptance are pending. The earlier count of 37 was rejected.
+grep -v excludes matching lines; ^// matches the protocol-relative candidates, all of which were external in the observed list. This is specific to this dataset: same-domain protocol-relative URLs would need normalization rather than exclusion. cut -d selects a delimiter and -f1 retains the first field, stripping queries and fragments. sort -u deduplicates paths and wc -l counts the results. Verified terminal count: 33, including the root path. HTB acceptance remains pending. The earlier count of 37 was rejected.
+
+## Question 3 — Corrected count verified
+
+The learner executed the corrected pipeline in local WSL and obtained **33**. Starting with 37 candidate strings, excluding the three observed external URL strings leaves 34; removing query parameters and deduplicating the two oEmbed variants leaves 33 distinct path candidates. The terminal output confirms this calculation. Submit 33 for HTB validation; do not mark the answer accepted until confirmed. The previous answer 37 was rejected.
