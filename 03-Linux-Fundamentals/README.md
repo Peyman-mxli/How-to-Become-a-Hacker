@@ -21,6 +21,6 @@ Source: [HTB Academy](https://academy.hackthebox.com/). Independent English stud
 
 ## Practical setup guides
 
-- [HTB VPN with Ubuntu WSL 2](HTB-VPN-WSL-Setup.md) — setup in progress.
+- [HTB VPN with Ubuntu WSL 2](HTB-VPN-WSL-Setup.md) — VPN and SSH connection verified.
 
 - [Ubuntu WSL password recovery](WSL-Ubuntu-Password-Recovery.md) — completed; sudo authentication verified.
