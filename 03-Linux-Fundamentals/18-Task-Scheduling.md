@@ -87,3 +87,7 @@ Answer: **dbus**. Submit only the value, not Type=.
 One mandatory question worth 20 HP. Answer independently verified against the upstream service definition; learner-side output and HTB acceptance remain pending. No timers, cron jobs or services were changed. Pwnbox is currently unavailable to the learner.
 
 Independent English study notes based on HTB Academy.
+
+## Learner verification — empty service property
+
+The learner ran `systemctl --user show dconf.service --property=Type` on the assigned SSH target. Actual output: `Type=` (empty). This does not establish the expected unit's type; the unit may be unavailable in that environment. Next, locate the unit definition using the previously documented find command and inspect its Type setting if present. Upstream expected answer: dbus. Local verification and HTB acceptance remain pending.
