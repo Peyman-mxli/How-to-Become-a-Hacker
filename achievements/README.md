@@ -8,5 +8,6 @@
 | 2026-11-23 | First Linux command in Pwnbox | Completed |
 | 2026-11-23 | First authorized web target exercise | Completed |
 | 2026-11-23 | Learning Process, sections 1–20 | Completed |
+| 2026-11-23 | Philomath badge | Earned |
 
 Module completion badges are not professional certifications. No certification or bug bounty award is claimed here.
