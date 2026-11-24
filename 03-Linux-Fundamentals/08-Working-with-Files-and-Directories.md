@@ -77,7 +77,7 @@ stat -c '%i' /var/backups/shadow.bak
 
 stat reads file metadata; -c specifies the format; %i selects the inode number only. Inode values are filesystem-specific. There is no need to read the contents of shadow.bak.
 
-Actual output and final answer pending. Both alternatives are instructional suggestions until tested.
+Method 1 verified from actual lab output; Method 2 remains an instructional alternative.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
 
@@ -99,4 +99,47 @@ ls -t /var/backups | head -n 1
 
 The -t option sorts newest first, the pipe passes standard output to head, and -n 1 limits output to one line. Expected result: apt.extended_states.0. This alternative is not yet executed and assumes the first visible entry is a regular file, as verified in the detailed listing.
 
-Question 2 remains pending. Use ls -i /var/backups/shadow.bak or stat -c '%i' /var/backups/shadow.bak to inspect inode metadata only.
+Question 2 was subsequently verified using ls -i /var/backups/shadow.bak. See the detailed results below.
+
+## Question 2 — Verified output, why and how
+
+The question asks for the inode number (filesystem metadata), not the content, size, permissions or name of the file. Select the exact requested path.
+
+### Method 1 — Verified in the assigned lab
+
+~~~bash
+ls -i /var/backups/shadow.bak
+~~~
+
+- ls lists information about the requested file.
+- -i requests its inode number.
+- /var/backups/shadow.bak selects the exact file mentioned in the question.
+
+Actual terminal output:
+
+~~~text
+265293 /var/backups/shadow.bak
+~~~
+
+The first field is the inode number, while the second field is the filename. Submit only **265293**.
+
+### Method 2 — Alternative
+
+~~~bash
+stat -c '%i' /var/backups/shadow.bak
+~~~
+
+- stat retrieves filesystem metadata.
+- -c selects a custom output format.
+- %i requests the inode number only.
+
+Expected output: 265293. This method has not yet been executed in the lab. It is useful when a script needs only the inode number. Inode values may differ between filesystems or lab instances. Neither method reads the sensitive file's contents.
+
+## Final exercise recap
+
+| Question | Verified answer |
+| --- | --- |
+| Most recently modified file | apt.extended_states.0 |
+| Inode number of shadow.bak | 265293 |
+
+Both answers have been verified from the learner's actual terminal output. HTB submission acceptance and section completion remain pending confirmation.
