@@ -47,7 +47,7 @@ Question 1 verified from actual terminal output: `.bash_history`.
 
 Question 2: `ls -i /etc/sudoers` returned `147627 /etc/sudoers`. The verified answer is `147627`. Inode numbers identify files within a filesystem and can vary between machines.
 
-Both answers verified from actual lab output. HTB submission and section completion remain pending confirmation.
+Both answers verified from actual lab output. Learner proceeded to section 8; both answers were verified from terminal output, but individual submission acceptance was not explicitly shown.
 
 ## Question 1 — Two methods, why they work, and how to identify the answer
 
