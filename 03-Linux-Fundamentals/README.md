@@ -23,4 +23,4 @@ Source: [HTB Academy](https://academy.hackthebox.com/). Independent English stud
 
 - [HTB VPN with Ubuntu WSL 2](HTB-VPN-WSL-Setup.md) — setup in progress.
 
-- [Ubuntu WSL password recovery](WSL-Ubuntu-Password-Recovery.md) — password reset successful; sudo verification pending.
+- [Ubuntu WSL password recovery](WSL-Ubuntu-Password-Recovery.md) — completed; sudo authentication verified.
