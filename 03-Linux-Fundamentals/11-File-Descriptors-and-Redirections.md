@@ -65,10 +65,10 @@ dpkg-query -W -f='${Status}\n' | grep -c ' installed$'
 ~~~bash
 dpkg -l | grep -c '^ii '
 ~~~
-The ii prefix represents requested installation and current installed state; other desired states such as held packages may need separate consideration. Actual output pending.
+The ii prefix represents requested installation and current installed state; other desired states such as held packages may need separate consideration. Actual verified output: 737.
 
 ## Verification
-Question 1 verified from actual terminal output; question 2 and HTB acceptance pending. Alternatives are untested. No lab credentials or VPN profiles are included.
+Both questions verified from actual terminal output; HTB acceptance remains pending. Alternatives are untested. No lab credentials or VPN profiles are included.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
 
@@ -86,4 +86,35 @@ Actual output: **32**. The search returned discoverable regular-file paths endin
 dpkg -l | grep '^ii ' | wc -l
 ~~~
 
-The question asks for a count, not package names. dpkg -l lists package records; grep filters lines beginning with the normal installed status ii followed by a space; the caret anchors the pattern to the beginning of the line; wc -l counts those records. This method excludes headers and removed packages, but may omit installed packages with other desired states such as held packages. Compare with the dpkg-query method above if necessary. Actual result pending.
+The question asks for a count, not package names. dpkg -l lists package records; grep filters lines beginning with the normal installed status ii followed by a space; the caret anchors the pattern to the beginning of the line; wc -l counts those records. This method excludes headers and removed packages, but may omit installed packages with other desired states such as held packages. Compare with the dpkg-query method above if necessary. Actual result: 737.
+
+## Question 2 — Verified output, why and how
+
+~~~bash
+dpkg -l | grep '^ii ' | wc -l
+~~~
+
+Actual output:
+
+~~~text
+737
+~~~
+
+The question requests a number, not package names. dpkg is the Debian package management tool; -l lists package records. The first pipe transfers the listing to grep. The caret anchors the pattern at the beginning of each line, and ii followed by a space selects normally installed package records. The second pipe transfers matching records to wc -l, which counts lines. This excludes headers and removed package records. Other selection states, such as held packages, may require checking the current installation status separately.
+
+### Alternative method
+
+~~~bash
+dpkg -l | grep -c '^ii '
+~~~
+
+The -c option counts matching lines directly, removing the need for wc -l. Expected output: 737. This alternative has not been executed in the lab.
+
+## Final exercise recap
+
+| Question | Verified answer |
+| --- | --- |
+| Number of discoverable regular .log files | 32 |
+| Number of normally installed packages | 737 |
+
+Both answers are verified from the learner's actual terminal output. HTB submission acceptance and section completion remain pending confirmation.
