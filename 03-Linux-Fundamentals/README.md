@@ -41,3 +41,7 @@ Source: [HTB Academy](https://academy.hackthebox.com/). Independent English stud
 ## Practical exercise documentation standard
 
 For each exercise, record the question, important keywords, why the command was selected, syntax and parameter meanings, actual output, how to extract the requested answer, alternative methods where useful, and verification/submission status. Distinguish tested commands from suggested alternatives. Keep documentation in English and exclude secrets.
+
+## Extended Apache study notes
+
+[Apache HTTP Server deep dive](19-Apache-HTTP-Server-Deep-Dive.md) — request lifecycle, Git and Flask distinctions, example deployment architecture, configuration, logs, security and local verification.
