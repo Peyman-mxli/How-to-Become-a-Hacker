@@ -83,3 +83,5 @@ snapd.apparmor.service    loaded    active    exited    Load AppArmor profiles m
 Answer: **snapd.apparmor.service**. The learner's output exactly matches the requested description. UNIT identifies the service; LOAD indicates that its unit definition is loaded; ACTIVE is the high-level state; SUB is the detailed state. An active/exited service can have completed its task without a continuously running process.
 
 The alternative awk '{print $1}' pipeline extracts the first field from this observed row. Expected output: snapd.apparmor.service. The alternative has not been executed. No service settings were changed. HTB submission acceptance remains pending.
+
+The learner proceeded to Section 18 after verifying the unit name on the target. Individual HTB acceptance was not explicitly shown.
