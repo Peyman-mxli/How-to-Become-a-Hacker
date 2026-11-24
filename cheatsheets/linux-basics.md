@@ -56,3 +56,11 @@ More commands will be added as they are studied and practiced.
 - `-size`, `-user`, `-newermt`: filter by size, owner and modification time.
 - `2>/dev/null`: suppress standard error without changing access permissions.
 - `locate PATTERN`: search indexed filenames; `sudo updatedb` refreshes the database on an owned system.
+
+## File descriptors and redirection
+
+- FD 0: stdin; FD 1: stdout; FD 2: stderr.
+- `> FILE`: write/truncate; `>> FILE`: append; `< FILE`: input.
+- `2> FILE`: save errors; `2>/dev/null`: discard errors.
+- `<< EOF`: here-document input.
+- Pipe: forward stdout; `grep PATTERN`: filter; `wc -l`: count lines.
