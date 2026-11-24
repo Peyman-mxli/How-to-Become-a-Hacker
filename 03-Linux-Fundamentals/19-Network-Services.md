@@ -74,3 +74,7 @@ The first command installs the package; --config selects the downloaded connecti
 Section 19 has no mandatory questions. No new services were installed, started or reconfigured during this lesson. Previous SSH and OpenVPN practice was verified in earlier exercises. Section 18 was followed by Section 19; the learner did not explicitly show HTB acceptance of dbus. Section 18 provided Pwnbox only, with no target or VPN option visible, and its upstream answer was independently identified.
 
 Independent English study notes based on HTB Academy.
+
+## Extended Apache study notes
+
+[Apache HTTP Server deep dive](19-Apache-HTTP-Server-Deep-Dive.md) — request lifecycle, Git and Flask distinctions, example deployment architecture, configuration, logs, security and local verification.
