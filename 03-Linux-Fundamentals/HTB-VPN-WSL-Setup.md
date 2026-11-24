@@ -35,16 +35,25 @@ wsl -d Ubuntu
 
 This starts the existing Ubuntu distribution and opens its Linux shell. Successfully verified: Ubuntu 24.04.4 LTS, x86_64, running under WSL 2.
 
-## Step 4 — Install OpenVPN (pending execution)
+## Step 4 — Install OpenVPN (verified)
 
 ~~~bash
 sudo apt update && sudo apt install openvpn -y
 ~~~
 
-Use the local Ubuntu password if sudo requests authentication. Installation has not yet been verified.
+Use the local Ubuntu password if sudo requests authentication. Installation completed successfully; OpenVPN 2.6.19 was installed.
+
+## Step 5 — Locate the VPN profile (pending verification)
+
+From Ubuntu WSL, locate the downloaded profile in the Windows Downloads directory:
+
+~~~bash
+ls /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads/*.ovpn
+~~~
+
+Replace the username placeholder with your Windows account folder name. Do not publish the VPN profile.
 
 ## Remaining steps (pending)
-- Locate the downloaded VPN profile locally.
 - Connect to the Academy VPN and verify connectivity.
 - Open a separate terminal and connect via SSH to the assigned lab.
 - Complete and verify the six System Information exercises.
