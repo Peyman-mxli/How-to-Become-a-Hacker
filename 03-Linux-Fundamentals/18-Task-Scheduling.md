@@ -91,3 +91,7 @@ Independent English study notes based on HTB Academy.
 ## Learner verification — empty service property
 
 The learner ran `systemctl --user show dconf.service --property=Type` on the assigned SSH target. Actual output: `Type=` (empty). This does not establish the expected unit's type; the unit may be unavailable in that environment. Next, locate the unit definition using the previously documented find command and inspect its Type setting if present. Upstream expected answer: dbus. Local verification and HTB acceptance remain pending.
+
+## Environment limitation and next lesson
+
+The learner reported an unresponsive SSH terminal and reopened local WSL Ubuntu. Section 18 displayed only Pwnbox, with no VPN or target controls and no remaining free spawns. The upstream dconf.service definition remains the basis for the proposed answer dbus. The learner proceeded to Section 19; explicit platform acceptance was not shown. No paid access was required to study the next section.
