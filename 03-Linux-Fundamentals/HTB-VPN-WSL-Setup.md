@@ -63,9 +63,19 @@ sudo openvpn --config /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads/academy-regul
 
 Replace the placeholder with the local Windows account folder. Look for `Initialization Sequence Completed` in the output. Keep this terminal running and use a separate Ubuntu terminal for SSH. OpenVPN initialization was confirmed by the message `Initialization Sequence Completed`. The foreground process remains running to maintain the tunnel. Remote SSH connectivity is still pending verification.
 
-## Step 7 — Open a separate Ubuntu terminal (pending)
+## Step 7 — Open a separate Ubuntu terminal (verified)
 
 Keep the VPN terminal open. Open another Windows Terminal tab using Ctrl+Shift+T. If it opens PowerShell, run `wsl -d Ubuntu` to enter the same Ubuntu distribution. Use the second terminal for lab SSH commands.
+
+A separate Ubuntu shell was successfully opened through PowerShell. Keep the first terminal running OpenVPN; commands typed into that foreground process will not execute as shell commands.
+
+## Step 8 — Connect to the assigned lab via SSH (pending verification)
+
+~~~bash
+ssh htb-student@TARGET_IP
+~~~
+
+Replace TARGET_IP with the current assigned Academy target. Confirm the host key when appropriate for the assigned lab, and enter the exercise-provided password when prompted. Do not publish credentials or session-specific addresses.
 
 ## Remaining steps (pending)
 - Open a separate terminal and connect via SSH to the assigned lab.
