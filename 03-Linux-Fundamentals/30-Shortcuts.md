@@ -50,7 +50,7 @@ Ctrl+R starts reverse incremental history search. Type a keyword to find an earl
 Alt+Tab switches applications in desktop environments. Ctrl+Plus and Ctrl+Minus commonly zoom terminal text in/out, depending on emulator configuration. In Windows Terminal, Ctrl+Shift+C / Ctrl+Shift+V commonly copy/paste, and zoom bindings may differ. Windows shortcuts and terminal-specific settings are distinct from Bash bindings.
 
 ## Completion status
-All supplied 30 Linux Fundamentals lessons have now been studied and independently documented. Section 30 contains no mandatory question in the supplied text. No new practical execution or HTB platform completion was verified. Mark Complete & Next on HTB and confirm the module completion screen before recording platform completion, rewards or achievements.
+All supplied 30 Linux Fundamentals lessons have now been studied and independently documented. Section 30 contains no mandatory question in the supplied text. No new practical execution was verified in this lesson. On November 24, 2026, the learner supplied an HTB dashboard screenshot showing Linux Fundamentals marked Completed. Module completion is confirmed; specific rewards and badges were not verified.
 
 Study preference: explain lessons in English and Farsi in chat; maintain English-only GitHub notes; skip optional exercises and knowledge quizzes unless explicitly requested.
 
