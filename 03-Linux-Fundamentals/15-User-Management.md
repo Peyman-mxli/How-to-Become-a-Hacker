@@ -60,6 +60,6 @@ Verified help output:
 Answer: **--command**. -c is the ordinary short equivalent. --session-command is a distinct option that does not create a new session. Authentication and authorization still apply. Alternative: man su, search for --command.
 
 ## Verification
-All three option names were verified using actual command help in an independent Linux environment. Learner-side execution and HTB acceptance are not yet confirmed. No users, passwords, privileges or system files were modified.
+All three option names were verified using actual command help in an independent Linux environment. Learner proceeded to Section 16; individual submission acceptance was not explicitly shown. No users, passwords, privileges or system files were modified.
 
 Independent English study notes based on HTB Academy.
