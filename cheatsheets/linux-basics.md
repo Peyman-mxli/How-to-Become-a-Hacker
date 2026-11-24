@@ -90,3 +90,11 @@ More commands will be added as they are studied and practiced.
 - `chown USER:GROUP FILE`: change ownership (requires appropriate privileges).
 - `stat -c '%a %A' FILE`: show octal and symbolic permissions.
 - Special bits: SUID=4, SGID=2, sticky=1 in the leading octal digit.
+
+## User management
+
+- `useradd -m` / `--create-home`: create a home directory when adding an account.
+- `usermod -L` / `--lock`: lock password authentication.
+- `su -c` / `--command`: execute a command as another user subject to authentication.
+- `sudo`: run commands according to administrative policy.
+- `--help` and `man`: verify options without changing system state.
