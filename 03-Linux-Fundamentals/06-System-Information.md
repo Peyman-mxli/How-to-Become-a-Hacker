@@ -47,6 +47,6 @@ Lab credentials, IP addresses and session identifiers are intentionally excluded
 
 The home directory and configured shell are fields six and seven of the passwd record. If MAIL is unset, investigate the local mail spool configuration. For the kernel question, use the requested numeric format based on the actual output. Identify the interface from its MTU field.
 
-All six answers and submission results are pending live lab verification. No practical completion is claimed.
+SSH login succeeded. The remote login banner reports x86_64 architecture. Question 1 expected answer: x86_64; direct command and submission verification pending. Other answers and submissions remain pending. No practical completion is claimed.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
