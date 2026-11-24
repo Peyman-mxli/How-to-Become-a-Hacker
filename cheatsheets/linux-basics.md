@@ -153,3 +153,14 @@ More commands will be added as they are studied and practiced.
 - `--backup` and `--backup-dir`: retain replaced destination files; review `--delete` carefully.
 - Source trailing slash changes directory-copy semantics.
 - Restore to a separate directory and verify the recovered data.
+
+## File system management
+
+- `ls -il`: show inode numbers and detailed file attributes.
+- `df -i`: inode usage; `df -h`: filesystem space usage.
+- `sudo fdisk -l`: list disk partition tables; `lsblk`: device hierarchy.
+- `lsblk -nr -o TYPE | grep -cx 'part'`: count partition entries, excluding parent disks.
+- `lsblk -f`: filesystem details; `findmnt`: mounted filesystems.
+- `cat /etc/fstab`: read persistent mount configuration.
+- `free -h`: memory and swap usage; `swapon --show`: active swap areas.
+- Never format or repartition an unidentified device.
