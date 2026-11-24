@@ -19,9 +19,9 @@ This repository is a growing portfolio of original study notes, authorized lab e
 | --- | --- | --- | --- |
 | Intro to Academy | 0 | Completed — 8/8 | [Study notes](01-Intro-to-Academy/README.md) · [Exercises](01-Intro-to-Academy/Exercises.md) |
 | Learning Process | 0 | Completed — 20/20 | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
-| Linux Fundamentals | 0 | In progress — 25/30 lessons studied; section 25 platform completion pending | [Module index](03-Linux-Fundamentals/README.md) |
+| Linux Fundamentals | 0 | In progress — 26/30 lessons studied; section 26 platform completion pending | [Module index](03-Linux-Fundamentals/README.md) |
 
-**Current checkpoint:** Linux Fundamentals Section 25/30 — Remote Desktop Protocols in Linux studied and documented. Mark Complete & Next on HTB; next study section: 26/30.
+**Current checkpoint:** Linux Fundamentals Section 26/30 — Linux Security studied and documented. Mark Complete & Next on HTB; next study section: 27/30.
 
 ## Learning roadmap
 
