@@ -69,4 +69,14 @@ Output: `/home/htb-student`.
 
 Question 2 answer verified from actual lab output; submission acceptance not yet confirmed.
 
-Question 3 next command: `echo "$MAIL"` (pending output).
+### Verified practical output — Question 3
+
+~~~bash
+echo "$MAIL"
+~~~
+
+Output: `/var/mail/htb-student`.
+
+Question 3 answer verified from reported lab output; submission acceptance not yet confirmed.
+
+Question 4 next command: `echo "$SHELL"` (pending output).
