@@ -1,7 +1,7 @@
 # 02 — Learning Process
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental  
-**Status:** In progress — sections 1–19 studied; section 20 pending  
+**Status:** In progress — all 20 sections studied; final exercise submission and module completion pending  
 **Started:** November 23, 2026  
 **Estimated course duration:** 3 hours | **Sections:** 20
 
@@ -28,7 +28,7 @@
 | 17 | Obstacles |
 | 18 | Questioning |
 | 19 | Handling Frustration |
-| 20 | Pending |
+| 20 | Learning Progress |
 
 - [Section-by-section study notes](Study-Notes.md)
 - [Review questions and optional exercises](Exercises.md)
