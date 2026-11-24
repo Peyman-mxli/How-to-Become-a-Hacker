@@ -7,8 +7,8 @@ This is the English-only continuity guide for the independent HTB Academy study 
 - Intro to Academy: 8/8 completed.
 - Learning Process: 20/20 completed.
 - Linux Fundamentals: 30/30 completed, confirmed by the learner's HTB dashboard. All numbered lesson notes and supplemental guides are in 03-Linux-Fundamentals/.
-- Total: 3 completed modules, 58 sections.
-- Next recommended module: Web Requests (Tier 0). Not yet started. Start with Section 1, after the learner supplies the actual lesson. Verify the current section count on the course.
+- Total: 3 completed modules, 58 confirmed completed sections in those modules; 60 sections studied/documented including Web Requests.
+- Current module: Web Requests (Tier 0), 2/8 sections studied and documented. Section 1 download and flag extraction verified; learner advanced to Section 2. Section 2 has no mandatory questions. Next: mark Section 2 complete and continue to Section 3 when supplied. Individual platform completion not separately confirmed.
 - Repository: https://github.com/Peyman-mxli/How-to-Become-a-Hacker
 - Branch: main.
 
@@ -40,4 +40,4 @@ Paste this instruction:
 
 Continue my HTB ethical hacking journey. Read STUDY-WORKFLOW.md and README.md in https://github.com/Peyman-mxli/How-to-Become-a-Hacker (main), then read the current module README and relevant prior lesson notes. Follow the documented study rules, explain every lesson in English and Farsi, and commit English-only notes with additional examples to GitHub after each lesson. No icons, emojis, review quizzes or unnecessary optional practice. Resume at the current checkpoint without repeating completed lessons.
 
-As of this checkpoint, the next module is Web Requests, Section 1. The learner will provide the actual HTB lesson.
+As of this checkpoint, continue Web Requests at Section 3 after the learner marks Section 2 complete. The learner will provide the actual HTB lesson.
