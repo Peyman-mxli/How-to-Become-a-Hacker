@@ -66,7 +66,7 @@ vimtutor
 This launches an interactive tutorial, normally using a practice copy. The lesson estimates 25–30 minutes. Practice inside the tutor rather than merely reading it. The command may be unavailable if Vim's tutorial package is not installed.
 
 ## Verification
-No mandatory answer fields appear in the supplied lesson. Nano and Vim commands are study examples; practical execution and optional tutor completion have not been confirmed.
+No mandatory answer fields appear in the supplied lesson. Nano creation, editing, saving and verification were completed successfully. Vim and optional tutor execution remain unverified.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
 
@@ -93,4 +93,20 @@ cat reads existing files; it does not create them. The relative path notes.txt r
 
 Alternative: use pwd to check the current directory and ls -l notes.txt to check whether the file exists. touch notes.txt can create an empty file if absent, but it does not add text.
 
-The original error was observed in the lab. Successful creation and verification are pending.
+The original error was observed in the lab. Successful creation and verification confirmed by the learner's terminal output.
+
+## Verified Nano practice result
+
+After resolving the missing file error, the learner opened nano notes.txt, entered text, saved the file and exited. Verification:
+
+~~~bash
+cat notes.txt
+~~~
+
+Actual output:
+
+~~~text
+I am learning Linux and Ethical Hacking with Hack The Box Academy.
+~~~
+
+Why this works: Nano writes the text to disk when saved, and cat subsequently reads the saved file. The successful output verifies that the missing-file error was resolved. No mandatory questions are present in the supplied section; VimTutor remains optional.
