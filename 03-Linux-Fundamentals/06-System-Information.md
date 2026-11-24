@@ -79,4 +79,14 @@ Output: `/var/mail/htb-student`.
 
 Question 3 answer verified from reported lab output; submission acceptance not yet confirmed.
 
-Question 4 next command: `echo "$SHELL"` (pending output).
+### Verified practical output — Question 4
+
+~~~bash
+echo "$SHELL"
+~~~
+
+Output: `/bin/bash`.
+
+Question 4 answer verified from actual lab output; submission acceptance not yet confirmed.
+
+Question 5 next command: `uname -r` (pending output).
