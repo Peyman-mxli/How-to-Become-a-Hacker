@@ -18,9 +18,9 @@ This repository is a growing portfolio of original study notes, authorized lab e
 | Module | Tier | Progress | Notes |
 | --- | --- | --- | --- |
 | Intro to Academy | 0 | Completed — 8/8 | [Study notes](01-Intro-to-Academy/README.md) · [Exercises](01-Intro-to-Academy/Exercises.md) |
-| Learning Process | 0 | In progress — 18/20 studied | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
+| Learning Process | 0 | In progress — 19/20 studied | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
 
-**Current checkpoint:** Learning Process, section 18 (Questioning). Next: section 19.
+**Current checkpoint:** Learning Process, section 19 (Handling Frustration). Next: section 20.
 
 ## Learning roadmap
 
