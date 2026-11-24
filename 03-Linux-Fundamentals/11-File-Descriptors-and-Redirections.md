@@ -117,4 +117,4 @@ The -c option counts matching lines directly, removing the need for wc -l. Expec
 | Number of discoverable regular .log files | 32 |
 | Number of normally installed packages | 737 |
 
-Both answers are verified from the learner's actual terminal output. HTB submission acceptance and section completion remain pending confirmation.
+Both answers are verified from the learner's actual terminal output. Learner proceeded to section 12; individual submission acceptance was not explicitly shown.
