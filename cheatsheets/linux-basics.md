@@ -73,3 +73,10 @@ More commands will be added as they are studied and practiced.
 - `awk -F: '{print $1, $7}'`: extract selected fields.
 - `tr`, `column -t`, `sed`: transform or format text.
 - `ss -lntu4`: inspect listening IPv4 TCP and UDP sockets.
+
+## Regular expressions
+
+- `grep -E`: extended regex; `grep -v`: exclude matches; `grep -w`: whole words.
+- `^` and `$`: beginning and end of line; `.*`: zero or more arbitrary characters.
+- `[0-9]`: digit range; `{1,10}`: repetition; parentheses: group; pipe in regex: OR.
+- `grep -E 'my.*false'`: ordered match; two grep commands in a shell pipeline: both patterns in either order.
