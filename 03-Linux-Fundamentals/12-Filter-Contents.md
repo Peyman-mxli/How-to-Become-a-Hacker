@@ -146,3 +146,13 @@ Actual output: **37**. The grep expression extracts absolute same-domain URL str
 ## Question 3 — Rejected answer and troubleshooting
 
 HTB rejected 37. The learner reached level 5, as shown in the platform notification. The next diagnostic step is to rerun the combined extraction pipeline, replacing wc -l with nl. This displays numbered candidate strings instead of only their count. Inspect the list for external protocol-relative URLs, query strings, fragments, malformed matches and other differences in path interpretation before choosing another answer. The cause of the mismatch has not yet been confirmed. Do not treat 37 as a correct exercise answer.
+
+## Question 3 — Diagnose the 37 candidates
+
+The numbered output revealed three external protocol-relative URL strings (two for fonts.googleapis.com and one for s.w.org), which do not belong to the requested domain. Two oEmbed URLs also share the same path but differ in query parameters. Remove the observed external candidates and strip queries and fragments before deduplication.
+
+~~~bash
+grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | grep -v '^//' | cut -d'?' -f1 | cut -d'#' -f1 | sort -u | wc -l
+~~~
+
+grep -v excludes matching lines; ^// matches the protocol-relative candidates, all of which were external in the observed list. This is specific to this dataset: same-domain protocol-relative URLs would need normalization rather than exclusion. cut -d selects a delimiter and -f1 retains the first field, stripping queries and fragments. sort -u deduplicates paths and wc -l counts the results. Expected count from the observed list: 33, including the root path. Actual execution and HTB acceptance are pending. The earlier count of 37 was rejected.
