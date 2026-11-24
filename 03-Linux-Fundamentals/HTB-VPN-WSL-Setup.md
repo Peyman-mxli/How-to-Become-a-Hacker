@@ -27,17 +27,23 @@ Observed output:
 
 This confirms Ubuntu is already installed, uses WSL 2, and is currently stopped. No duplicate Ubuntu installation is needed.
 
-## Step 3 — Start Ubuntu (next action)
+## Step 3 — Start Ubuntu (completed)
 
 ~~~powershell
 wsl -d Ubuntu
 ~~~
 
-This starts the existing Ubuntu distribution and opens its Linux shell. Execution has not yet been confirmed.
+This starts the existing Ubuntu distribution and opens its Linux shell. Successfully verified: Ubuntu 24.04.4 LTS, x86_64, running under WSL 2.
+
+## Step 4 — Install OpenVPN (pending execution)
+
+~~~bash
+sudo apt update && sudo apt install openvpn -y
+~~~
+
+Use the local Ubuntu password if sudo requests authentication. Installation has not yet been verified.
 
 ## Remaining steps (pending)
-- Verify Ubuntu starts successfully.
-- Install or verify OpenVPN.
 - Locate the downloaded VPN profile locally.
 - Connect to the Academy VPN and verify connectivity.
 - Open a separate terminal and connect via SSH to the assigned lab.
