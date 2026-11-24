@@ -90,3 +90,18 @@ This guide will be expanded as the actual setup progresses. Credentials, private
 ## Troubleshooting: forgotten sudo password
 
 OpenVPN installation was blocked by failed sudo authentication. Follow the [local WSL password recovery guide](WSL-Ubuntu-Password-Recovery.md), then retry installation. Password recovery completed successfully. Normal-user authentication verified with `sudo -v`. Resume OpenVPN installation.
+
+## Troubleshooting — SSH Broken pipe
+
+Observed error: `client_loop: send disconnect: Broken pipe`.
+
+The SSH session ended and control returned to the local WSL shell. A subsequent filesystem search ran locally rather than on the assigned HTB machine.
+
+### Why and how to recover
+1. Press Ctrl+C to stop an unintended local search.
+2. Check the Academy target timer. Spawn a fresh target if the previous one expired.
+3. Verify the existing VPN connection is still running.
+4. Reconnect using `ssh htb-student@TARGET_IP`, with the current assigned address.
+5. Confirm the remote prompt and use `hostname` if needed before running lab commands.
+
+The exact cause of the dropped SSH session is not confirmed; target expiration, inactivity or network interruption are possible. Recovery is pending verification. Do not confuse the local WSL prompt with the remote student prompt.
