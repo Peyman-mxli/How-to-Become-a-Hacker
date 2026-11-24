@@ -54,5 +54,8 @@ Fear of failure, rigid beliefs and pressure may hinder progress. Reframe "I cann
 ## 18 — Questioning
 Replace overly broad questions with precise, evidence-oriented ones. The course's Relationship-Oriented-Questioning (ROQ) model maps five components: your position, the object, known information, unknown information and other positions. Define the object and at least two components; examine their connections and influence. Rephrase unclear questions as needed and update known information as evidence emerges.
 
-## 19–20
+## 19 — Handling Frustration
+Frustration can arise from internal expectations or external pressures. In authorized security testing, missing information or resources can cause difficulties. Enumeration is the systematic collection of relevant information about systems and services. Build frustration tolerance through manageable, controlled practice; identify missing information, adjust the approach, and take breaks when needed. Distinguish controllable responses from external circumstances. Frustration is temporary, while lessons learned through practice can persist.
+
+## 20
 Not yet studied. No notes or completion claims are recorded.
