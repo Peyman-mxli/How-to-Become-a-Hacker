@@ -51,6 +51,8 @@ The roadmap is a personal study plan, not a claim of completed training or profe
 
 ## Learning approach
 
+[Study workflow and new-chat handoff](STUDY-WORKFLOW.md) — bilingual learning rules, English-only documentation, additional original examples, verification and continuation procedure.
+
 1. Understand the concept before memorizing commands.
 2. Practice in authorized environments.
 3. Record errors, observations and reproducible steps.
