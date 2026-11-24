@@ -25,3 +25,7 @@ Source: [HTB Academy](https://academy.hackthebox.com/). Independent English stud
 - [HTB VPN with Ubuntu WSL 2](HTB-VPN-WSL-Setup.md) — VPN and SSH connection verified.
 
 - [Ubuntu WSL password recovery](WSL-Ubuntu-Password-Recovery.md) — completed; sudo authentication verified.
+
+## Practical exercise documentation standard
+
+For each exercise, record the question, important keywords, why the command was selected, syntax and parameter meanings, actual output, how to extract the requested answer, alternative methods where useful, and verification/submission status. Distinguish tested commands from suggested alternatives. Keep documentation in English and exclude secrets.
