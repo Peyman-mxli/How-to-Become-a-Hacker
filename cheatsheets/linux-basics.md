@@ -107,3 +107,12 @@ More commands will be added as they are studied and practiced.
 - `dpkg -s NAME`: inspect installed package status; `dpkg -L NAME`: list package files.
 - `apt download NAME`: download without installation; `dpkg -i FILE.deb`: install local package.
 - `git clone URL`: copy a repository, not necessarily install its software.
+
+## Service and process management
+
+- `systemctl status NAME`: inspect service; `systemctl list-units --type=service --all`: list loaded service units.
+- `journalctl -u NAME --no-pager`: inspect service logs.
+- `ps aux`, `pgrep`: inspect processes; `kill -l`: list signals.
+- SIGTERM requests termination; SIGKILL forces it.
+- `jobs`, `bg`, `fg %1`, `&`: shell job control.
+- `;`, `&&`, `||`, pipe: command sequencing and output transfer.
