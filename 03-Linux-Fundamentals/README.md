@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 29/30 lessons studied; section 29 platform completion pending
+**Status:** In progress — 30/30 lessons studied and documented; HTB module completion pending confirmation
 **Started:** November 23, 2026
 
 ## Lessons
@@ -34,7 +34,8 @@
 26. [Linux Security](26-Linux-Security.md) — lesson reviewed; no mandatory questions
 27. [Firewall Setup](27-Firewall-Setup.md) — lesson reviewed; ten optional exercises
 28. [System Logs](28-System-Logs.md) — lesson reviewed; no mandatory questions
-29. [Solaris](29-Solaris.md) — lesson reviewed; no mandatory questions in supplied text; platform completion pending
+29. [Solaris](29-Solaris.md) — lesson reviewed; no mandatory questions in supplied text
+30. [Shortcuts](30-Shortcuts.md) — final lesson studied; HTB module completion pending confirmation
 
 ## Learning objectives
 
