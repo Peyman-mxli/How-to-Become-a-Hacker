@@ -69,3 +69,28 @@ This launches an interactive tutorial, normally using a practice copy. The lesso
 No mandatory answer fields appear in the supplied lesson. Nano and Vim commands are study examples; practical execution and optional tutor completion have not been confirmed.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
+
+## Troubleshooting — No such file or directory
+
+Actual lab attempt:
+~~~bash
+cat notes.txt
+~~~
+
+Observed output:
+~~~text
+cat: notes.txt: No such file or directory
+~~~
+
+### Why this happened
+cat reads existing files; it does not create them. The relative path notes.txt refers to a file in the current working directory. The file could be absent or located elsewhere.
+
+### How to resolve it
+1. Run nano notes.txt to open a new practice file.
+2. Enter practice text.
+3. Press Ctrl+O, Enter, then Ctrl+X to save and exit.
+4. Run cat notes.txt to verify the contents.
+
+Alternative: use pwd to check the current directory and ls -l notes.txt to check whether the file exists. touch notes.txt can create an empty file if absent, but it does not add text.
+
+The original error was observed in the lab. Successful creation and verification are pending.
