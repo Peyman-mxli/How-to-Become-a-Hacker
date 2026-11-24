@@ -79,3 +79,5 @@ References:
 - https://statick88.github.io/challenges/learning-journey/security/linux-fundamentals/11-file-system-management.html
 
 Independent English study notes based on HTB Academy.
+
+The learner proceeded to Section 23; explicit platform acceptance of the proposed answer was not shown.
