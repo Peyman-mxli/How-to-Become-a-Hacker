@@ -48,3 +48,11 @@ More commands will be added as they are studied and practiced.
 - `cat FILE`: display saved content.
 - `vim FILE`: modal editing; i inserts, Esc returns to Normal mode, :wq saves and quits, :q! discards unsaved changes.
 - `vimtutor`: interactive Vim practice.
+
+## Find files and directories
+
+- `which PROGRAM`, `command -v PROGRAM`: resolve an executable or command.
+- `find LOCATION -type f -name 'PATTERN'`: search regular files.
+- `-size`, `-user`, `-newermt`: filter by size, owner and modification time.
+- `2>/dev/null`: suppress standard error without changing access permissions.
+- `locate PATTERN`: search indexed filenames; `sudo updatedb` refreshes the database on an owned system.
