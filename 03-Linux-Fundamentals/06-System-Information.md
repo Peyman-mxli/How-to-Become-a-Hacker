@@ -47,6 +47,16 @@ Lab credentials, IP addresses and session identifiers are intentionally excluded
 
 The home directory and configured shell are fields six and seven of the passwd record. If MAIL is unset, investigate the local mail spool configuration. For the kernel question, use the requested numeric format based on the actual output. Identify the interface from its MTU field.
 
-SSH login succeeded. The remote login banner reports x86_64 architecture. Question 1 expected answer: x86_64; direct command and submission verification pending. Other answers and submissions remain pending. No practical completion is claimed.
+SSH login succeeded. The remote login banner reports x86_64 architecture. Question 1: `uname -m` returned `x86_64`, confirmed by actual lab output. HTB submission acceptance not yet confirmed. Other answers and submissions remain pending. No practical completion is claimed.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
+
+### Verified practical output — Question 1
+
+~~~bash
+uname -m
+~~~
+
+Output: `x86_64`.
+
+Question 2 next command: `echo "$HOME"` (pending output).
