@@ -194,8 +194,16 @@ The learner's numbered list independently supports 34 unique same-domain URL can
 grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | grep -v '^//' | sort -u | wc -l
 ~~~
 
-The corrected method retains queries, excludes the three observed external protocol-relative candidates, deduplicates, and counts. Actual terminal result: 34. The learner executed this command successfully; HTB acceptance remains pending. The earlier rejected counts of 37 and 33 are retained as troubleshooting evidence.
+The corrected method retains queries, excludes the three observed external protocol-relative candidates, deduplicates, and counts. Actual terminal result: 34. The learner executed this command successfully; HTB accepted 34. The earlier rejected counts of 37 and 33 are retained as troubleshooting evidence.
 
 ## Question 3 — Final terminal verification
 
-The corrected pipeline preserving query parameters returned **34** in the learner's local WSL Ubuntu terminal. This matches the 37 previously listed candidates minus three external URL strings. Both earlier submissions (37 and 33) were rejected. The new count is verified from actual terminal output, but platform acceptance is not yet confirmed. The next action is to submit 34.
+The corrected pipeline preserving query parameters returned **34** in the learner's local WSL Ubuntu terminal. This matches the 37 previously listed candidates minus three external URL strings. Both earlier submissions (37 and 33) were rejected. The new count is verified from actual terminal output, and the learner explicitly confirmed that HTB accepted 34.
+
+## Accepted answer and free-account submission limits
+
+Question 3: **34 — accepted by HTB**, confirmed by the learner. Earlier counts 37 and 33 were rejected and are retained only as troubleshooting history. The official Academy FAQ and module documentation do not publish a fixed incorrect-answer limit for regular lesson assessments. This does not prove that unpublished rate limits cannot exist. Free Academy Pwnbox access is limited to one two-hour spawn per day; local VPN access is a supported alternative. Certification exam attempts are separate from ordinary exercises.
+
+Official references: https://academy.hackthebox.com/faq and https://help.hackthebox.com/en/articles/12741910-academy-modules-paths
+
+Future verification standard: distinguish observed output, inferred answers, and platform-accepted answers; inspect ambiguous filtering results before recommending submission.
