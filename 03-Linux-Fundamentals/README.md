@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 27/30 lessons studied; section 27 platform completion pending
+**Status:** In progress — 28/30 lessons studied; section 28 platform completion pending
 **Started:** November 23, 2026
 
 ## Lessons
@@ -32,7 +32,8 @@
 24. [Network Configuration](24-Network-Configuration.md) — lesson reviewed; ten optional exercises
 25. [Remote Desktop Protocols in Linux](25-Remote-Desktop-Protocols-in-Linux.md) — lesson reviewed; no mandatory questions
 26. [Linux Security](26-Linux-Security.md) — lesson reviewed; no mandatory questions
-27. [Firewall Setup](27-Firewall-Setup.md) — lesson reviewed; ten optional exercises; platform completion pending
+27. [Firewall Setup](27-Firewall-Setup.md) — lesson reviewed; ten optional exercises
+28. [System Logs](28-System-Logs.md) — lesson reviewed; no mandatory questions; platform completion pending
 
 ## Learning objectives
 
