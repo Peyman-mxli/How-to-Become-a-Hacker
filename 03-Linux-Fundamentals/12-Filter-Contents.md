@@ -108,3 +108,15 @@ wc -c website.html
 ~~~
 
 curl retrieves the designated training website. -s suppresses the progress meter, -L follows redirects, and -o writes the response to a local file. wc -c counts bytes to check that data was saved. Download, path extraction, deduplication and final count remain pending. A successful byte count alone does not establish that the downloaded response is the intended HTML.
+
+## Question 3 — Verified download checkpoint
+
+Local WSL Ubuntu was started successfully. The learner executed curl -sL with the designated training website and saved website.html. The command wc -c website.html returned 22266 bytes. This verifies that a nonempty response was saved, but not that every byte belongs to the intended HTML page. No local username or machine identifier is recorded.
+
+### Initial absolute URL extraction
+
+~~~bash
+grep -oE 'https://www\.inlanefreight\.com/[^"<>[:space:]]*' website.html | sort -u | wc -l
+~~~
+
+grep -o prints matched portions and -E enables extended regular expressions. Escaped dots match literal domain separators. The negated character class stops at quotes, angle brackets or whitespace. sort -u deduplicates matching strings; wc -l counts them. This is a preliminary absolute-URL count, not a complete normalized same-domain path count. Relative paths, other URL forms and query/fragment normalization must be considered before submitting the final answer. Actual extraction output pending.
