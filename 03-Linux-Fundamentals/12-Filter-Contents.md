@@ -160,3 +160,14 @@ grep -v excludes matching lines; ^// matches the protocol-relative candidates, a
 ## Question 3 — Corrected count verified
 
 The learner executed the corrected pipeline in local WSL and obtained **33**. Starting with 37 candidate strings, excluding the three observed external URL strings leaves 34; removing query parameters and deduplicating the two oEmbed variants leaves 33 distinct path candidates. The terminal output confirms this calculation. Submit 33 for HTB validation; do not mark the answer accepted until confirmed. The previous answer 37 was rejected.
+
+## Question 3 — Second rejection and response validation
+
+HTB also rejected 33. Both 37 and 33 are observed pipeline outputs, not accepted answers. Stripping query parameters was an unverified interpretation of the exercise. The next diagnostic step is to validate the HTTP response, effective URL and HTML title before refining extraction. The local WSL response may differ from the expected Pwnbox response; this possibility is not yet confirmed.
+
+~~~bash
+curl -sL -o /dev/null -w 'HTTP: %{http_code}\nURL: %{url_effective}\n' https://www.inlanefreight.com/
+grep -i '<title>' website.html
+~~~
+
+The -w option prints response metadata, -L follows redirects, and -o /dev/null discards the response body for this diagnostic request. grep -i searches the saved HTML title case-insensitively. Results pending. Do not submit another unverified count.
