@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 21/30 lessons studied; section 21 has no mandatory questions
+**Status:** In progress — 22/30 lessons studied; section 22 expected answer corroborated by community reports
 **Started:** November 23, 2026
 
 ## Lessons
@@ -27,6 +27,7 @@
 19. [Network Services](19-Network-Services.md) — no mandatory exercises
 20. [Working with Web Services](20-Working-with-Web-Services.md) — answers verified against documentation
 21. [Backup and Restore](21-Backup-and-Restore.md) — optional practice only
+22. [File System Management](22-File-System-Management.md) — community-corroborated expected answer; submission pending
 
 ## Learning objectives
 
