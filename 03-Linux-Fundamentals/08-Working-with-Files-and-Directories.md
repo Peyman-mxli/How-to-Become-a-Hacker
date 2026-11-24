@@ -55,7 +55,7 @@ ls -t /var/backups
 
 This sorts names by modification time without the long-format metadata. It is faster to read but does not distinguish regular files from directories. If necessary, use the detailed method to verify the result.
 
-Actual output and final answer pending.
+Actual lab output listed `apt.extended_states.0` first, followed by `apt.extended_states.1.gz` and `dpkg.status.0`. The first entry is a regular file and the listing is sorted by modification time. Verified answer: `apt.extended_states.0`. HTB submission acceptance pending.
 
 ## Practical question 2 — Inode number
 
@@ -80,3 +80,23 @@ stat reads file metadata; -c specifies the format; %i selects the inode number o
 Actual output and final answer pending. Both alternatives are instructional suggestions until tested.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
+
+## Question 1 — Verified result and additional alternative
+
+~~~text
+-rw-r--r-- 1 root root 41872 Nov 12 2020 apt.extended_states.0
+-rw-r--r-- 1 root root 4437 Nov 12 2020 apt.extended_states.1.gz
+-rw-r--r-- 1 root root 742750 Nov 11 2020 dpkg.status.0
+~~~
+
+The first regular file in the time-sorted output is the answer. The displayed date can be identical for multiple files because the listing hides finer timestamp precision. Sorting uses the underlying modification timestamps.
+
+### Method 3 — Display only the first entry
+
+~~~bash
+ls -t /var/backups | head -n 1
+~~~
+
+The -t option sorts newest first, the pipe passes standard output to head, and -n 1 limits output to one line. Expected result: apt.extended_states.0. This alternative is not yet executed and assumes the first visible entry is a regular file, as verified in the detailed listing.
+
+Question 2 remains pending. Use ls -i /var/backups/shadow.bak or stat -c '%i' /var/backups/shadow.bak to inspect inode metadata only.
