@@ -142,4 +142,4 @@ Expected output: 265293. This method has not yet been executed in the lab. It is
 | Most recently modified file | apt.extended_states.0 |
 | Inode number of shadow.bak | 265293 |
 
-Both answers have been verified from the learner's actual terminal output. HTB submission acceptance and section completion remain pending confirmation.
+Both answers have been verified from the learner's actual terminal output. Learner proceeded to section 9; both answers were verified from terminal output, but individual submission acceptance was not explicitly shown.
