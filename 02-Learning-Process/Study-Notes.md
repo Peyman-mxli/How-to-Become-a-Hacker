@@ -57,5 +57,5 @@ Replace overly broad questions with precise, evidence-oriented ones. The course'
 ## 19 — Handling Frustration
 Frustration can arise from internal expectations or external pressures. In authorized security testing, missing information or resources can cause difficulties. Enumeration is the systematic collection of relevant information about systems and services. Build frustration tolerance through manageable, controlled practice; identify missing information, adjust the approach, and take breaks when needed. Distinguish controllable responses from external circumstances. Frustration is temporary, while lessons learned through practice can persist.
 
-## 20
-Not yet studied. No notes or completion claims are recorded.
+## 20 — Learning Progress
+Compare current skills with a dated baseline rather than relying solely on other people's judgments. Maintain two records: a baseline inventory with self-assessed skill ratings from 1 to 10, and a continuous journal of new knowledge and practical experience. Small, consistent learning sessions can support long-term development. The lesson illustrates compounding with 1.00^365 = 1.00 and 1.01^365 ≈ 37.7; this is a mathematical illustration, not a guaranteed rate of human learning.
