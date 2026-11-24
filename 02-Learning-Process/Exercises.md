@@ -49,7 +49,7 @@ Try applying ROQ independently to three to five personal situations.
 **Question:** What is the difference between the two learning progress figures in the lesson?
 **Answer:** 36.7 (37.7 − 1.00).
 **Suggested practice:** Maintain a dated skill baseline and an ongoing learning journal.
-**Submission status:** Answer prepared; acceptance not yet confirmed.
+**Submission status:** Module completion confirmed by HTB achievement share screen.
 
 ## Status
-All 20 sections studied. Final exercise submission and module completion pending.
+All 20 sections completed; module completion confirmed.
