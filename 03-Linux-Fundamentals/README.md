@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 17/30 lessons studied; section 17 lab pending
+**Status:** In progress — 18/30 lessons studied; section 18 answer verified upstream
 **Started:** November 23, 2026
 
 ## Lessons
@@ -22,7 +22,8 @@
 14. [Permission Management](14-Permission-Management.md) — no mandatory exercises
 15. [User Management](15-User-Management.md) — command options verified
 16. [Package Management](16-Package-Management.md) — optional exercise only
-17. [Service and Process Management](17-Service-and-Process-Management.md) — lab pending
+17. [Service and Process Management](17-Service-and-Process-Management.md) — answer verified on target
+18. [Task Scheduling](18-Task-Scheduling.md) — answer verified upstream; submission pending
 
 ## Learning objectives
 
