@@ -43,7 +43,7 @@ sudo apt update && sudo apt install openvpn -y
 
 Use the local Ubuntu password if sudo requests authentication. Installation completed successfully; OpenVPN 2.6.19 was installed.
 
-## Step 5 — Locate the VPN profile (pending verification)
+## Step 5 — Locate the VPN profile (verified)
 
 From Ubuntu WSL, locate the downloaded profile in the Windows Downloads directory:
 
@@ -53,8 +53,17 @@ ls /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads/*.ovpn
 
 Replace the username placeholder with your Windows account folder name. Do not publish the VPN profile.
 
+The downloaded academy-regular.ovpn file was successfully located.
+
+## Step 6 — Connect to the Academy VPN (pending verification)
+
+~~~bash
+sudo openvpn --config /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads/academy-regular.ovpn
+~~~
+
+Replace the placeholder with the local Windows account folder. Look for `Initialization Sequence Completed` in the output. Keep this terminal running and use a separate Ubuntu terminal for SSH. VPN connectivity is not yet verified.
+
 ## Remaining steps (pending)
-- Connect to the Academy VPN and verify connectivity.
 - Open a separate terminal and connect via SSH to the assigned lab.
 - Complete and verify the six System Information exercises.
 
