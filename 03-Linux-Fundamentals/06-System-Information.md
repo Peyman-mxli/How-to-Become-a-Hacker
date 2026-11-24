@@ -118,4 +118,4 @@ Observed interface MTU values: `lo` = 65536; `ens192` = 1500. Correct answer: `e
 | 5 | `4.15.0` |
 | 6 | `ens192` |
 
-All six answers verified from lab evidence; Question 5 acceptance reported. Final HTB section completion remains pending confirmation.
+All six answers verified from lab evidence; Question 5 acceptance reported. Learner has proceeded to section 7; individual submission confirmations beyond question 5 were not explicitly shown.
