@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 11/30 lessons studied; section 11 lab pending
+**Status:** In progress — 12/30 lessons studied; section 12 lab pending
 **Started:** November 23, 2026
 
 ## Lessons
@@ -16,7 +16,8 @@
 8. [Working with Files and Directories](08-Working-with-Files-and-Directories.md) — both answers verified
 9. [Editing Files](09-Editing-Files.md) — Nano practice verified
 10. [Find Files and Directories](10-Find-Files-and-Directories.md) — three answers verified
-11. [File Descriptors and Redirections](11-File-Descriptors-and-Redirections.md) — lab pending
+11. [File Descriptors and Redirections](11-File-Descriptors-and-Redirections.md) — both answers verified
+12. [Filter Contents](12-Filter-Contents.md) — lab pending
 
 ## Learning objectives
 
