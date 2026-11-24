@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 14/30 lessons studied; section 14 has no mandatory exercises
+**Status:** In progress — 15/30 lessons studied; section 15 answers verified against command help
 **Started:** November 23, 2026
 
 ## Lessons
@@ -20,6 +20,7 @@
 12. [Filter Contents](12-Filter-Contents.md) — final answer accepted
 13. [Regular Expressions](13-Regular-Expressions.md) — optional exercises
 14. [Permission Management](14-Permission-Management.md) — no mandatory exercises
+15. [User Management](15-User-Management.md) — command options verified; submission pending
 
 ## Learning objectives
 
