@@ -36,7 +36,7 @@ Expected success message:
 passwd: password updated successfully
 ~~~
 
-## Step 4 — Return to your normal account
+## Step 4 — Return to your normal account (verified)
 
 ~~~bash
 exit
@@ -66,6 +66,6 @@ Use the newly chosen password. Once verified, resume the OpenVPN installation.
 
 ## Status
 
-Root shell access and successful password change confirmed. Normal-user sudo verification pending.
+Completed: root access, password reset and normal-user sudo authentication verified successfully using `sudo -v`.
 
 See also [HTB VPN setup](HTB-VPN-WSL-Setup.md).
