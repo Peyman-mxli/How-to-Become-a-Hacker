@@ -22,7 +22,7 @@ wsl -d Ubuntu -u root
 
 A root shell was successfully opened. Its prompt commonly ends in #.
 
-## Step 3 — Reset the local user's password (pending verification)
+## Step 3 — Reset the local user's password (verified)
 
 ~~~bash
 passwd YOUR_LINUX_USERNAME
@@ -66,6 +66,6 @@ Use the newly chosen password. Once verified, resume the OpenVPN installation.
 
 ## Status
 
-Root shell access confirmed. Password change and sudo verification pending.
+Root shell access and successful password change confirmed. Normal-user sudo verification pending.
 
 See also [HTB VPN setup](HTB-VPN-WSL-Setup.md).
