@@ -104,4 +104,4 @@ The SSH session ended and control returned to the local WSL shell. A subsequent 
 4. Reconnect using `ssh htb-student@TARGET_IP`, with the current assigned address.
 5. Confirm the remote prompt and use `hostname` if needed before running lab commands.
 
-The exact cause of the dropped SSH session is not confirmed; target expiration, inactivity or network interruption are possible. Recovery is pending verification. Do not confuse the local WSL prompt with the remote student prompt.
+The exact cause of the dropped SSH session is not confirmed; target expiration, inactivity or network interruption are possible. Recovery verified: the previous target was no longer active, a fresh target was spawned with a new IP address, and SSH authentication succeeded using the existing OpenVPN connection. The remote student prompt confirmed the correct environment. No VPN reinstallation or profile download was required. Do not confuse the local WSL prompt with the remote student prompt.
