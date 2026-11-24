@@ -126,3 +126,19 @@ grep -o prints matched portions and -E enables extended regular expressions. Esc
 The absolute URL extraction pipeline returned **35**. This is an observed intermediate result, not yet the final answer, because the question also includes relative paths.
 
 Next, extract both same-domain absolute URLs and quoted root-relative candidates, remove the domain and opening quotes with sed, deduplicate using sort -u, and count using wc -l. Inspect protocol-relative URLs, query strings, fragments and non-path matches before treating this count as definitive. The combined extraction has not yet been executed.
+
+## Question 3 — Combined extraction result
+
+The learner ran the following command in local WSL, using the downloaded HTML:
+
+~~~bash
+grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | sort -u | wc -l
+~~~
+
+Actual output: **37**. The grep expression extracts absolute same-domain URL strings and quoted slash-prefixed candidates. sed removes the domain prefix and opening quotes; sort -u removes duplicate strings; wc -l counts them. Compared with the initial absolute-only count of 35, the combined extraction produces 37 candidates. This is not fully normalized URL parsing: protocol-relative external URLs, query strings, fragments and other non-path matches may affect the count. Proposed answer: 37; HTB acceptance pending. Local WSL was used because Pwnbox was unavailable.
+
+## Current answers
+
+- Q1: 7 TCP wildcard listening sockets; 10 if UDP wildcard sockets are included. Acceptance pending.
+- Q2: proftpd, verified from process output.
+- Q3: 37 combined path candidates, verified pipeline output; acceptance pending.
