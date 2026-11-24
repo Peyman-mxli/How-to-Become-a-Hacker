@@ -61,3 +61,15 @@ The lesson requests fetching the designated training website's HTML with curl fr
 
 ## Verification
 Three mandatory questions and optional exercises are pending. No lab credentials, private addresses or VPN profiles are included. Independent English study notes based on HTB Academy.
+
+## Question 1 — Observed socket results and interpretation
+
+The learner ran `ss -lntu4`. Seven TCP LISTEN rows were bound to 0.0.0.0, on ports 22, 445, 993, 995, 139, 110 and 143. Three UDP UNCONN rows were bound to 0.0.0.0, on ports 68, 137 and 138. Loopback, broadcast and specific-interface addresses are excluded. Proposed answer for TCP listening services: 7. If the exercise includes UDP wildcard-bound sockets, the combined count is 10. HTB acceptance is pending.
+
+### Alternative automatic count
+
+~~~bash
+ss -lnt4 | awk '$4 ~ /^0\.0\.0\.0:/ {print $4}' | wc -l
+~~~
+
+The -l option selects listening sockets, -n numeric output, -t TCP, and -4 IPv4. awk tests the fourth field (local address) against a regex anchored to the wildcard IPv4 address; escaped dots match literal dots. The pipe forwards matching lines to wc -l. Expected count: 7. This alternative has not yet been executed. Private target addresses are omitted.
