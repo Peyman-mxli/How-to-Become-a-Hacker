@@ -194,4 +194,8 @@ The learner's numbered list independently supports 34 unique same-domain URL can
 grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | grep -v '^//' | sort -u | wc -l
 ~~~
 
-The corrected method retains queries, excludes the three observed external protocol-relative candidates, deduplicates, and counts. Expected result: 34. This command has not yet been executed by the learner; HTB acceptance remains pending. The earlier rejected counts of 37 and 33 are retained as troubleshooting evidence.
+The corrected method retains queries, excludes the three observed external protocol-relative candidates, deduplicates, and counts. Actual terminal result: 34. The learner executed this command successfully; HTB acceptance remains pending. The earlier rejected counts of 37 and 33 are retained as troubleshooting evidence.
+
+## Question 3 — Final terminal verification
+
+The corrected pipeline preserving query parameters returned **34** in the learner's local WSL Ubuntu terminal. This matches the 37 previously listed candidates minus three external URL strings. Both earlier submissions (37 and 33) were rejected. The new count is verified from actual terminal output, but platform acceptance is not yet confirmed. The next action is to submit 34.
