@@ -125,3 +125,13 @@ More commands will be added as they are studied and practiced.
 - Cron fields: minute, hour, day of month, month, weekday.
 - `0 */6 * * *`: every six hours at minute zero.
 - `systemctl --user show NAME --property=Type`: inspect user service type.
+
+## Network services
+
+- `ssh USER@HOST`: connect to an authorized remote SSH account.
+- `systemctl status ssh`: inspect SSH service status.
+- `/etc/ssh/sshd_config`: SSH server configuration; `/etc/exports`: NFS exports.
+- NFS options: `ro`, `rw`, `root_squash`, `sync`, `async`; review risks of `no_root_squash`.
+- `/etc/apache2/apache2.conf`: Apache global configuration.
+- `python3 -m http.server`: temporary HTTP server, default port 8000; not HTTPS.
+- `sudo openvpn --config FILE.ovpn`: connect using an authorized VPN profile.
