@@ -56,4 +56,4 @@ This guide will be expanded as the actual setup progresses. Credentials, private
 
 ## Troubleshooting: forgotten sudo password
 
-OpenVPN installation was blocked by failed sudo authentication. Follow the [local WSL password recovery guide](WSL-Ubuntu-Password-Recovery.md), then retry installation. Root access and successful password reset have been verified; normal-user sudo verification is pending.
+OpenVPN installation was blocked by failed sudo authentication. Follow the [local WSL password recovery guide](WSL-Ubuntu-Password-Recovery.md), then retry installation. Password recovery completed successfully. Normal-user authentication verified with `sudo -v`. Resume OpenVPN installation.
