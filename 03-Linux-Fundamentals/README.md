@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 8/30 lessons studied; section 8 lab pending
+**Status:** In progress — 9/30 lessons studied
 **Started:** November 23, 2026
 
 ## Lessons
@@ -13,7 +13,8 @@
 5. [Getting Help](05-Getting-Help.md)
 6. [System Information](06-System-Information.md) — six answers verified
 7. [Navigation](07-Navigation.md) — both answers verified
-8. [Working with Files and Directories](08-Working-with-Files-and-Directories.md) — lab pending
+8. [Working with Files and Directories](08-Working-with-Files-and-Directories.md) — both answers verified
+9. [Editing Files](09-Editing-Files.md) — optional practice
 
 ## Learning objectives
 
