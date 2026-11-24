@@ -171,3 +171,13 @@ grep -i '<title>' website.html
 ~~~
 
 The -w option prints response metadata, -L follows redirects, and -o /dev/null discards the response body for this diagnostic request. grep -i searches the saved HTML title case-insensitively. Results pending. Do not submit another unverified count.
+
+## Question 3 — HTTP diagnostic results
+
+The learner observed HTTP 200 and the expected effective HTTPS URL. The saved HTML title was Inlanefreight &#8211; Protected by Wordfence. This title alone does not establish that a security block occurred; HTTP 200 also does not guarantee that the body is the expected homepage. Check the saved response for explicit access-denial messages before interpreting additional counts.
+
+~~~bash
+grep -inE 'access denied|blocked|captcha|403 forbidden|temporarily limited' website.html
+~~~
+
+-i enables case-insensitive matching, -n displays line numbers, and -E permits alternative patterns. Matches require contextual interpretation; no matches do not conclusively rule out a different response. The exercise explicitly specifies Pwnbox, which is currently unavailable to the learner. Both 37 and 33 remain rejected; no new answer is proposed.
