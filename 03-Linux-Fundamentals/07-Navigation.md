@@ -35,7 +35,7 @@ Use the existing authorized HTB SSH session.
 | Question | Suggested command | Status |
 | --- | --- | --- |
 | Identify the hidden history filename in the student's home directory | `ls -la ~` | Answer verified: `.bash_history` |
-| Identify the inode number of the sudoers file | `ls -i /etc/sudoers` | Pending lab verification |
+| Identify the inode number of the sudoers file | `ls -i /etc/sudoers` | Answer verified: `147627` |
 
 Question 1: `ls -la ~` confirmed the hidden file `.bash_history`, with permissions `-rw-------`. This file stores saved Bash command history. HTB submission acceptance is pending. Inode numbers must be read from the assigned machine rather than guessed.
 
@@ -45,4 +45,6 @@ Source: [HTB Academy](https://academy.hackthebox.com/). Independent English stud
 
 Question 1 verified from actual terminal output: `.bash_history`.
 
-Question 2: run `ls -i /etc/sudoers` and read the inode number. Output pending.
+Question 2: `ls -i /etc/sudoers` returned `147627 /etc/sudoers`. The verified answer is `147627`. Inode numbers identify files within a filesystem and can vary between machines.
+
+Both answers verified from actual lab output. HTB submission and section completion remain pending confirmation.
