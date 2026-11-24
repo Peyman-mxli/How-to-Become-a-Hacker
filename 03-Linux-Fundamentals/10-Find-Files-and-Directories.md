@@ -46,7 +46,7 @@ Each filter narrows the results by type, extension, size and timestamp. Read the
 ~~~bash
 find / -type f -name '*.conf' -size +25600c -size -28672c -newermt 2020-03-03 2>/dev/null
 ~~~
-The c suffix means bytes; 25 KiB = 25600 bytes and 28 KiB = 28672 bytes. This avoids KiB rounding. The lesson-style search displayed /usr/share/drirc.d/00-mesa-defaults.conf on the newly assigned HTB target. The filename answer is 00-mesa-defaults.conf; submission acceptance and completion of the search are not yet confirmed. The exact-byte alternative remains untested.
+The c suffix means bytes; 25 KiB = 25600 bytes and 28 KiB = 28672 bytes. This avoids KiB rounding. The lesson-style search displayed /usr/share/drirc.d/00-mesa-defaults.conf on the newly assigned HTB target. The filename answer is 00-mesa-defaults.conf; search completion confirmed by the subsequent terminal output; submission acceptance remains unconfirmed. The exact-byte alternative remains untested.
 
 ## Practical question 2 — Count backup files
 ~~~bash
@@ -58,10 +58,10 @@ The file filter selects regular files ending in .bak; the pipe passes paths to w
 ~~~bash
 which xxd
 ~~~
-The question requests the full executable path, not its filename. Alternative: command -v xxd. Answer pending.
+The question requests the full executable path, not its filename. Alternative: command -v xxd. Verified answer: /usr/bin/xxd.
 
 ## Verification
-Question 1 has a matching result observed in the lab. Question 2 count verified as 4; question 3 remains pending lab verification. Alternatives are instructional examples, not confirmed executions. No lab credentials, private addresses or VPN profiles are included.
+Question 1 has a matching result observed in the lab. Question 2 count verified as 4; question 3 verified as /usr/bin/xxd. Alternatives are instructional examples, not confirmed executions. No lab credentials, private addresses or VPN profiles are included.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
 
@@ -113,4 +113,38 @@ This lists the matching paths individually rather than counting them. The altern
 which xxd
 ~~~
 
-which searches PATH for the executable named xxd. The question requests the entire executable path, so retain all directory components. Alternative: command -v xxd, which uses the shell's command resolution. Expected path: /usr/bin/xxd; actual output and acceptance pending.
+which searches PATH for the executable named xxd. The question requests the entire executable path, so retain all directory components. Alternative: command -v xxd, which uses the shell's command resolution. Actual output: /usr/bin/xxd. Answer verified; HTB acceptance pending.
+
+## Question 3 — Verified output, why and how
+
+The question asks for the complete executable path of xxd. Using which is appropriate because the program is expected to be available through PATH.
+
+~~~bash
+which xxd
+~~~
+
+Actual output:
+
+~~~text
+/usr/bin/xxd
+~~~
+
+The full path is the answer, including the leading slash and all directory components. xxd is a utility for hexadecimal dumps and reversing that representation.
+
+Alternative:
+
+~~~bash
+command -v xxd
+~~~
+
+command -v uses shell command resolution. Expected output: /usr/bin/xxd. This alternative has not been executed in the lab.
+
+## Final exercise recap
+
+| Question | Verified answer |
+| --- | --- |
+| Configuration filename | 00-mesa-defaults.conf |
+| Number of discoverable regular backup files | 4 |
+| Full xxd executable path | /usr/bin/xxd |
+
+All three answers are verified from actual lab output. HTB submission acceptance and section completion remain pending confirmation.
