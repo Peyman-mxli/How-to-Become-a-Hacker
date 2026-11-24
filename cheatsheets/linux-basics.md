@@ -41,3 +41,10 @@ More commands will be added as they are studied and practiced.
 - `rm -i FILE`, `rmdir DIRECTORY`: interactive file removal and empty-directory removal.
 - `ls -lt DIRECTORY`: detailed listing sorted newest modification first.
 - `stat -c '%i' FILE`: print inode number.
+
+## Editing files
+
+- `nano FILE`: edit text; Ctrl+O then Enter saves, Ctrl+X exits, Ctrl+W searches.
+- `cat FILE`: display saved content.
+- `vim FILE`: modal editing; i inserts, Esc returns to Normal mode, :wq saves and quits, :q! discards unsaved changes.
+- `vimtutor`: interactive Vim practice.
