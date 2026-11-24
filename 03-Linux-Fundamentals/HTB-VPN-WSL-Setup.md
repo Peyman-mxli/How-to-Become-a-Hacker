@@ -55,13 +55,17 @@ Replace the username placeholder with your Windows account folder name. Do not p
 
 The downloaded academy-regular.ovpn file was successfully located.
 
-## Step 6 — Connect to the Academy VPN (pending verification)
+## Step 6 — Connect to the Academy VPN (verified)
 
 ~~~bash
 sudo openvpn --config /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads/academy-regular.ovpn
 ~~~
 
-Replace the placeholder with the local Windows account folder. Look for `Initialization Sequence Completed` in the output. Keep this terminal running and use a separate Ubuntu terminal for SSH. VPN connectivity is not yet verified.
+Replace the placeholder with the local Windows account folder. Look for `Initialization Sequence Completed` in the output. Keep this terminal running and use a separate Ubuntu terminal for SSH. OpenVPN initialization was confirmed by the message `Initialization Sequence Completed`. The foreground process remains running to maintain the tunnel. Remote SSH connectivity is still pending verification.
+
+## Step 7 — Open a separate Ubuntu terminal (pending)
+
+Keep the VPN terminal open. Open another Windows Terminal tab using Ctrl+Shift+T. If it opens PowerShell, run `wsl -d Ubuntu` to enter the same Ubuntu distribution. Use the second terminal for lab SSH commands.
 
 ## Remaining steps (pending)
 - Open a separate terminal and connect via SSH to the assigned lab.
