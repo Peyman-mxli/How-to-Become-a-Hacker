@@ -18,3 +18,7 @@
 Understand Linux architecture, filesystem organization, shell usage and foundational administration concepts before progressing to security labs.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
+
+## Practical setup guides
+
+- [HTB VPN with Ubuntu WSL 2](HTB-VPN-WSL-Setup.md) — setup in progress.
