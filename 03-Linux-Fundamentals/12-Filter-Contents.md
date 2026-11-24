@@ -135,10 +135,14 @@ The learner ran the following command in local WSL, using the downloaded HTML:
 grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | sort -u | wc -l
 ~~~
 
-Actual output: **37**. The grep expression extracts absolute same-domain URL strings and quoted slash-prefixed candidates. sed removes the domain prefix and opening quotes; sort -u removes duplicate strings; wc -l counts them. Compared with the initial absolute-only count of 35, the combined extraction produces 37 candidates. This is not fully normalized URL parsing: protocol-relative external URLs, query strings, fragments and other non-path matches may affect the count. Proposed answer: 37; HTB acceptance pending. Local WSL was used because Pwnbox was unavailable.
+Actual output: **37**. The grep expression extracts absolute same-domain URL strings and quoted slash-prefixed candidates. sed removes the domain prefix and opening quotes; sort -u removes duplicate strings; wc -l counts them. Compared with the initial absolute-only count of 35, the combined extraction produces 37 candidates. This is not fully normalized URL parsing: protocol-relative external URLs, query strings, fragments and other non-path matches may affect the count. Proposed answer 37 was rejected by HTB; further filtering is required. Local WSL was used because Pwnbox was unavailable.
 
 ## Current answers
 
 - Q1: 7 TCP wildcard listening sockets; 10 if UDP wildcard sockets are included. Acceptance pending.
 - Q2: proftpd, verified from process output.
-- Q3: 37 combined path candidates, verified pipeline output; acceptance pending.
+- Q3: 37 combined path candidates, verified pipeline output but rejected by HTB.
+
+## Question 3 — Rejected answer and troubleshooting
+
+HTB rejected 37. The learner reached level 5, as shown in the platform notification. The next diagnostic step is to rerun the combined extraction pipeline, replacing wc -l with nl. This displays numbered candidate strings instead of only their count. Inspect the list for external protocol-relative URLs, query strings, fragments, malformed matches and other differences in path interpretation before choosing another answer. The cause of the mismatch has not yet been confirmed. Do not treat 37 as a correct exercise answer.
