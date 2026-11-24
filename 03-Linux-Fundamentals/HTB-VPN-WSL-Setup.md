@@ -61,7 +61,7 @@ The downloaded academy-regular.ovpn file was successfully located.
 sudo openvpn --config /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads/academy-regular.ovpn
 ~~~
 
-Replace the placeholder with the local Windows account folder. Look for `Initialization Sequence Completed` in the output. Keep this terminal running and use a separate Ubuntu terminal for SSH. OpenVPN initialization was confirmed by the message `Initialization Sequence Completed`. The foreground process remains running to maintain the tunnel. Remote SSH connectivity is still pending verification.
+Replace the placeholder with the local Windows account folder. Look for `Initialization Sequence Completed` in the output. Keep this terminal running and use a separate Ubuntu terminal for SSH. OpenVPN initialization was confirmed by the message `Initialization Sequence Completed`. The foreground process remains running to maintain the tunnel. Remote SSH connectivity was subsequently verified.
 
 ## Step 7 — Open a separate Ubuntu terminal (verified)
 
@@ -69,7 +69,7 @@ Keep the VPN terminal open. Open another Windows Terminal tab using Ctrl+Shift+T
 
 A separate Ubuntu shell was successfully opened through PowerShell. Keep the first terminal running OpenVPN; commands typed into that foreground process will not execute as shell commands.
 
-## Step 8 — Connect to the assigned lab via SSH (pending verification)
+## Step 8 — Connect to the assigned lab via SSH (verified)
 
 ~~~bash
 ssh htb-student@TARGET_IP
@@ -77,8 +77,9 @@ ssh htb-student@TARGET_IP
 
 Replace TARGET_IP with the current assigned Academy target. Confirm the host key when appropriate for the assigned lab, and enter the exercise-provided password when prompted. Do not publish credentials or session-specific addresses.
 
-## Remaining steps (pending)
-- Open a separate terminal and connect via SSH to the assigned lab.
+SSH authentication succeeded. The remote login banner identified Ubuntu 18.04.5 LTS on x86_64, and the student shell prompt appeared. The free local VPN/SSH setup is complete.
+
+## Remaining exercises (pending)
 - Complete and verify the six System Information exercises.
 
 This guide will be expanded as the actual setup progresses. Credentials, private VPN profiles, local usernames, target IPs and session details are intentionally excluded.
