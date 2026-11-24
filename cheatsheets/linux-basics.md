@@ -164,3 +164,15 @@ More commands will be added as they are studied and practiced.
 - `cat /etc/fstab`: read persistent mount configuration.
 - `free -h`: memory and swap usage; `swapon --show`: active swap areas.
 - Never format or repartition an unidentified device.
+
+## Containerization
+
+- `docker version`, `docker run hello-world`: check existing installation and run a test container.
+- `docker build -t NAME .`: build an image; use lowercase repository names.
+- `docker run -d -p 127.0.0.1:8080:80 IMAGE`: local-only HTTP port mapping.
+- `docker ps -a`, `docker images`, `docker logs NAME`, `docker inspect NAME`, `docker stats`: inspect resources.
+- `docker stop NAME`, `docker start NAME`: lifecycle management. Removal destroys the container writable layer.
+- `docker volume ls`: inspect persistent volumes.
+- `docker compose up -d`, `docker compose ps`: multi-service management.
+- `lxc-ls`, `lxc-info -n NAME`, `lxc-attach -n NAME`: classic LXC commands.
+- Namespaces isolate resource views; cgroups manage resource consumption. Avoid unnecessary privileges and sensitive host mounts.
