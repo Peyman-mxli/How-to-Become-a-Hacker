@@ -19,9 +19,9 @@ This repository is a growing portfolio of original study notes, authorized lab e
 | --- | --- | --- | --- |
 | Intro to Academy | 0 | Completed — 8/8 | [Study notes](01-Intro-to-Academy/README.md) · [Exercises](01-Intro-to-Academy/Exercises.md) |
 | Learning Process | 0 | Completed — 20/20 | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
-| Linux Fundamentals | 0 | In progress — 30/30 lessons studied and documented; HTB module completion pending confirmation | [Module index](03-Linux-Fundamentals/README.md) |
+| Linux Fundamentals | 0 | Completed — 30/30 (HTB dashboard verified) | [Module index](03-Linux-Fundamentals/README.md) |
 
-**Current checkpoint:** Linux Fundamentals Section 30/30 — Shortcuts studied and documented. All 30 lessons studied; confirm the HTB module completion screen before recording platform completion. Next: select the next HTB Academy module.
+**Current checkpoint:** Three modules completed (58 sections). Linux Fundamentals completion confirmed by the learner's HTB dashboard on November 24, 2026. Recommended next module: Web Requests (Tier 0), not yet started.
 
 ## Learning roadmap
 
@@ -29,7 +29,7 @@ This repository is a growing portfolio of original study notes, authorized lab e
 - [x] Complete Intro to Academy and earn the Academician badge.
 - [x] Execute a Linux command in Pwnbox and access an authorized web target.
 - [x] Complete Learning Process.
-- [ ] Linux fundamentals and Bash.
+- [x] Linux fundamentals and Bash.
 - [ ] Networking and operating system fundamentals.
 - [ ] HTTP, web requests and API fundamentals.
 - [ ] Web application security and secure development.
