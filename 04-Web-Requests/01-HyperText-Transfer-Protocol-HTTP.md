@@ -128,13 +128,13 @@ file identifies the apparent file type. Do not execute untrusted downloads. The 
 - Use only assigned HTB targets or owned/explicitly authorized systems. Do not publish live lab addresses, flags, credentials or restricted assessment solutions.
 
 ## Required HTB exercise
-The supplied section requires retrieving a file from an assigned lab endpoint and submitting its flag. The target must be spawned and its actual address and port obtained from the learner. The relevant techniques are GET, saving the response to an explicit local filename, and inspecting the file as data. The private exercise result and answer will not be published.
+The supplied section requires retrieving a file from an assigned lab endpoint and submitting its flag. The learner spawned the assigned target and used Ubuntu WSL2 to retrieve the file. Terminal output showed 20 bytes received. The learner then used cat to read the file and obtained the flag. The live target and flag are intentionally omitted.
 
 ## Verification and progress
 - Section 1 of 8: theory studied and independently documented.
-- Mandatory exercise: pending target details, execution and HTB acceptance.
+- Mandatory exercise: download and flag extraction verified from learner terminal output. The learner advanced to Section 2; individual HTB answer acceptance was not separately shown.
 - No commands executed against a target by the assistant. Examples are illustrative.
-- Platform completion: not yet confirmed.
+- Platform completion: learner advanced to Section 2; no separate completion screenshot supplied.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/)
