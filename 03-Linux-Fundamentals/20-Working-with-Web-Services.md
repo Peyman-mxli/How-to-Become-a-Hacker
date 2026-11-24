@@ -80,3 +80,5 @@ On a learner-owned system, check npm --version and php --version to confirm avai
 Two mandatory questions worth 40 HP. Both expected answers verified against upstream documentation, with community corroboration for question 1. HTB acceptance pending. No packages installed or servers started by the assistant. Section 19 had no mandatory questions and was followed by Section 20.
 
 Independent English study notes based on HTB Academy.
+
+The learner proceeded to Section 21; individual HTB submission acceptance was not explicitly shown.
