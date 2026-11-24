@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 4/30 lessons studied
+**Status:** In progress — 5/30 lessons studied
 **Started:** November 23, 2026
 
 ## Lessons
@@ -10,6 +10,7 @@
 2. [Linux Distributions](02-Linux-Distributions.md)
 3. [Introduction to Shell](03-Introduction-to-Shell.md)
 4. [Prompt Description](04-Prompt-Description.md)
+5. [Getting Help](05-Getting-Help.md)
 
 ## Learning objectives
 
