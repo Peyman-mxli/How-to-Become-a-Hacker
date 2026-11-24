@@ -89,4 +89,14 @@ Output: `/bin/bash`.
 
 Question 4 answer verified from actual lab output; submission acceptance not yet confirmed.
 
-Question 5 next command: `uname -r` (pending output).
+### Practical output — Question 5
+
+~~~bash
+uname -r
+~~~
+
+Kernel release: `4.15.0-123-generic`.
+
+The full release was rejected by HTB because the question requires a three-component numeric version. Correct submission: `4.15.0`. Acceptance confirmed by the learner.
+
+Question 6 next command: `ip link show` (pending output).
