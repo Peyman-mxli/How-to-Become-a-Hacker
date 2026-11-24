@@ -59,4 +59,14 @@ uname -m
 
 Output: `x86_64`.
 
-Question 2 next command: `echo "$HOME"` (pending output).
+### Verified practical output — Question 2
+
+~~~bash
+echo "$HOME"
+~~~
+
+Output: `/home/htb-student`.
+
+Question 2 answer verified from actual lab output; submission acceptance not yet confirmed.
+
+Question 3 next command: `echo "$MAIL"` (pending output).
