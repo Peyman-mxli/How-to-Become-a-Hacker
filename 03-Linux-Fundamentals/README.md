@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 23/30 lessons studied; section 23 has optional practice only
+**Status:** In progress — 24/30 lessons studied; section 24 has optional practice only; platform completion pending
 **Started:** November 23, 2026
 
 ## Lessons
@@ -29,7 +29,7 @@
 21. [Backup and Restore](21-Backup-and-Restore.md) — optional practice only
 22. [File System Management](22-File-System-Management.md) — community-corroborated expected answer
 23. [Containerization](23-Containerization.md) — optional practice only
-24. [Network Configuration](24-Network-Configuration.md) — introductory notes; official lesson review pending
+24. [Network Configuration](24-Network-Configuration.md) — lesson reviewed; ten optional exercises; platform completion pending
 
 ## Learning objectives
 
