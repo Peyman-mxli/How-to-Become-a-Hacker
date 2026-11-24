@@ -59,7 +59,7 @@ systemctl list-units --type=service --all --no-pager | grep -F 'Load AppArmor pr
 ~~~
 
 ### Why and how
-systemctl inspects systemd units; list-units lists loaded units; --type=service limits output to services; --all includes inactive loaded units; --no-pager avoids interactive paging. grep -F filters the literal description. The first column gives the requested unit name. Expected answer: snapd.apparmor.service; actual target output and platform acceptance pending.
+systemctl inspects systemd units; list-units lists loaded units; --type=service limits output to services; --all includes inactive loaded units; --no-pager avoids interactive paging. grep -F filters the literal description. The first column gives the requested unit name. Verified answer from the learner's target: snapd.apparmor.service; platform acceptance pending.
 
 Alternative:
 ~~~bash
@@ -70,6 +70,16 @@ awk extracts the first whitespace-delimited field. Inspect the full output first
 The supplied lesson showed approximately five minutes remaining on the assigned target. If the target expires, reconnect to a newly assigned target using the existing VPN as documented in the setup notes.
 
 ## Verification
-One mandatory question worth 20 HP. Expected unit name is not yet verified from the learner's current target. No service changes were performed. No credentials or session-specific addresses included.
+One mandatory question worth 20 HP. The unit name is verified from the learner's actual target output; HTB acceptance remains pending. No service changes were performed. No credentials or session-specific addresses included.
 
 Independent English study notes based on HTB Academy.
+
+## Mandatory question — Verified terminal output
+
+~~~text
+snapd.apparmor.service    loaded    active    exited    Load AppArmor profiles managed internally by snapd
+~~~
+
+Answer: **snapd.apparmor.service**. The learner's output exactly matches the requested description. UNIT identifies the service; LOAD indicates that its unit definition is loaded; ACTIVE is the high-level state; SUB is the detailed state. An active/exited service can have completed its task without a continuously running process.
+
+The alternative awk '{print $1}' pipeline extracts the first field from this observed row. Expected output: snapd.apparmor.service. The alternative has not been executed. No service settings were changed. HTB submission acceptance remains pending.
