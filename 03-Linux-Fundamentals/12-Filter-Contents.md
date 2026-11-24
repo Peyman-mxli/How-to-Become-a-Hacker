@@ -119,4 +119,10 @@ Local WSL Ubuntu was started successfully. The learner executed curl -sL with th
 grep -oE 'https://www\.inlanefreight\.com/[^"<>[:space:]]*' website.html | sort -u | wc -l
 ~~~
 
-grep -o prints matched portions and -E enables extended regular expressions. Escaped dots match literal domain separators. The negated character class stops at quotes, angle brackets or whitespace. sort -u deduplicates matching strings; wc -l counts them. This is a preliminary absolute-URL count, not a complete normalized same-domain path count. Relative paths, other URL forms and query/fragment normalization must be considered before submitting the final answer. Actual extraction output pending.
+grep -o prints matched portions and -E enables extended regular expressions. Escaped dots match literal domain separators. The negated character class stops at quotes, angle brackets or whitespace. sort -u deduplicates matching strings; wc -l counts them. This is a preliminary absolute-URL count, not a complete normalized same-domain path count. Relative paths, other URL forms and query/fragment normalization must be considered before submitting the final answer. Actual preliminary extraction output: 35 unique absolute URL strings.
+
+## Question 3 — Preliminary count verified
+
+The absolute URL extraction pipeline returned **35**. This is an observed intermediate result, not yet the final answer, because the question also includes relative paths.
+
+Next, extract both same-domain absolute URLs and quoted root-relative candidates, remove the domain and opening quotes with sed, deduplicate using sort -u, and count using wc -l. Inspect protocol-relative URLs, query strings, fragments and non-path matches before treating this count as definitive. The combined extraction has not yet been executed.
