@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 25/30 lessons studied; section 25 platform completion pending
+**Status:** In progress — 26/30 lessons studied; section 26 platform completion pending
 **Started:** November 23, 2026
 
 ## Lessons
@@ -30,7 +30,8 @@
 22. [File System Management](22-File-System-Management.md) — community-corroborated expected answer
 23. [Containerization](23-Containerization.md) — optional practice only
 24. [Network Configuration](24-Network-Configuration.md) — lesson reviewed; ten optional exercises
-25. [Remote Desktop Protocols in Linux](25-Remote-Desktop-Protocols-in-Linux.md) — lesson reviewed; no mandatory questions; platform completion pending
+25. [Remote Desktop Protocols in Linux](25-Remote-Desktop-Protocols-in-Linux.md) — lesson reviewed; no mandatory questions
+26. [Linux Security](26-Linux-Security.md) — lesson reviewed; no mandatory questions; platform completion pending
 
 ## Learning objectives
 
