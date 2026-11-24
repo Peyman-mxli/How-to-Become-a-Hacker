@@ -23,3 +23,10 @@ More commands will be added as they are studied and practiced.
 - `getent passwd htb-student`: configured account record in the assigned lab.
 - `echo "$MAIL"`: mail environment variable.
 - `ps`, `ss`, `who`, `env`, `lsblk`, `lsusb`, `lsof`, `lspci`: system inspection.
+
+## Navigation
+
+- `pwd`, `ls`, `ls -l`, `ls -la`: inspect current location and contents.
+- `ls -i PATH`: display inode numbers.
+- `cd ..`, `cd -`, `cd ~`: parent, previous and home directories.
+- `clear`, Ctrl+L: clear display; Ctrl+R: reverse history search; Tab: completion.
