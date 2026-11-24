@@ -181,3 +181,17 @@ grep -inE 'access denied|blocked|captcha|403 forbidden|temporarily limited' webs
 ~~~
 
 -i enables case-insensitive matching, -n displays line numbers, and -E permits alternative patterns. Matches require contextual interpretation; no matches do not conclusively rule out a different response. The exercise explicitly specifies Pwnbox, which is currently unavailable to the learner. Both 37 and 33 remain rejected; no new answer is proposed.
+
+## Question 3 — Diagnostic follow-up and externally corroborated answer
+
+The security-message grep returned no matching lines. No explicit evidence of blocking was observed. Two independent public walkthroughs report 34 as the expected HTB answer:
+- https://statick88.github.io/challenges/learning-journey/security/linux-fundamentals/index.html
+- https://kaitlinw-dev.github.io/cybersecurity/htb-linux-fundamentals-lab/
+
+The learner's numbered list independently supports 34 unique same-domain URL candidates if query parameters are retained: 37 minus three external candidates. Removing query parameters additionally merges two distinct oEmbed URL strings, yielding 33, which HTB rejected. The expected convention appears to count URL strings including query parameters rather than strict URI path components.
+
+~~~bash
+grep -oE "https://www\.inlanefreight\.com/[^\"'<>[:space:]]*|[\"']/[^\"'<>[:space:]]+" website.html | sed -E "s#^https://www\.inlanefreight\.com##; s/^[\"']//" | grep -v '^//' | sort -u | wc -l
+~~~
+
+The corrected method retains queries, excludes the three observed external protocol-relative candidates, deduplicates, and counts. Expected result: 34. This command has not yet been executed by the learner; HTB acceptance remains pending. The earlier rejected counts of 37 and 33 are retained as troubleshooting evidence.
