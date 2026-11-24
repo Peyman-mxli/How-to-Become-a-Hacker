@@ -135,3 +135,12 @@ More commands will be added as they are studied and practiced.
 - `/etc/apache2/apache2.conf`: Apache global configuration.
 - `python3 -m http.server`: temporary HTTP server, default port 8000; not HTTPS.
 - `sudo openvpn --config FILE.ovpn`: connect using an authorized VPN profile.
+
+## Working with web services
+
+- `curl -I URL`: HTTP headers; `curl -L URL`: follow redirects; `curl -o FILE URL`: save response.
+- `wget URL`: download a response to a file.
+- `http-server -p 8080`: start installed npm HTTP server; `npx http-server -p 8080`: alternative.
+- `php -S 127.0.0.1:8080`: PHP local development server.
+- `python3 -m http.server 8080 --bind 127.0.0.1`: local-only Python server.
+- Use dedicated non-sensitive directories and stop servers with Ctrl+C.
