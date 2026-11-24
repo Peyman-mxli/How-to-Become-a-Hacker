@@ -144,3 +144,12 @@ More commands will be added as they are studied and practiced.
 - `php -S 127.0.0.1:8080`: PHP local development server.
 - `python3 -m http.server 8080 --bind 127.0.0.1`: local-only Python server.
 - Use dedicated non-sensitive directories and stop servers with Ctrl+C.
+
+## Backup and restore
+
+- `rsync -av SOURCE/ DEST/`: synchronize directory contents in archive mode.
+- `rsync -avn SOURCE/ DEST/`: preview without making changes.
+- `rsync -avz -e ssh SOURCE/ USER@HOST:DEST/`: encrypted remote transfer.
+- `--backup` and `--backup-dir`: retain replaced destination files; review `--delete` carefully.
+- Source trailing slash changes directory-copy semantics.
+- Restore to a separate directory and verify the recovered data.
