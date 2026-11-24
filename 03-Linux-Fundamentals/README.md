@@ -1,7 +1,7 @@
 # 03 — Linux Fundamentals
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental
-**Status:** In progress — 20/30 lessons studied; section 20 answers verified against documentation
+**Status:** In progress — 21/30 lessons studied; section 21 has no mandatory questions
 **Started:** November 23, 2026
 
 ## Lessons
@@ -25,7 +25,8 @@
 17. [Service and Process Management](17-Service-and-Process-Management.md) — answer verified on target
 18. [Task Scheduling](18-Task-Scheduling.md) — answer verified upstream
 19. [Network Services](19-Network-Services.md) — no mandatory exercises
-20. [Working with Web Services](20-Working-with-Web-Services.md) — answers verified against documentation; submission pending
+20. [Working with Web Services](20-Working-with-Web-Services.md) — answers verified against documentation
+21. [Backup and Restore](21-Backup-and-Restore.md) — optional practice only
 
 ## Learning objectives
 
