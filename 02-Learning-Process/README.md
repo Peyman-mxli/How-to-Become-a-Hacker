@@ -1,8 +1,8 @@
 # 02 — Learning Process
 
 **Provider:** Hack The Box Academy | **Tier:** 0 | **Difficulty:** Fundamental  
-**Status:** In progress — all 20 sections studied; final exercise submission and module completion pending  
-**Started:** November 23, 2026  
+**Status:** Completed — 20/20 sections  
+**Started and completed:** November 23, 2026  
 **Estimated course duration:** 3 hours | **Sections:** 20
 
 ## Lesson index
