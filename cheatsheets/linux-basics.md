@@ -116,3 +116,12 @@ More commands will be added as they are studied and practiced.
 - SIGTERM requests termination; SIGKILL forces it.
 - `jobs`, `bg`, `fg %1`, `&`: shell job control.
 - `;`, `&&`, `||`, pipe: command sequencing and output transfer.
+
+## Task scheduling
+
+- `systemctl list-timers --all`: inspect loaded timers.
+- Timer units define when; service units define what executes.
+- `crontab -l`: list user jobs; `crontab -e`: edit jobs.
+- Cron fields: minute, hour, day of month, month, weekday.
+- `0 */6 * * *`: every six hours at minute zero.
+- `systemctl --user show NAME --property=Type`: inspect user service type.
