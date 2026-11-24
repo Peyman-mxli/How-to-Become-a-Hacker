@@ -29,6 +29,7 @@
 21. [Backup and Restore](21-Backup-and-Restore.md) — optional practice only
 22. [File System Management](22-File-System-Management.md) — community-corroborated expected answer
 23. [Containerization](23-Containerization.md) — optional practice only
+24. [Network Configuration](24-Network-Configuration.md) — introductory notes; official lesson review pending
 
 ## Learning objectives
 
