@@ -19,9 +19,9 @@ This repository is a growing portfolio of original study notes, authorized lab e
 | --- | --- | --- | --- |
 | Intro to Academy | 0 | Completed — 8/8 | [Study notes](01-Intro-to-Academy/README.md) · [Exercises](01-Intro-to-Academy/Exercises.md) |
 | Learning Process | 0 | Completed — 20/20 | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
-| Linux Fundamentals | 0 | In progress — 29/30 lessons studied; section 29 platform completion pending | [Module index](03-Linux-Fundamentals/README.md) |
+| Linux Fundamentals | 0 | In progress — 30/30 lessons studied and documented; HTB module completion pending confirmation | [Module index](03-Linux-Fundamentals/README.md) |
 
-**Current checkpoint:** Linux Fundamentals Section 29/30 — Solaris studied and documented. Mark Complete & Next on HTB; next study section: 30/30.
+**Current checkpoint:** Linux Fundamentals Section 30/30 — Shortcuts studied and documented. All 30 lessons studied; confirm the HTB module completion screen before recording platform completion. Next: select the next HTB Academy module.
 
 ## Learning roadmap
 
