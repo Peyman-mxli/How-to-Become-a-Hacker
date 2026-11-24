@@ -54,3 +54,7 @@ For each exercise, record the question, important keywords, why the command was 
 ## Extended VPN study notes
 
 [VPN and OpenVPN deep dive](19-VPN-and-OpenVPN-Deep-Dive.md) — encrypted tunnels, HTB architecture, VPN versus SSH, protocols, routing, diagnostic commands and security limitations.
+
+## Extended network monitoring study notes
+
+[Network monitoring tools: installation and practical usage](24-Network-Monitoring-Tools.md) — Wireshark, Npcap, tcpdump, TShark, syslog, rsyslog, ss, lsof and ELK; official downloads and local-only practice. Exercises proposed, not yet verified.
