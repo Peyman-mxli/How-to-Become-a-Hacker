@@ -52,7 +52,7 @@ The c suffix means bytes; 25 KiB = 25600 bytes and 28 KiB = 28672 bytes. This av
 ~~~bash
 find / -type f -name '*.bak' 2>/dev/null | wc -l
 ~~~
-The file filter selects regular files ending in .bak; the pipe passes paths to wc; -l counts output lines. This counts visible matching paths, not inaccessible files. For filenames containing newlines, GNU find -printf '.' piped to wc -c is a more robust counting alternative. Answer pending.
+The file filter selects regular files ending in .bak; the pipe passes paths to wc; -l counts output lines. This counts visible matching paths, not inaccessible files. For filenames containing newlines, GNU find -printf '.' piped to wc -c is a more robust counting alternative. Verified answer: 4.
 
 ## Practical question 3 — Locate xxd
 ~~~bash
@@ -61,7 +61,7 @@ which xxd
 The question requests the full executable path, not its filename. Alternative: command -v xxd. Answer pending.
 
 ## Verification
-Question 1 has a matching result observed in the lab. Questions 2 and 3 remain pending actual lab verification. Alternatives are instructional examples, not confirmed executions. No lab credentials, private addresses or VPN profiles are included.
+Question 1 has a matching result observed in the lab. Question 2 count verified as 4; question 3 remains pending lab verification. Alternatives are instructional examples, not confirmed executions. No lab credentials, private addresses or VPN profiles are included.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
 
@@ -89,4 +89,28 @@ The basename command removes leading directory components and returns only the f
 find / -type f -name '*.bak' 2>/dev/null | wc -l
 ~~~
 
-The starting location / requests a filesystem-wide search; -type f limits results to regular files; -name '*.bak' matches the requested suffix, with quotes preventing shell expansion. The shell redirects standard error to /dev/null. The pipe sends matching paths to wc, and -l counts newline-delimited output. The result is the count of discoverable matching paths under the current account permissions, not proof that inaccessible directories contain no additional files. Actual count pending.
+The starting location / requests a filesystem-wide search; -type f limits results to regular files; -name '*.bak' matches the requested suffix, with quotes preventing shell expansion. The shell redirects standard error to /dev/null. The pipe sends matching paths to wc, and -l counts newline-delimited output. The result is the count of discoverable matching paths under the current account permissions, not proof that inaccessible directories contain no additional files. Actual count returned by the assigned lab: 4.
+
+## Question 2 — Verified count and alternative methods
+
+~~~bash
+find / -type f -name '*.bak' 2>/dev/null | wc -l
+~~~
+
+Actual output: **4**. Submit only the number. The pipe connects the filesystem search to the line-counting utility. This counts discoverable regular-file paths under the current account's permissions.
+
+Alternative manual verification:
+
+~~~bash
+find / -type f -name '*.bak' 2>/dev/null
+~~~
+
+This lists the matching paths individually rather than counting them. The alternative has not yet been executed.
+
+## Question 3 — Why and how to resolve an executable
+
+~~~bash
+which xxd
+~~~
+
+which searches PATH for the executable named xxd. The question requests the entire executable path, so retain all directory components. Alternative: command -v xxd, which uses the shell's command resolution. Expected path: /usr/bin/xxd; actual output and acceptance pending.
