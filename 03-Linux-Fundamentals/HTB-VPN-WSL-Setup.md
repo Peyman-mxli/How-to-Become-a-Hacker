@@ -53,3 +53,7 @@ This guide will be expanded as the actual setup progresses. Credentials, private
 
 ## Reference
 [Hack The Box Academy](https://academy.hackthebox.com/)
+
+## Troubleshooting: forgotten sudo password
+
+OpenVPN installation was blocked by failed sudo authentication. Follow the [local WSL password recovery guide](WSL-Ubuntu-Password-Recovery.md), then retry installation. Root access has been verified; password reset is pending.
