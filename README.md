@@ -20,8 +20,9 @@ This repository is a growing portfolio of original study notes, authorized lab e
 | Intro to Academy | 0 | Completed — 8/8 | [Study notes](01-Intro-to-Academy/README.md) · [Exercises](01-Intro-to-Academy/Exercises.md) |
 | Learning Process | 0 | Completed — 20/20 | [Study notes](02-Learning-Process/Study-Notes.md) · [Exercises](02-Learning-Process/Exercises.md) |
 | Linux Fundamentals | 0 | Completed — 30/30 (HTB dashboard verified) | [Module index](03-Linux-Fundamentals/README.md) |
+| Web Requests | 0 | In progress — 1/8 studied and documented; 0/8 platform completions confirmed | [Module index](04-Web-Requests/README.md) |
 
-**Current checkpoint:** Three modules completed (58 sections). Linux Fundamentals completion confirmed by the learner's HTB dashboard on November 24, 2026. Recommended next module: Web Requests (Tier 0), not yet started.
+**Current checkpoint:** Three modules completed (58 sections). Linux Fundamentals completion confirmed by the learner's HTB dashboard on November 24, 2026. Web Requests (Tier 0) started November 24, 2026: Section 1 theory documented; mandatory exercise and platform completion pending. Total studied/documented: 59 sections; confirmed completed: 58.
 
 ## Learning roadmap
 
@@ -46,6 +47,7 @@ The roadmap is a personal study plan, not a claim of completed training or profe
 | [01 — Intro to Academy](01-Intro-to-Academy/README.md) | Eight lessons, credits, Pwnbox and authorized lab exercises |
 | [02 — Learning Process](02-Learning-Process/README.md) | Learning methodology, mindset, documentation and ROQ |
 | [03 — Linux Fundamentals](03-Linux-Fundamentals/README.md) | Linux architecture and filesystem fundamentals |
+| [04 — Web Requests](04-Web-Requests/README.md) | HTTP fundamentals, cURL and web request techniques |
 | [Linux cheatsheet](cheatsheets/linux-basics.md) | Commands actually practiced |
 | [Achievements](achievements/README.md) | Verified learning milestones |
 
