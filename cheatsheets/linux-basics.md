@@ -80,3 +80,13 @@ More commands will be added as they are studied and practiced.
 - `^` and `$`: beginning and end of line; `.*`: zero or more arbitrary characters.
 - `[0-9]`: digit range; `{1,10}`: repetition; parentheses: group; pipe in regex: OR.
 - `grep -E 'my.*false'`: ordered match; two grep commands in a shell pipeline: both patterns in either order.
+
+## Permission management
+
+- `ls -l`: inspect permissions; `ls -ld DIR`: inspect directory metadata.
+- `r=4`, `w=2`, `x=1`; sum each user/group/others triplet.
+- `chmod 754 FILE`: owner rwx, group r-x, others r--.
+- `chmod u+x FILE`: add owner execute; `chmod g-w FILE`: remove group write.
+- `chown USER:GROUP FILE`: change ownership (requires appropriate privileges).
+- `stat -c '%a %A' FILE`: show octal and symbolic permissions.
+- Special bits: SUID=4, SGID=2, sticky=1 in the leading octal digit.
