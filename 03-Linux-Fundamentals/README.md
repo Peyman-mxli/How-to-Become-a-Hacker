@@ -45,3 +45,7 @@ For each exercise, record the question, important keywords, why the command was 
 ## Extended Apache study notes
 
 [Apache HTTP Server deep dive](19-Apache-HTTP-Server-Deep-Dive.md) — request lifecycle, Git and Flask distinctions, example deployment architecture, configuration, logs, security and local verification.
+
+## Extended VPN study notes
+
+[VPN and OpenVPN deep dive](19-VPN-and-OpenVPN-Deep-Dive.md) — encrypted tunnels, HTB architecture, VPN versus SSH, protocols, routing, diagnostic commands and security limitations.
