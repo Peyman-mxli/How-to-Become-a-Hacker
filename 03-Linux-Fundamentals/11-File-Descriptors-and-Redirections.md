@@ -51,7 +51,7 @@ Alternative: run the find portion without the pipe and count paths manually. For
 ~~~bash
 find / -type f -name '*.log' -printf '.' 2>/dev/null | wc -c
 ~~~
-These count discoverable matching paths, not inaccessible files. Actual answer pending.
+These count discoverable matching paths, not inaccessible files. Actual verified answer: 32.
 
 ## Practical question 2 — Count installed packages
 
@@ -68,6 +68,22 @@ dpkg -l | grep -c '^ii '
 The ii prefix represents requested installation and current installed state; other desired states such as held packages may need separate consideration. Actual output pending.
 
 ## Verification
-Both exercises await actual lab results and HTB acceptance. Alternatives are untested. No lab credentials or VPN profiles are included.
+Question 1 verified from actual terminal output; question 2 and HTB acceptance pending. Alternatives are untested. No lab credentials or VPN profiles are included.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
+
+## Question 1 — Verified output
+
+~~~bash
+find / -type f -name '*.log' 2>/dev/null | wc -l
+~~~
+
+Actual output: **32**. The search returned discoverable regular-file paths ending in .log; the pipe forwarded them to wc -l, which counted the lines. Submit only 32. HTB acceptance is not yet confirmed.
+
+## Question 2 — Additional package counting method
+
+~~~bash
+dpkg -l | grep '^ii ' | wc -l
+~~~
+
+The question asks for a count, not package names. dpkg -l lists package records; grep filters lines beginning with the normal installed status ii followed by a space; the caret anchors the pattern to the beginning of the line; wc -l counts those records. This method excludes headers and removed packages, but may omit installed packages with other desired states such as held packages. Compare with the dpkg-query method above if necessary. Actual result pending.
