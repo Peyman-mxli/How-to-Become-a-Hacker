@@ -47,7 +47,7 @@ Lab credentials, IP addresses and session identifiers are intentionally excluded
 
 The home directory and configured shell are fields six and seven of the passwd record. If MAIL is unset, investigate the local mail spool configuration. For the kernel question, use the requested numeric format based on the actual output. Identify the interface from its MTU field.
 
-SSH login succeeded. The remote login banner reports x86_64 architecture. Question 1: `uname -m` returned `x86_64`, confirmed by actual lab output. HTB submission acceptance not yet confirmed. Other answers and submissions remain pending. No practical completion is claimed.
+SSH login succeeded. The remote login banner reports x86_64 architecture. Question 1: `uname -m` returned `x86_64`, confirmed by actual lab output. HTB submission acceptance not yet confirmed. See the verified practical outputs below for all six answers. All six answers have now been verified; section completion is pending confirmation.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
 
@@ -99,4 +99,23 @@ Kernel release: `4.15.0-123-generic`.
 
 The full release was rejected by HTB because the question requires a three-component numeric version. Correct submission: `4.15.0`. Acceptance confirmed by the learner.
 
-Question 6 next command: `ip link show` (pending output).
+### Verified practical output — Question 6
+
+~~~bash
+ip link show
+~~~
+
+Observed interface MTU values: `lo` = 65536; `ens192` = 1500. Correct answer: `ens192`. Session-specific MAC addresses are omitted.
+
+## Exercise recap
+
+| Question | Verified answer |
+| --- | --- |
+| 1 | `x86_64` |
+| 2 | `/home/htb-student` |
+| 3 | `/var/mail/htb-student` |
+| 4 | `/bin/bash` |
+| 5 | `4.15.0` |
+| 6 | `ens192` |
+
+All six answers verified from lab evidence; Question 5 acceptance reported. Final HTB section completion remains pending confirmation.
