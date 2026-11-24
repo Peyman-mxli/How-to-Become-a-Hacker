@@ -64,3 +64,12 @@ More commands will be added as they are studied and practiced.
 - `2> FILE`: save errors; `2>/dev/null`: discard errors.
 - `<< EOF`: here-document input.
 - Pipe: forward stdout; `grep PATTERN`: filter; `wc -l`: count lines.
+
+## Content filtering
+
+- `more`, `less`, `head`, `tail`: read text; `sort`: sort lines.
+- `grep -vE PATTERN`: exclude matching lines using extended regex.
+- `cut -d: -f1`: extract first colon-delimited field.
+- `awk -F: '{print $1, $7}'`: extract selected fields.
+- `tr`, `column -t`, `sed`: transform or format text.
+- `ss -lntu4`: inspect listening IPv4 TCP and UDP sockets.
