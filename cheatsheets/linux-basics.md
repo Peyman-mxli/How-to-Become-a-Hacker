@@ -30,3 +30,14 @@ More commands will be added as they are studied and practiced.
 - `ls -i PATH`: display inode numbers.
 - `cd ..`, `cd -`, `cd ~`: parent, previous and home directories.
 - `clear`, Ctrl+L: clear display; Ctrl+R: reverse history search; Tab: completion.
+
+## Working with files and directories
+
+- `touch FILE`: create an absent file or update timestamps.
+- `mkdir -p PATH`: create nested directories.
+- `tree .`: show directory structure.
+- `mv SOURCE DESTINATION`: move or rename.
+- `cp SOURCE DESTINATION`: copy.
+- `rm -i FILE`, `rmdir DIRECTORY`: interactive file removal and empty-directory removal.
+- `ls -lt DIRECTORY`: detailed listing sorted newest modification first.
+- `stat -c '%i' FILE`: print inode number.
