@@ -46,7 +46,7 @@ Each filter narrows the results by type, extension, size and timestamp. Read the
 ~~~bash
 find / -type f -name '*.conf' -size +25600c -size -28672c -newermt 2020-03-03 2>/dev/null
 ~~~
-The c suffix means bytes; 25 KiB = 25600 bytes and 28 KiB = 28672 bytes. This avoids KiB rounding. The actual lab output and answer are pending.
+The c suffix means bytes; 25 KiB = 25600 bytes and 28 KiB = 28672 bytes. This avoids KiB rounding. The lesson-style search displayed /usr/share/drirc.d/00-mesa-defaults.conf on the newly assigned HTB target. The filename answer is 00-mesa-defaults.conf; submission acceptance and completion of the search are not yet confirmed. The exact-byte alternative remains untested.
 
 ## Practical question 2 — Count backup files
 ~~~bash
@@ -61,6 +61,32 @@ which xxd
 The question requests the full executable path, not its filename. Alternative: command -v xxd. Answer pending.
 
 ## Verification
-All three questions remain pending actual lab verification. Alternatives are instructional examples, not confirmed executions. No lab credentials, private addresses or VPN profiles are included.
+Question 1 has a matching result observed in the lab. Questions 2 and 3 remain pending actual lab verification. Alternatives are instructional examples, not confirmed executions. No lab credentials, private addresses or VPN profiles are included.
 
 Source: [HTB Academy](https://academy.hackthebox.com/). Independent English study notes.
+
+## Question 1 — Observed lab result and filename extraction
+
+The learner recovered the expired SSH target using the existing VPN, then ran the lesson-style find command on the remote machine. Observed matching path:
+
+~~~text
+/usr/share/drirc.d/00-mesa-defaults.conf
+~~~
+
+The question requests the filename rather than its full path. Read the last path component: **00-mesa-defaults.conf**.
+
+### Additional alternative — Extract the basename
+
+~~~bash
+basename /usr/share/drirc.d/00-mesa-defaults.conf
+~~~
+
+The basename command removes leading directory components and returns only the filename. Expected output: 00-mesa-defaults.conf. This alternative has not yet been executed. The screenshot showed a matching path but did not show the shell prompt returning; wait for search completion before executing the next command. The search uses modification time, as taught in the lesson, rather than a true file creation timestamp.
+
+## Question 2 — Why and how to count matches
+
+~~~bash
+find / -type f -name '*.bak' 2>/dev/null | wc -l
+~~~
+
+The starting location / requests a filesystem-wide search; -type f limits results to regular files; -name '*.bak' matches the requested suffix, with quotes preventing shell expansion. The shell redirects standard error to /dev/null. The pipe sends matching paths to wc, and -l counts newline-delimited output. The result is the count of discoverable matching paths under the current account permissions, not proof that inaccessible directories contain no additional files. Actual count pending.
