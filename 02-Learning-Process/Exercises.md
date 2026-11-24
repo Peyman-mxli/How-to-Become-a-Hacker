@@ -45,5 +45,11 @@ Suggested log columns: date, study topic, location, sleep, session length, break
 
 Try applying ROQ independently to three to five personal situations.
 
+## 20 — Learning Progress
+**Question:** What is the difference between the two learning progress figures in the lesson?
+**Answer:** 36.7 (37.7 − 1.00).
+**Suggested practice:** Maintain a dated skill baseline and an ongoing learning journal.
+**Submission status:** Answer prepared; acceptance not yet confirmed.
+
 ## Status
-No mandatory interactive exercise from sections 1–19 was shown. Section 20 remains pending.
+All 20 sections studied. Final exercise submission and module completion pending.
