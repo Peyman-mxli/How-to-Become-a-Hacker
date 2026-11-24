@@ -98,3 +98,12 @@ More commands will be added as they are studied and practiced.
 - `su -c` / `--command`: execute a command as another user subject to authentication.
 - `sudo`: run commands according to administrative policy.
 - `--help` and `man`: verify options without changing system state.
+
+## Package management
+
+- `sudo apt update`: refresh package indexes; `apt search NAME`: search; `apt show NAME`: metadata.
+- `sudo apt install NAME`: install with dependency resolution.
+- `apt list --installed`: list installed packages.
+- `dpkg -s NAME`: inspect installed package status; `dpkg -L NAME`: list package files.
+- `apt download NAME`: download without installation; `dpkg -i FILE.deb`: install local package.
+- `git clone URL`: copy a repository, not necessarily install its software.
