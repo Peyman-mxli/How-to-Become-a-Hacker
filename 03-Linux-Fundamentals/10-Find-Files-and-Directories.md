@@ -147,4 +147,4 @@ command -v uses shell command resolution. Expected output: /usr/bin/xxd. This al
 | Number of discoverable regular backup files | 4 |
 | Full xxd executable path | /usr/bin/xxd |
 
-All three answers are verified from actual lab output. HTB submission acceptance and section completion remain pending confirmation.
+All three answers are verified from actual lab output. Learner proceeded to section 11; individual acceptance was not explicitly shown.
