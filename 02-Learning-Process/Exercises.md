@@ -46,4 +46,4 @@ Suggested log columns: date, study topic, location, sleep, session length, break
 Try applying ROQ independently to three to five personal situations.
 
 ## Status
-No mandatory interactive exercise from sections 1–18 was shown. Sections 19–20 remain pending.
+No mandatory interactive exercise from sections 1–19 was shown. Section 20 remains pending.
