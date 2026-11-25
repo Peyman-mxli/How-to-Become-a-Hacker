@@ -86,10 +86,45 @@ Planned approach:
 5. Inspect the response body and identify the exact field or line containing the flag. Submit it privately.
 6. Document sanitized observed evidence and the exact answer location after the learner supplies output.
 
-The lab target, live credentials, session cookie and exact assessment answer are omitted from public notes. No result has yet been observed.
+### Observed results and exact evidence location
+
+The learner ran the login request in Ubuntu WSL2. The actual command used -i to include headers, -c to save the session cookie, and -d to submit the form. Sanitized command:
+
+~~~bash
+curl -i -c cookies.txt -d 'username=LAB_USER&password=LAB_PASSWORD' http://TARGET_IP:PORT/
+~~~
+
+Observed login evidence (session value redacted):
+
+~~~http
+HTTP/1.1 200 OK
+Set-Cookie: PHPSESSID=[REDACTED]; path=/
+Content-Length: 1554
+Content-Type: text/html; charset=UTF-8
+~~~
+
+The response body contained the City Search title, the logout link and the instruction to type a city name and press Enter. These support successful authentication, rather than relying solely on status 200 or the presence of a cookie.
+
+The learner then loaded the saved cookie jar and submitted the requested search value in JSON. Sanitized command:
+
+~~~bash
+curl -b cookies.txt -H 'Content-Type: application/json' -d '{"search":"REQUESTED_TERM"}' http://TARGET_IP:PORT/search.php
+~~~
+
+The -b option reads the cookie jar; -H declares the media type; -d provides the JSON body and selects POST by default. The endpoint was specified by the exercise. No manual copying of the session identifier was required.
+
+Actual response structure, with the assessment value redacted:
+
+~~~json
+["flag: [FLAG REDACTED]"]
+~~~
+
+Exact answer location: response body, first element of the JSON array (index 0), immediately following the literal prefix flag: and a space. Extract only the flag including its braces, excluding the label, quotation marks, array brackets and shell prompt. The pasted command displayed a duplicated fragment at its end, but the returned JSON visibly confirms successful retrieval.
+
+The lab target, live credentials, session cookie and exact assessment answer are omitted from public notes. The learner's output verifies the authenticated request and flag retrieval; platform acceptance has not separately been shown. The cookie jar is sensitive and should be removed after the exercise; do not commit it.
 
 ## Verification
-Section 7 theory studied and documented. Mandatory login and authenticated JSON POST exercise pending. Optional exercises skipped. All examples are illustrative; no new lab or application requests were executed by the assistant.
+Section 7 theory studied and documented. Mandatory login, cookie issuance and authenticated JSON POST flag retrieval verified from learner terminal output. HTB submission acceptance pending. Optional exercises skipped. Original examples are illustrative; sanitized evidence above records actual learner observations. No new lab or application requests were executed by the assistant.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/)
