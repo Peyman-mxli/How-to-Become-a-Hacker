@@ -102,10 +102,25 @@ Planned procedure:
 4. Select the relevant request and inspect Headers for the exact Request URL, method and status, then Response for the returned content.
 5. Extract the flag from the actual response and submit it privately to HTB.
 
-Evidence location: Network request row, Headers > Request URL, and Response > response body. The exact endpoint, response line and assessment answer remain unknown until learner evidence is supplied. No live target or flag is published. If the response is JSON, identify the actual field that contains the requested value; do not guess the field or endpoint.
+### Observed practical results and exact evidence location
+The learner spawned the assigned lab and opened it in Chrome on Windows 11. F12 opened the Windows projection menu on the learner's keyboard, so Ctrl+Shift+I was used to access DevTools instead. After opening Network and reloading, the learner selected Fetch/XHR.
+
+The first screenshot showed a request whose name began with flag_, status 200, type fetch, and initiator script.js:7. The request name was truncated in the screenshot. Status 200 indicated a successful response; fetch identified the browser request type; script.js:7 identified the initiating script location. These observations identified the relevant row without guessing the endpoint.
+
+The learner selected that row and opened Response. The second screenshot displayed the flag on line 1 of the response body. Exact evidence location: Chrome DevTools > Network > Fetch/XHR > flag request > Response > line 1. Copy the entire returned flag, including its surrounding braces, into the private HTB answer box. The line number is a UI label, not part of the answer. The exact flag and resource identifier are redacted here, and the full Request URL was not inspected in the supplied screenshots.
+
+Sanitized observed evidence:
+~~~text
+Name: flag_[REDACTED]
+Status: 200
+Type: fetch
+Initiator: script.js:7
+Response line 1: [FLAG REDACTED]
+~~~
+This is actual learner evidence with sensitive assessment details removed, not an illustrative result. No cURL command was needed. The browser can receive additional resources after rendering the initial page; inspecting the initial HTML alone would not necessarily reveal this response. For defensive development, never send secrets to a browser that is not authorized to receive them.
 
 ## Verification
-Section 4 theory studied and documented. Required Network exercise pending learner target and screenshot. Optional recall and cURL exercises were skipped. All examples are illustrative, not newly observed results.
+Section 4 theory studied and documented. Required Network request identification and flag extraction verified from learner screenshots. HTB submission acceptance and section completion not separately confirmed. Optional recall and cURL exercises were skipped. Original command examples are illustrative; the sanitized walkthrough records actual observations.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/)
