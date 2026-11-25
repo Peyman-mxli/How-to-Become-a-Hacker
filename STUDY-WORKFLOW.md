@@ -7,8 +7,8 @@ This is the English-only continuity guide for the independent HTB Academy study 
 - Intro to Academy: 8/8 completed.
 - Learning Process: 20/20 completed.
 - Linux Fundamentals: 30/30 completed, confirmed by the learner's HTB dashboard. All numbered lesson notes and supplemental guides are in 03-Linux-Fundamentals/.
-- Total: 3 completed modules, 58 confirmed completed sections in those modules; 61 sections studied/documented including Web Requests.
-- Current module: Web Requests (Tier 0), 3/8 sections studied and documented. Section 1 download and flag extraction verified. Section 2 has no mandatory questions; learner advanced to Section 3. Section 3 request method identified and advertised Apache version verified using a GET request to the assigned lab. Individual submission acceptance pending. Individual platform completion not separately confirmed.
+- Total: 3 completed modules, 58 confirmed completed sections in those modules; 62 sections studied/documented including Web Requests.
+- Current module: Web Requests (Tier 0), 4/8 sections studied and documented. Section 1 download and flag extraction verified. Section 2 has no mandatory questions; learner advanced to Section 3. Section 3 request method identified and advertised Apache version verified using a GET request to the assigned lab. Learner advanced to Section 4; individual submission acceptance was not separately shown. Section 4 theory documented; mandatory Network flag exercise pending. Individual platform completion not separately confirmed.
 - Repository: https://github.com/Peyman-mxli/How-to-Become-a-Hacker
 - Branch: main.
 
@@ -40,4 +40,4 @@ Paste this instruction:
 
 Continue my HTB ethical hacking journey. Read STUDY-WORKFLOW.md and README.md in https://github.com/Peyman-mxli/How-to-Become-a-Hacker (main), then read the current module README and relevant prior lesson notes. Follow the documented study rules, explain every lesson in English and Farsi, and commit English-only notes with additional examples to GitHub after each lesson. No icons, emojis, review quizzes or unnecessary optional practice. Resume at the current checkpoint without repeating completed lessons.
 
-As of this checkpoint, submit the identified answers in Web Requests Section 3 and mark complete, then continue to Section 4 when supplied.
+As of this checkpoint, complete the mandatory browser Network exercise in Web Requests Section 4, then continue to Section 5 when supplied.
