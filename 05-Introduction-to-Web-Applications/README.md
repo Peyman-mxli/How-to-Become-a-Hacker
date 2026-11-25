@@ -1,14 +1,14 @@
 # 05 — Introduction to Web Applications
 
 **Provider:** Hack The Box Academy | **Tier:** 0
-**Status:** In progress — 2/17 sections studied and documented
+**Status:** In progress — 3/17 sections studied and documented
 **Started:** November 24, 2026 (learner local date)
 
 ## Lessons
 
 1. [Introduction](01-Introduction.md) — theory documented; no mandatory questions in supplied lesson.
 2. [Web Application Layout](02-Web-Application-Layout.md) — theory documented; no mandatory questions in supplied lesson.
-3. Section 3 — awaiting lesson.
+3. [Front End vs. Back End](03-Front-End-vs-Back-End.md) — theory documented; no mandatory questions.
 4. Section 4 — awaiting lesson.
 5. Section 5 — awaiting lesson.
 6. Section 6 — awaiting lesson.
@@ -30,7 +30,7 @@ Understand web application architecture, browser and backend responsibilities, c
 
 ## Current checkpoint
 
-Sections 1–2 studied and documented; learner advanced to Section 2. Both supplied lessons have no mandatory questions. No new lab execution or separate platform completion confirmation. Next: mark Section 2 complete and supply Section 3.
+Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. Next: mark Section 3 complete and supply Section 4.
 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All notes are independently written; original examples are illustrative unless actual evidence is recorded.
 
