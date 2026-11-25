@@ -86,10 +86,39 @@ The assigned lab asks the learner to perform a city update, a deletion, and a fi
 5. Read the renamed resource and inspect the actual response for the requested flag.
 6. Extract the exact response field or line containing the flag, submit privately, and document sanitized observed evidence.
 
-The assigned target, assessment-specific values, exact flag and live data are not published. The practical exercise is pending; no specific returned field, mutation outcome, or platform acceptance has been observed.
+### Observed practical evidence
+
+The learner used Ubuntu WSL2 and cURL against the assigned training instance. Initial GET requests returned existing London and Birmingham records, each with country_name set to (UK). Two distinct records were selected so the subsequent DELETE would not remove the renamed record.
+
+Sanitized command templates:
+
+~~~bash
+curl -s http://TARGET_IP:PORT/api.php/city/ORIGINAL_CITY
+curl -s http://TARGET_IP:PORT/api.php/city/OTHER_CITY
+curl -i -X PUT http://TARGET_IP:PORT/api.php/city/ORIGINAL_CITY -d '{"city_name":"REQUESTED_NAME","country_name":"(UK)"}' -H 'Content-Type: application/json'
+curl -i -X DELETE http://TARGET_IP:PORT/api.php/city/OTHER_CITY
+curl -s http://TARGET_IP:PORT/api.php/city/REQUESTED_NAME
+~~~
+
+Both mutation requests returned HTTP/1.1 200 OK with Content-Length: 0. The final GET returned the renamed record, confirming the renamed resource was accessible and the requested flag was retrieved. Deletion was accepted according to the response status, but absence of the deleted record was not independently rechecked.
+
+Sanitized final response, reformatted for readability:
+
+~~~json
+[
+  {
+    "city_name": "[REQUESTED_NAME]",
+    "country_name": "[FLAG REDACTED]"
+  }
+]
+~~~
+
+Exact answer location: first object of the returned JSON array, in the country_name field. Extract only the flag string including its braces. A generic jq expression for extracting that field is jq -r '.[0].country_name'; the learner retrieved the answer directly from the raw response, not by running jq.
+
+The assigned target, assessment-specific values and exact flag are omitted from public documentation. Platform acceptance and official module completion have not yet been independently confirmed.
 
 ## Verification
-Section 8 theory studied and documented. All eight Web Requests lessons now have English notes. Mandatory CRUD exercise and official module completion remain pending. All local examples are illustrative. Optional exercises skipped.
+Section 8 theory studied and documented. All eight Web Requests lessons now have English notes. Mandatory CRUD requests and final flag retrieval verified from learner terminal output. PUT and DELETE returned 200 OK; final GET returned the renamed resource and flag. Independent post-deletion read was not performed. Official module completion remains pending. Local examples are illustrative. Optional exercises skipped.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/)
