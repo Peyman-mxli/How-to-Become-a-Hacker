@@ -1,7 +1,7 @@
 # 04 — Web Requests
 
 **Provider:** Hack The Box Academy | **Tier:** 0
-**Status:** In progress — 6/8 sections studied and documented; Sections 1, 3 and 4 practical work verified; Section 6 exercise pending
+**Status:** In progress — 6/8 sections studied and documented; Sections 1, 3 and 4 practical work verified; Section 6 practical work verified; acceptance pending
 **Started:** November 24, 2026
 
 ## Lessons
@@ -11,7 +11,7 @@
 3. [HTTP Requests and Responses](03-HTTP-Requests-and-Responses.md) — theory documented; method identified from lesson and Apache banner verified from learner output; acceptance pending.
 4. [HTTP Headers](04-HTTP-Headers.md) — theory documented; mandatory browser Network request and flag extraction verified from screenshots; acceptance pending.
 5. [HTTP Methods and Codes](05-HTTP-Methods-and-Codes.md) — theory documented; no mandatory questions in supplied lesson.
-6. [GET](06-GET.md) — theory documented; mandatory authenticated search exercise pending.
+6. [GET](06-GET.md) — theory documented; mandatory authenticated search and flag extraction verified; acceptance pending.
 7. Section 7 — awaiting lesson.
 8. Section 8 — awaiting lesson.
 
@@ -21,7 +21,7 @@ Understand HTTP request and response mechanics and develop reproducible web requ
 
 ## Current checkpoint
 
-Section 1 mandatory download and flag extraction verified from learner terminal output; individual HTB acceptance was not separately shown. Section 2 studied and documented; no mandatory questions; learner advanced to Section 3. Section 3 theory documented. Both required answers have been identified; Apache banner verified from the assigned lab response. Learner advanced to Section 4; individual acceptance was not separately shown. Section 4 theory documented. The learner identified the fetch request and extracted the flag from Response line 1. Learner advanced to Section 5; individual submission acceptance was not separately shown. Section 5 theory documented; no mandatory questions in supplied text. Learner advanced to Section 6. Section 6 theory documented. Next: inspect the assigned lab search request and reproduce it with cURL to obtain the flag. No flag or live lab details are published.
+Section 1 mandatory download and flag extraction verified from learner terminal output; individual HTB acceptance was not separately shown. Section 2 studied and documented; no mandatory questions; learner advanced to Section 3. Section 3 theory documented. Both required answers have been identified; Apache banner verified from the assigned lab response. Learner advanced to Section 4; individual acceptance was not separately shown. Section 4 theory documented. The learner identified the fetch request and extracted the flag from Response line 1. Learner advanced to Section 5; individual submission acceptance was not separately shown. Section 5 theory documented; no mandatory questions in supplied text. Learner advanced to Section 6. Section 6 theory documented. Learner identified the search endpoint in Chrome Network and retrieved the flag using authenticated cURL. Next: submit the flag and mark Section 6 complete before continuing to Section 7. No flag or live lab details are published.
 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All examples are independent, and practical verification is explicitly distinguished from illustrative commands. No optional exercises are required.
 
