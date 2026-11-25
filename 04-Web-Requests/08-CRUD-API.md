@@ -115,10 +115,10 @@ Sanitized final response, reformatted for readability:
 
 Exact answer location: first object of the returned JSON array, in the country_name field. Extract only the flag string including its braces. A generic jq expression for extracting that field is jq -r '.[0].country_name'; the learner retrieved the answer directly from the raw response, not by running jq.
 
-The assigned target, assessment-specific values and exact flag are omitted from public documentation. Platform acceptance and official module completion have not yet been independently confirmed.
+The assigned target, assessment-specific values and exact flag are omitted from public documentation. The learner subsequently supplied an HTB share preview stating Completed Web Requests, confirming overall module completion. Individual answer acceptance screens were not separately supplied.
 
 ## Verification
-Section 8 theory studied and documented. All eight Web Requests lessons now have English notes. Mandatory CRUD requests and final flag retrieval verified from learner terminal output. PUT and DELETE returned 200 OK; final GET returned the renamed resource and flag. Independent post-deletion read was not performed. Official module completion remains pending. Local examples are illustrative. Optional exercises skipped.
+Section 8 theory studied and documented. All eight Web Requests lessons now have English notes. Mandatory CRUD requests and final flag retrieval verified from learner terminal output. PUT and DELETE returned 200 OK; final GET returned the renamed resource and flag. Independent post-deletion read was not performed. Official module completion confirmed by the learner's HTB completion share preview. Local examples are illustrative. Optional exercises skipped.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/)
