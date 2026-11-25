@@ -94,10 +94,41 @@ Planned approach:
 5. Reproduce that verified request in Ubuntu WSL2 with cURL, changing only the search value as requested by the exercise. Supply the lab authentication credentials.
 6. Inspect the returned response for the flag, extract its exact value, and submit privately.
 
-Evidence location: the actual Network row and its Request URL/Method establish the request; the terminal response body establishes the answer. The lesson shows an example endpoint, but the assigned target, actual response, and answer have not yet been observed. No lab credentials, exact flags, or live lab addresses are published.
+### Observed practical results and exact answer location
+
+The learner opened the assigned lab in Chrome on Windows 11 and reached the city-search page. Network > Fetch/XHR was initially empty because no matching search request had been made. After entering the ordinary search term and pressing Enter, the screenshot showed the following sanitized observations:
+
+~~~text
+Name: search.php?search=le
+Status: 200
+Type: fetch
+Initiator: script.js:29
+~~~
+
+The visible page returned Leeds (UK) and Leicester (UK). The Name column established the endpoint and query parameter; the screenshot did not separately display the Request Method field. The endpoint and query were consistent with the lesson's GET example. The learner reproduced the search with cURL in Ubuntu WSL2, using the provided Basic authentication credentials and changing the search value to the term requested by the question.
+
+Sanitized representation of the command (credentials, assigned address and assessment-specific value replaced by placeholders):
+
+~~~bash
+curl -u 'LAB_USER:LAB_PASSWORD' 'http://TARGET_IP:PORT/search.php?search=REQUESTED_TERM'
+~~~
+
+- curl sends the HTTP request; GET is the default for this invocation.
+- -u supplies the authorized lab credentials and generates the Basic Authorization header.
+- /search.php is the observed backend endpoint.
+- ?search= identifies the observed query parameter; only its value needed to change.
+- Single quotes protect the URL from shell interpretation.
+
+The actual terminal response body contained a line beginning with the literal label flag: followed by the requested value. Sanitized observed evidence:
+
+~~~text
+flag: [FLAG REDACTED]
+~~~
+
+Exact answer location: terminal response body, on the line beginning flag:, immediately after that label. Copy the full flag including its braces, but exclude the label and shell prompt. The original flag, credentials and assigned address are intentionally excluded from public notes. The pasted command line had some terminal display artifacts; the returned flag is clearly visible and establishes successful retrieval. HTB acceptance is not yet confirmed.
 
 ## Verification
-Section 6 theory studied and documented. Mandatory exercise pending target spawn, browser request inspection, and cURL output. Optional exercises skipped. All examples above are illustrative; no new requests have been executed.
+Section 6 theory studied and documented. Mandatory authenticated search request and flag retrieval verified from learner screenshot and terminal output. HTB submission acceptance not separately confirmed. Optional exercises skipped. Original examples are illustrative; sanitized practical evidence above records actual observations.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/)
