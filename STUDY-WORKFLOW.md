@@ -7,9 +7,9 @@ This is the English-only continuity guide for the independent HTB Academy study 
 - Intro to Academy: 8/8 completed.
 - Learning Process: 20/20 completed.
 - Linux Fundamentals: 30/30 completed, confirmed by the learner's HTB dashboard. All numbered lesson notes and supplemental guides are in 03-Linux-Fundamentals/.
-- Total: 4 completed modules, 66 confirmed completed sections; 67 studied and documented sections.
+- Total: 4 completed modules, 66 confirmed completed sections; 68 studied and documented sections.
 - Web Requests (Tier 0): 8/8 completed and documented, confirmed by the learner's HTB completion share preview. Section 1 download and flag extraction verified. Section 2 has no mandatory questions; learner advanced to Section 3. Section 3 request method identified and advertised Apache version verified using a GET request to the assigned lab. Learner advanced to Section 4; individual submission acceptance was not separately shown. Section 4 theory documented; mandatory Network request identification and flag extraction verified from learner screenshots; learner advanced to Section 5; individual submission acceptance not separately shown. Section 5 theory documented; no mandatory questions in supplied text. Learner advanced to Section 6; GET and Basic authentication documented, mandatory authenticated search and flag extraction verified. Learner advanced to Section 7; POST theory documented; mandatory valid login, session cookie and authenticated JSON POST flag retrieval verified. Learner advanced to Section 8; CRUD API theory documented; mandatory CRUD requests and final flag retrieval verified. Individual acceptance screens were not separately supplied; overall completion confirmed.
-- Current module: Introduction to Web Applications (Tier 0), 1/17 studied and documented. Section 1 has no mandatory questions; platform completion not separately confirmed. Official course: https://academy.hackthebox.com/course/preview/introduction-to-web-applications
+- Current module: Introduction to Web Applications (Tier 0), 2/17 studied and documented. Sections 1–2 have no mandatory questions; learner advanced to Section 2, with platform completion not separately confirmed. Official course: https://academy.hackthebox.com/course/preview/introduction-to-web-applications
 - Repository: https://github.com/Peyman-mxli/How-to-Become-a-Hacker
 - Branch: main.
 
@@ -41,4 +41,4 @@ Paste this instruction:
 
 Continue my HTB ethical hacking journey. Read STUDY-WORKFLOW.md and README.md in https://github.com/Peyman-mxli/How-to-Become-a-Hacker (main), then read the current module README and relevant prior lesson notes. Follow the documented study rules, explain every lesson in English and Farsi, and commit English-only notes with additional examples to GitHub after each lesson. No icons, emojis, review quizzes or unnecessary optional practice. Resume at the current checkpoint without repeating completed lessons.
 
-As of this checkpoint, Web Requests is complete. Introduction to Web Applications Section 1 is documented; mark it complete in HTB and continue to Section 2 when supplied.
+As of this checkpoint, Web Requests is complete. Introduction to Web Applications Sections 1–2 are documented; mark Section 2 complete in HTB and continue to Section 3 when supplied.
