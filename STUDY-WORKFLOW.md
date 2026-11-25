@@ -7,8 +7,9 @@ This is the English-only continuity guide for the independent HTB Academy study 
 - Intro to Academy: 8/8 completed.
 - Learning Process: 20/20 completed.
 - Linux Fundamentals: 30/30 completed, confirmed by the learner's HTB dashboard. All numbered lesson notes and supplemental guides are in 03-Linux-Fundamentals/.
-- Total: 3 completed modules, 58 confirmed completed sections in those modules; 66 sections studied/documented including Web Requests.
-- Current module: Web Requests (Tier 0), 8/8 sections studied and documented. Section 1 download and flag extraction verified. Section 2 has no mandatory questions; learner advanced to Section 3. Section 3 request method identified and advertised Apache version verified using a GET request to the assigned lab. Learner advanced to Section 4; individual submission acceptance was not separately shown. Section 4 theory documented; mandatory Network request identification and flag extraction verified from learner screenshots; learner advanced to Section 5; individual submission acceptance not separately shown. Section 5 theory documented; no mandatory questions in supplied text. Learner advanced to Section 6; GET and Basic authentication documented, mandatory authenticated search and flag extraction verified. Learner advanced to Section 7; POST theory documented; mandatory valid login, session cookie and authenticated JSON POST flag retrieval verified. Learner advanced to Section 8; CRUD API theory documented; mandatory CRUD requests and final flag retrieval verified; official module completion pending. Individual platform completion not separately confirmed.
+- Total: 4 completed modules, 66 completed and documented sections.
+- Web Requests (Tier 0): 8/8 completed and documented, confirmed by the learner's HTB completion share preview. Section 1 download and flag extraction verified. Section 2 has no mandatory questions; learner advanced to Section 3. Section 3 request method identified and advertised Apache version verified using a GET request to the assigned lab. Learner advanced to Section 4; individual submission acceptance was not separately shown. Section 4 theory documented; mandatory Network request identification and flag extraction verified from learner screenshots; learner advanced to Section 5; individual submission acceptance not separately shown. Section 5 theory documented; no mandatory questions in supplied text. Learner advanced to Section 6; GET and Basic authentication documented, mandatory authenticated search and flag extraction verified. Learner advanced to Section 7; POST theory documented; mandatory valid login, session cookie and authenticated JSON POST flag retrieval verified. Learner advanced to Section 8; CRUD API theory documented; mandatory CRUD requests and final flag retrieval verified. Individual acceptance screens were not separately supplied; overall completion confirmed.
+- Next recommended module: Introduction to Web Applications (Tier 0, 17 sections), not started. Official course: https://academy.hackthebox.com/course/preview/introduction-to-web-applications
 - Repository: https://github.com/Peyman-mxli/How-to-Become-a-Hacker
 - Branch: main.
 
@@ -27,7 +28,7 @@ This is the English-only continuity guide for the independent HTB Academy study 
 
 - Read the current repository and module indexes before writing.
 - Create one numbered English Markdown file per section, following the existing naming style (for example, 03-Linux-Fundamentals/30-Shortcuts.md).
-- For the next module, use 04-Web-Requests/ and create its README when the first lesson is supplied.
+- For the next module, use 05-Introduction-to-Web-Applications/ and create its README when the first lesson is supplied.
 - Include title, concepts, command/parameter explanations where relevant, additional original examples, security considerations, relevant official references, practice and verification status.
 - Add links to the module README and update the root README progress/checkpoint after every lesson. Record verified achievements in achievements/README.md only when evidence is supplied.
 - For longer requested topics, create a separate English supplement in the relevant module folder and link it in the module index. Previous examples include Apache, VPN/OpenVPN, WSL setup, and network monitoring tools.
@@ -40,4 +41,4 @@ Paste this instruction:
 
 Continue my HTB ethical hacking journey. Read STUDY-WORKFLOW.md and README.md in https://github.com/Peyman-mxli/How-to-Become-a-Hacker (main), then read the current module README and relevant prior lesson notes. Follow the documented study rules, explain every lesson in English and Farsi, and commit English-only notes with additional examples to GitHub after each lesson. No icons, emojis, review quizzes or unnecessary optional practice. Resume at the current checkpoint without repeating completed lessons.
 
-As of this checkpoint, submit the retrieved flag for Web Requests Section 8 privately, mark the section complete, and verify official module completion before recording an achievement or starting the next module.
+As of this checkpoint, Web Requests is complete. Start Introduction to Web Applications, Section 1/17, when the learner supplies it.
