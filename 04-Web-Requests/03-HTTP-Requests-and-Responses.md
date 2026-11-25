@@ -87,6 +87,59 @@ For an owned Flask application such as UniTrack, inspect HTTP status, response f
 ## Required HTB questions
 The first question asks the learner to identify the method shown in the lesson's intercepted request; the relevant evidence is the first field of the request line. The second asks for the Apache version advertised by the assigned lab server after a GET request. The learner used cURL verbose mode in Ubuntu WSL2 against the assigned HTB target. The observed request was GET over HTTP/1.1 and the response was 200 OK, with an Apache server banner, HTML content type, UTF-8 encoding, and a Content-Length of 348 bytes. The learner extracted the requested version from the Server header. The exact assessment answer and lab address are intentionally omitted. Individual answers and live lab identifiers are omitted from this public portfolio.
 
+## Mandatory exercise walkthrough: locating evidence
+
+### Question 1 — Request method
+The question asks for the case-sensitive HTTP method. Locate the request line, above Host, User-Agent and other headers. Its first space-delimited field is the method; its second is the request target; its third is the protocol version. Submit only the first field with its original capitalization. The method can also be seen immediately after the outgoing greater-than marker in cURL verbose output.
+
+### Question 2 — Advertised Apache version
+
+**Step 1: Interpret the requirement.** The question asks for a GET request and the Apache software version in the response headers, not the HTTP protocol version, client cURL version, status code or OS name.
+
+**Step 2: Choose the command.** The learner was already inside Ubuntu WSL2, so another wsl invocation was unnecessary. The following template represents the command actually used, with the assigned lab address redacted:
+
+~~~bash
+curl -v "http://TARGET_IP:PORT/"
+~~~
+
+curl sends the request; -v displays the outgoing and incoming HTTP headers plus diagnostic information. http:// selects HTTP, TARGET_IP is the assigned server address, PORT is its assigned listening port, and / requests the root path. No data or method override was supplied, so cURL selected GET.
+
+**Step 3: Find the response header.** The following is a sanitized excerpt of the learner's observed terminal output, preserving the order of the relevant lines. Square-bracket placeholders replace the live target, timestamp and assessment answer.
+
+~~~text
+* Connected to [TARGET]
+> GET / HTTP/1.1
+> Host: [TARGET]
+> User-Agent: curl/8.5.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Date: [TIMESTAMP]
+< Server: Apache/[VERSION] (Ubuntu)
+< Vary: Accept-Encoding
+< Content-Length: 348
+< Content-Type: text/html; charset=UTF-8
+<
+~~~
+
+The exact location is the Server header, directly after Date and before Vary in this response. The less-than marker identifies an incoming header in cURL's verbose display. The response status line confirms that the GET request succeeded.
+
+**Step 4: Extract the answer.**
+
+| Header component | Meaning |
+| --- | --- |
+| Server: | Response header name |
+| Apache | Advertised web server software |
+| / | Separator between product name and version |
+| [VERSION] | The exact numeric version requested by the question |
+| (Ubuntu) | Advertised platform, not part of the requested version |
+
+Copy only the characters after Apache/ and before the space preceding (Ubuntu). An independent illustrative example is Server: Apache/2.4.62 (ExampleOS), from which the version would be 2.4.62. This example is not the lab answer.
+
+Do not confuse the server version with HTTP/1.1 or curl/8.5.0. The former is the protocol version and the latter is the client software version.
+
+**Step 5: Verification.** The learner's actual terminal output confirms a successful GET, an Apache Server header and extraction of its version. The exact assessment answer is retained privately, consistent with the repository publication rules. HTB submission acceptance has not been separately observed. The banner identifies advertised software; it does not prove actual patch status.
+
 ## Verification and progress
 Section 3 theory studied and documented. Question 1 can be derived from supplied lesson text; platform acceptance not observed. Question 2: GET request and Apache banner extraction verified from learner terminal output; platform acceptance not yet shown. Optional verbose and DevTools exercises were not performed. The examples are original illustrations, not captured responses.
 
