@@ -53,10 +53,26 @@ The comment is not rendered as normal page text but is delivered in the HTML res
 A hypothetical school dashboard should return only the records the authenticated user is authorized to see. A private database service credential must stay on the server. A browser-facing public client key may be intentionally public if access is constrained by appropriately enforced backend policies. Public configuration identifiers should not be confused with privileged credentials.
 
 ## Mandatory lab
-The supplied lesson includes a required exercise asking the learner to inspect a login form for an exposed password. The lesson's illustrative comment is separate from the assigned target; no target response has yet been supplied. Use only the spawned HTB training instance. Planned evidence: the actual HTML response or source line, the location of the exposed value, and sanitized extraction reasoning. Do not publish the target address, exposed password, or other restricted exercise data.
+The supplied lesson includes a required exercise asking the learner to inspect a login form for an exposed password. The learner inspected the assigned HTB training instance from Ubuntu WSL2 using cURL. The returned HTML contained an exposed credential pair in a developer comment immediately after the password input and before the login button.
+
+### Observed practical evidence (sanitized)
+
+~~~bash
+curl -s http://TARGET_IP:PORT/
+~~~
+
+The -s option suppresses the progress meter; GET is the default HTTP method. The response body contained the following structure, with the actual credential pair redacted:
+
+~~~html
+<input type="password" required>
+<!-- Developer reminder to remove test credentials [USERNAME REDACTED]:[PASSWORD REDACTED] -->
+<button type="submit">Login</button>
+~~~
+
+The password is the value after the colon separating the username and password. Only the password is requested. The learner inspected the raw source directly; no login attempt or credential validity test was performed. No HTTP status code was recorded because response headers were not requested. The target address and actual credential values are not published.
 
 ## Verification
-Theory documented. Mandatory practical question pending; no target inspection or answer acceptance observed. Section 6 question area was not supplied; the learner has advanced to Section 7. Full Sections 4–5 remain pending. All original examples are illustrative.
+Theory documented. Mandatory practical evidence verified from the learner's terminal output; exposed password identified in the HTML comment. HTB answer acceptance and section completion remain pending. Section 6 question area was not supplied; the learner has advanced to Section 7. Full Sections 4–5 remain pending. All original examples are illustrative.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/app/module/75)
