@@ -30,6 +30,24 @@
 
 - [CSS text alignment](05-CSS-Text-Alignment-Supplement.md) — Section 5 question concept, alignment values and multilingual examples.
 
+## Individual framework and library guides
+
+Read the four supplemental guides in order. Each explains architecture, core concepts, a comparable original attendance-counter example, expected behavior, use cases, security and official references.
+
+1. [Angular](JavaScript-Frameworks/01-Angular.md)
+2. [React](JavaScript-Frameworks/02-React.md)
+3. [Vue.js](JavaScript-Frameworks/03-Vue.md)
+4. [jQuery](JavaScript-Frameworks/04-jQuery.md)
+
+| Technology | Main approach | Typical fit |
+| --- | --- | --- |
+| Angular | Components, templates, signals and services | Structured applications |
+| React | JSX components and state | Interactive interfaces |
+| Vue | Reactive state and declarative templates | Progressive adoption and applications |
+| jQuery | Direct DOM manipulation and event handlers | Existing pages and targeted enhancements |
+
+All four are free and open-source. Examples are illustrative; no installations, execution or additional HTB completion are claimed.
+
 ## Learning objectives
 
 Understand web application architecture, browser and backend responsibilities, common web technologies, security risks and authorized assessment methodology.
