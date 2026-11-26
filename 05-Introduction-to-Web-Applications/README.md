@@ -24,13 +24,17 @@
 16. Section 16 — awaiting lesson.
 17. Section 17 — awaiting lesson.
 
+## Supplemental notes
+
+- [HTML image elements](HTML-Image-Elements.md) — image syntax, accessibility and original examples; standalone question concept covered, full lesson pending.
+
 ## Learning objectives
 
 Understand web application architecture, browser and backend responsibilities, common web technologies, security risks and authorized assessment methodology.
 
 ## Current checkpoint
 
-Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. Next: mark Section 3 complete and supply Section 4.
+Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Next: supply the full Section 4 lesson and confirm any required answers.
 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All notes are independently written; original examples are illustrative unless actual evidence is recorded.
 
