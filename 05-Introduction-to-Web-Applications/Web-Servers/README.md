@@ -1,10 +1,12 @@
 # Web Servers — Apache, NGINX and IIS
 
-Supplement to [Section 11 — Back End Servers](../11-Back-End-Servers.md). Read in order:
+Supplement to [Section 11 — Back End Servers](../11-Back-End-Servers.md) and [Section 12 — Web Servers](../12-Web-Servers.md). Read in order:
 
 1. [Apache HTTP Server](01-Apache-HTTP-Server.md)
 2. [NGINX](02-NGINX.md)
 3. [Microsoft IIS](03-Microsoft-IIS.md)
+4. [Apache Tomcat](04-Apache-Tomcat.md) — Java servlet container and HTTP service.
+5. [Node.js](05-NodeJS.md) — JavaScript runtime and HTTP server API.
 
 ## Comparison
 
