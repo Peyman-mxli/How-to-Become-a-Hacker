@@ -1,7 +1,7 @@
 # Section 14 — Development Frameworks & APIs
 
 **Provider:** Hack The Box Academy  
-**Status:** Theory documented; mandatory assigned-target exercise pending.
+**Status:** Theory documented; mandatory GET exercise verified from learner terminal output; submission acceptance pending.
 
 ## 1. Development frameworks
 
@@ -122,9 +122,13 @@ def get_notice(notice_id):
 - UniTrack: Flask routes must enforce session, role and object checks for QR, visitor and access records.
 - ProTrack-MX: React calls Supabase APIs backed by PostgreSQL; RLS policies enforce access to permitted groups/records. UI checks alone are insufficient. Never publish service-role keys.
 
-## 8. Mandatory lab — pending
+## 8. Mandatory lab — verified methodology
 
-The supplied question asks to use a GET request with the id parameter in the assigned HTB index.php endpoint and identify the name associated with user ID 1. Spawn the assigned target. Observe the provided starting request and change only the id value to the requested identifier. Inspect the returned content and identify the actual name field. A generic local example is curl -i 'http://127.0.0.1:8080/index.php?id=1' (illustrative only, not the assigned target). -i displays headers and body; quoting protects shell metacharacters. Use the assigned URL with its actual scheme and port privately. If HTML is returned, inspect the displayed page or source; if JSON is returned, inspect the actual field before filtering. No target address, output, answer, or acceptance has been supplied; do not guess or publish restricted answers. Update this note with sanitized methodology once evidence is supplied.
+The learner used the assigned HTB target and changed only the supplied GET query parameter to the requested identifier. The curl -i option displayed both HTTP headers and the response body. The response was HTTP/1.1 200 OK, advertised Apache 2.4.41 on Ubuntu, and included Content-Length: 10 and Content-Type: text/html; charset=UTF-8.
+
+The requested name appeared directly in the response body after the blank line separating headers from content. The body had no trailing newline, so the shell prompt appeared immediately afterward. The reported content length corroborates the extraction. Removing -i and using -sS would display the body without headers or a progress meter while preserving error messages. This alternative command was explained but not separately executed or verified.
+
+The learner's terminal output establishes retrieval of the requested value. It does not independently establish that HTB accepted the submitted answer or that the endpoint has an authorization vulnerability. The assigned address, exact assessment answer and personal shell prompt are intentionally omitted from these public notes.
 
 ## References
 
