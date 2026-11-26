@@ -6,3 +6,7 @@ Supplement to [Section 16](../16-Public-Vulnerabilities.md).
 2. [Vulnerability research and remediation](02-Vulnerability-Research.md) — inventory, advisory validation, prioritization, historical cases and project relevance.
 
 English-only educational notes. No extra HTB lesson credit or live tests claimed.
+
+## Extended research toolkit
+
+[Eight individual research resource guides](Research-Resources/README.md) — CVE, NVD, SearchSploit, Rapid7, Vulnerability Lab, GitHub Advisories, CISA KEV and FIRST, including free WSL2 setup, public lookup and data download examples.
