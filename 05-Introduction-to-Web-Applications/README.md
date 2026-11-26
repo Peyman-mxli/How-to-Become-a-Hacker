@@ -48,6 +48,15 @@ Read the four supplemental guides in order. Each explains architecture, core con
 
 All four are free and open-source. Examples are illustrative; no installations, execution or additional HTB completion are claimed.
 
+## Individual web server guides
+
+- [Apache HTTP Server](Web-Servers/01-Apache-HTTP-Server.md)
+- [NGINX](Web-Servers/02-NGINX.md)
+- [Microsoft IIS](Web-Servers/03-Microsoft-IIS.md)
+- [Web server comparison and reading index](Web-Servers/README.md)
+
+Section 11 supplemental guides cover architecture, configuration, command explanations, original local examples, troubleshooting, security and project applications. No additional HTB lesson credit or lab execution is claimed.
+
 ## Learning objectives
 
 Understand web application architecture, browser and backend responsibilities, common web technologies, security risks and authorized assessment methodology.
