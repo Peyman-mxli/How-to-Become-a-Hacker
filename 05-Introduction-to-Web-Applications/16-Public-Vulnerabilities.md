@@ -143,3 +143,7 @@ The question asks for the historical CVSS v2.0 base score of CVE-2017-0144. Cons
 - [FIRST v4 calculator](https://www.first.org/cvss/calculator/cvsscalc40)
 
 Sources consulted November 26, 2026. Original examples are illustrative; no commands executed or live vulnerability testing performed.
+
+## 11. Extended vulnerability research resource guides
+
+[Complete eight-resource toolkit](Public-Vulnerabilities/Research-Resources/README.md) — individual guides for CVE Program, NVD, Exploit Database/SearchSploit, Rapid7, Vulnerability Lab, GitHub Advisory Database, CISA KEV, and FIRST. Includes free Ubuntu WSL2 setup, download options, browser/API usage and original examples. These supplements do not add lesson credit.
