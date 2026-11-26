@@ -1,7 +1,7 @@
 # 05 — Introduction to Web Applications
 
 **Provider:** Hack The Box Academy | **Tier:** 0
-**Status:** In progress — 10/17 full lessons studied and documented; reached Section 12
+**Status:** In progress — 11/17 full lessons studied and documented; reached Section 13
 **Started:** November 24, 2026 (learner local date)
 
 ## Lessons
@@ -18,7 +18,7 @@
 10. [Cross-Site Request Forgery (CSRF)](10-Cross-Site-Request-Forgery-CSRF.md) — theory documented; no mandatory question in supplied lesson.
 11. [Back End Servers](11-Back-End-Servers.md) — theory and required conceptual question reasoning documented; acceptance pending.
 12. [Web Servers](12-Web-Servers.md) — theory and required conceptual question reasoning documented; acceptance pending.
-13. Section 13 — awaiting lesson.
+13. [Databases](13-Databases.md) — theory and required conceptual question reasoning documented; acceptance pending.
 14. Section 14 — awaiting lesson.
 15. Section 15 — awaiting lesson.
 16. Section 16 — awaiting lesson.
@@ -48,6 +48,13 @@ Read the four supplemental guides in order. Each explains architecture, core con
 
 All four are free and open-source. Examples are illustrative; no installations, execution or additional HTB completion are claimed.
 
+## Database study guides
+
+- [Relational databases](Databases/01-Relational-Databases.md)
+- [NoSQL databases](Databases/02-NoSQL-Databases.md)
+- [Firebase](Databases/03-Firebase.md)
+- [Database guide index](Databases/README.md)
+
 ## Individual web server guides
 
 - [Apache HTTP Server](Web-Servers/01-Apache-HTTP-Server.md)
@@ -65,7 +72,7 @@ Understand web application architecture, browser and backend responsibilities, c
 
 ## Current checkpoint
 
-Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Learner subsequently reached Section 5 and supplied a CSS text alignment question; the concept is documented. Section 5 answer acceptance is now confirmed by the learner after correcting declaration formatting. Full Sections 4–5 and Section 4 answer acceptance remain pending. Learner advanced to Section 6; JavaScript theory documented, including DOM, AJAX and frameworks. Question area not supplied. Learner advanced to Section 7; sensitive data exposure theory documented. Learner retrieved the exposed credential from an HTML comment using cURL against the assigned Section 7 target. Learner advanced to Section 8; Section 7 acceptance was not separately shown. HTML Injection theory and mandatory answer reasoning documented from supplied code; no live test performed. Learner advanced to Section 9; Section 8 acceptance was not separately shown. XSS theory documented; learner screenshots verify the local browser alert and cookie retrieval on the assigned lab. Learner advanced to Section 10; Section 9 answer acceptance was not separately shown. CSRF theory and defensive examples documented; no mandatory question appears in supplied content. Section 11 back-end servers, software stacks, virtualization, hardware and security documented; mandatory conceptual question reasoning identified from the supplied stack table. No lab required; submission acceptance pending. Learner advanced to Section 12; Section 11 answer acceptance was not separately shown. Section 12 web server workflow, HTTP status codes, input formats, cURL and server technologies documented; required conceptual question verified against RFC 9110, submission acceptance pending. No lab required. Apache Tomcat and Node.js supplemental guides added. Next: Section 13 after submission of the Section 12 question. Full Sections 4–5 remain pending.
+Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Learner subsequently reached Section 5 and supplied a CSS text alignment question; the concept is documented. Section 5 answer acceptance is now confirmed by the learner after correcting declaration formatting. Full Sections 4–5 and Section 4 answer acceptance remain pending. Learner advanced to Section 6; JavaScript theory documented, including DOM, AJAX and frameworks. Question area not supplied. Learner advanced to Section 7; sensitive data exposure theory documented. Learner retrieved the exposed credential from an HTML comment using cURL against the assigned Section 7 target. Learner advanced to Section 8; Section 7 acceptance was not separately shown. HTML Injection theory and mandatory answer reasoning documented from supplied code; no live test performed. Learner advanced to Section 9; Section 8 acceptance was not separately shown. XSS theory documented; learner screenshots verify the local browser alert and cookie retrieval on the assigned lab. Learner advanced to Section 10; Section 9 answer acceptance was not separately shown. CSRF theory and defensive examples documented; no mandatory question appears in supplied content. Section 11 back-end servers, software stacks, virtualization, hardware and security documented; mandatory conceptual question reasoning identified from the supplied stack table. No lab required; submission acceptance pending. Learner advanced to Section 12; Section 11 answer acceptance was not separately shown. Section 12 web server workflow, HTTP status codes, input formats, cURL and server technologies documented; required conceptual question verified against RFC 9110, submission acceptance pending. No lab required. Apache Tomcat and Node.js supplemental guides added. Learner advanced to Section 13; Section 12 answer acceptance was not separately shown. Section 13 relational and non-relational databases, SQL relationships, secure PHP queries and Firebase documented. Required conceptual question verified from Google's official database comparison; acceptance pending. Three supplemental database guides added; no live lab or paid resource required. Next: Section 14 after submission of the Section 13 question. Full Sections 4–5 remain pending.
 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All notes are independently written; original examples are illustrative unless actual evidence is recorded.
 
