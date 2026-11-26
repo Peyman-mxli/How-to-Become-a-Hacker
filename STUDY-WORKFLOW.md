@@ -24,6 +24,10 @@ This is the English-only continuity guide for the independent HTB Academy study 
 7. Prioritize free tools and official documentation. Use the learner's Windows 11, PowerShell, Ubuntu WSL2 and Docker Desktop environment where relevant. Work only on owned or explicitly authorized systems and within the lab scope.
 8. Keep credentials, VPN profiles, private keys, sensitive logs, student records and restricted assessment answers out of public GitHub. Write independent explanations, not copies of course text; follow HTB publication rules.
 
+9. Explain every important technology introduced in a lesson in English first, followed by Farsi in chat. When the learner requests deeper coverage, create separate comprehensive English-only guides with definitions, architecture, configuration, commands, original examples, troubleshooting, risks and defenses, and project applications. Link them to the numbered lesson, module and root index. Do not count supplements as additional HTB lessons.
+
+Section 11 has three separate web server guides (Apache HTTP Server, NGINX and Microsoft IIS) in 05-Introduction-to-Web-Applications/Web-Servers/, with a comparison index. The checkpoint remains 75 documented lessons; Section 11 acceptance is pending.
+
 ## GitHub procedure after each lesson
 
 - Read the current repository and module indexes before writing.
