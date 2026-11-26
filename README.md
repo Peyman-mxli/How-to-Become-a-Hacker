@@ -93,3 +93,7 @@ Hack The Box owns its original course materials and branding. This independent p
 ---
 
 Maintained by [Peyman-mxli](https://github.com/Peyman-mxli). Started November 23, 2026.
+
+### Extended vulnerability research toolkit
+
+[Eight individual resource guides](05-Introduction-to-Web-Applications/Public-Vulnerabilities/Research-Resources/README.md) — CVE, NVD, SearchSploit, Rapid7, Vulnerability Lab, GitHub Advisories, CISA KEV and FIRST.
