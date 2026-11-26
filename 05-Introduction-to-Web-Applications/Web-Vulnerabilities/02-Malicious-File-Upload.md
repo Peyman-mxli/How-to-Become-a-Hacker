@@ -29,3 +29,44 @@ Image.open selects permitted decoders; dimensions bound pixel count; load decode
 Use benign fixtures on owned projects: a valid JPEG, a text document renamed .jpg, an oversized file, a malformed image, and a filename with multiple suffixes. Check that only valid content is stored and returned to authorized callers; no uploaded directory may execute scripts. Test rejection without malicious code. UniTrack visitor and credential photos and ProTrack-MX attachments need separate access policies, storage rules and size limits.
 
 References: [OWASP File Upload](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html), [Pillow](https://pillow.readthedocs.io/). No live tests performed.
+
+## Expanded terminology and validation reference
+
+| Term | Meaning |
+| --- | --- |
+| File extension | Filename suffix, such as .jpg |
+| MIME/media type | Declared format metadata |
+| File signature | Characteristic initial bytes; not proof of complete validity |
+| Double extension | Filename containing multiple suffixes |
+| Arbitrary file upload | Upload outside the intended policy |
+| Web root | Directory from which a web server serves public resources |
+| Web shell | Server-side script offering unauthorized remote management or command access |
+| File validation | Checking content, format, limits and policy |
+
+| Benign test fixture | Expected behavior for an image-only upload |
+| --- | --- |
+| Valid JPEG within limits | Accept, decode and re-encode |
+| Plain text named photo.jpg | Reject |
+| File with multiple suffixes | Reject or independently validate according to explicit policy |
+| Valid PDF | Reject if PDF is not allowed |
+| Corrupted PNG | Reject |
+| Image exceeding dimension/byte limits | Reject |
+
+A client-provided MIME type and an extension must not determine whether content is executed. Even a valid image can violate privacy or contain metadata. Storage must be non-executable and retrieval authorized.
+
+### Image example reference
+
+| Component | Purpose |
+| --- | --- |
+| pathlib.Path | Filesystem path representation |
+| uuid4 | Generate independent random identifier |
+| Pillow / PIL | Image decoder and processing library |
+| Image.open(formats=...) | Restrict allowed decoder formats |
+| image.width, image.height | Check decoded image dimensions |
+| image.load | Decode pixels |
+| ImageOps.exif_transpose | Correct orientation |
+| convert("RGB") | Normalize color mode |
+| thumbnail | Bound output dimensions |
+| save(format="JPEG") | Encode controlled output format |
+
+Treat decoder errors as invalid uploads without revealing internal paths. Keep private directory under service control; use safe write/cleanup behavior. Strip unnecessary metadata, apply byte quotas, and use content-disposition and content-type policies on download.
