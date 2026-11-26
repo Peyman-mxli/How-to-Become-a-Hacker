@@ -2,7 +2,7 @@
 
 This is the English-only continuity guide for the independent HTB Academy study portfolio. The root README and each module README are the authoritative progress records. Read them before resuming; the checkpoint below is a snapshot, not a substitute for current status.
 
-## Checkpoint — November 24, 2026
+## Checkpoint — November 25, 2026
 
 - Intro to Academy: 8/8 completed.
 - Learning Process: 20/20 completed.
@@ -30,6 +30,7 @@ This is the English-only continuity guide for the independent HTB Academy study 
 - Create one numbered English Markdown file per section, following the existing naming style (for example, 03-Linux-Fundamentals/30-Shortcuts.md).
 - For the current module, use 05-Introduction-to-Web-Applications/ and update its existing README after each lesson.
 - Include title, concepts, command/parameter explanations where relevant, additional original examples, security considerations, relevant official references, practice and verification status.
+- Document standalone required questions and their underlying concepts as well as full lessons, using independent examples and excluding restricted assessment answers. Link supplemental notes in the module index, and merge them into the numbered lesson when its full content is supplied.
 - Add links to the module README and update the root README progress/checkpoint after every lesson. Record verified achievements in achievements/README.md only when evidence is supplied.
 - For longer requested topics, create a separate English supplement in the relevant module folder and link it in the module index. Previous examples include Apache, VPN/OpenVPN, WSL setup, and network monitoring tools.
 - Use the connected GitHub tools to commit to main directly, preserving existing content. Confirm successful writes and provide links. If access fails, disclose that instead of claiming success.
@@ -41,4 +42,4 @@ Paste this instruction:
 
 Continue my HTB ethical hacking journey. Read STUDY-WORKFLOW.md and README.md in https://github.com/Peyman-mxli/How-to-Become-a-Hacker (main), then read the current module README and relevant prior lesson notes. Follow the documented study rules, explain every lesson in English and Farsi, and commit English-only notes with additional examples to GitHub after each lesson. No icons, emojis, review quizzes or unnecessary optional practice. Resume at the current checkpoint without repeating completed lessons.
 
-As of this checkpoint, Web Requests is complete. Introduction to Web Applications Sections 1–3 are documented; mark Section 3 complete in HTB and continue to Section 4 when supplied.
+As of this checkpoint, Web Requests is complete. Introduction to Web Applications Sections 1–3 are documented; a standalone HTML image-element question was covered in HTML-Image-Elements.md. Full Section 4 content and answer acceptance remain pending; continue when supplied.
