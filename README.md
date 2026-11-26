@@ -51,6 +51,7 @@ The roadmap is a personal study plan, not a claim of completed training or profe
 | [04 — Web Requests](04-Web-Requests/README.md) | HTTP fundamentals, cURL and web request techniques |
 | [05 — Introduction to Web Applications](05-Introduction-to-Web-Applications/README.md) | Web architecture, technologies and security fundamentals |
 | [JavaScript frameworks and libraries](05-Introduction-to-Web-Applications/06-JavaScript.md#individual-framework-and-library-guides) | Four separate Angular, React, Vue and jQuery guides with original examples and defensive considerations |
+| [Web server guides](05-Introduction-to-Web-Applications/Web-Servers/README.md) | Individual Apache, NGINX and IIS guides with original examples and defensive configuration |
 | [Linux cheatsheet](cheatsheets/linux-basics.md) | Commands actually practiced |
 | [Achievements](achievements/README.md) | Verified learning milestones |
 
