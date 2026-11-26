@@ -1,7 +1,7 @@
 # 05 — Introduction to Web Applications
 
 **Provider:** Hack The Box Academy | **Tier:** 0
-**Status:** In progress — 3/17 sections studied and documented
+**Status:** In progress — 4/17 full lessons studied and documented; reached Section 6
 **Started:** November 24, 2026 (learner local date)
 
 ## Lessons
@@ -11,7 +11,7 @@
 3. [Front End vs. Back End](03-Front-End-vs-Back-End.md) — theory documented; no mandatory questions.
 4. Section 4 — awaiting lesson.
 5. Section 5 — CSS text alignment question accepted (learner confirmed); full lesson pending.
-6. Section 6 — awaiting lesson.
+6. [JavaScript](06-JavaScript.md) — theory documented; question area not supplied.
 7. Section 7 — awaiting lesson.
 8. Section 8 — awaiting lesson.
 9. Section 9 — awaiting lesson.
@@ -36,7 +36,7 @@ Understand web application architecture, browser and backend responsibilities, c
 
 ## Current checkpoint
 
-Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Learner subsequently reached Section 5 and supplied a CSS text alignment question; the concept is documented. Section 5 answer acceptance is now confirmed by the learner after correcting declaration formatting. Full Sections 4–5 and Section 4 answer acceptance remain pending. Next: supply full lesson content or continue with the next required question.
+Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Learner subsequently reached Section 5 and supplied a CSS text alignment question; the concept is documented. Section 5 answer acceptance is now confirmed by the learner after correcting declaration formatting. Full Sections 4–5 and Section 4 answer acceptance remain pending. Learner advanced to Section 6; JavaScript theory documented, including DOM, AJAX and frameworks. Question area not supplied. Next: supply any Section 6 mandatory questions or continue to Section 7 if none. Full Sections 4–5 remain pending.
 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All notes are independently written; original examples are illustrative unless actual evidence is recorded.
 
