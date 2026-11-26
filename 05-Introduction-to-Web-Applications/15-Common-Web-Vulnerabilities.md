@@ -45,3 +45,82 @@ CVE means Common Vulnerabilities and Exposures; a CVE identifier names a publicl
 - [SQL injection](Web-Vulnerabilities/04-SQL-Injection.md)
 
 References: [OWASP Top 10](https://owasp.org/www-project-top-ten/), [OWASP Cheat Sheets](https://cheatsheetseries.owasp.org/), [CVE](https://www.cve.org/), [NVD](https://nvd.nist.gov/), [Red Hat Shellshock advisory](https://access.redhat.com/security/vulnerabilities/shellshock). Independently written notes; examples illustrative; no exploit reproduction or live testing.
+
+## 11. Expanded lesson reference
+
+### Terminology
+
+| Term | Meaning |
+| --- | --- |
+| Misconfiguration | Insecure settings or deployment choices |
+| Attack vector | Path by which a weakness can be reached |
+| Privilege escalation | Gaining permissions beyond intended scope |
+| Authentication bypass | Circumventing identity verification |
+| RCE | Remote code execution, a possible impact rather than a specific root cause |
+| PoC | Proof of concept demonstrating a claim |
+| Mitigation | Measure reducing risk |
+| Remediation | Correcting the underlying weakness |
+
+OWASP (Open Worldwide Application Security Project) is a nonprofit foundation offering community security resources. The [Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) provides testing methodology; the [Cheat Sheet Series](https://cheatsheetseries.owasp.org/) provides implementation advice.
+
+### Historical examples in the supplied course
+
+| Product and version named by HTB | Underlying issue | Potential consequence |
+| --- | --- | --- |
+| College Management System 1.2 | Unsafe SQL construction in login handling | Authentication bypass |
+| Responsive Thumbnail Slider 1.0 | Inadequate file type and handler restrictions | Unauthorized file upload or execution |
+| Plainview Activity Monitor 20161228 | Unsafe operating-system command construction | Unauthorized command execution |
+
+These are historical course examples, not current vulnerability findings or proof that another installation is affected. Exploit payloads are not reproduced.
+
+### Distinguishing security boundaries
+
+```text
+Untrusted input -> application -> browser rendering: XSS
+                               -> SQL interpreter: SQL injection
+                               -> OS command interpreter: command injection
+                               -> upload processor: unsafe file handling
+                               -> identity/permission checks: authentication or authorization failure
+```
+
+CSRF is different: a browser may send an unwanted request using an existing authenticated session. Use context-aware encoding for XSS and anti-CSRF tokens plus appropriate cookie policies for state-changing cookie-authenticated routes. See Sections 9 and 10 for more details.
+
+### Project comparison
+
+| Area | UniTrack | ProTrack-MX |
+| --- | --- | --- |
+| Authentication | Password hashing, session and MFA review | Supabase Auth and session handling |
+| Authorization | Student, teacher, worker, visitor and administrator boundaries | RLS, group membership and role policies |
+| Uploads | Visitor/profile photographs and credentials | Chat attachments, voice, video and room images |
+| Command execution | Review external tools and subprocess usage | Review backend functions and tools |
+| SQL | ORM/driver parameter binding | Safe SQL functions and scoped queries |
+| Dependencies | Python package review | npm package review |
+
+### CVE, CWE, CVSS and NVD
+
+CVE identifiers follow CVE-year-sequence format; the year identifies the record's numbering year and does not necessarily establish discovery date. CWE classifies underlying weaknesses. CVSS provides standardized severity metrics. The NVD is operated by NIST. Vendor security advisories document product-specific affected versions and fixes.
+
+| CWE | Weakness |
+| --- | --- |
+| CWE-78 | OS command injection |
+| CWE-79 | Cross-site scripting |
+| CWE-89 | SQL injection |
+| CWE-287 | Improper authentication |
+| CWE-352 | Cross-site request forgery |
+| CWE-434 | Unrestricted upload of file with dangerous type |
+| CWE-862 | Missing authorization |
+
+The common CVSS v3.x/v4.0 qualitative scale is None (0.0), Low (0.1–3.9), Medium (4.0–6.9), High (7.0–8.9), Critical (9.0–10.0). Always record the CVSS version; severity is not identical to organizational risk.
+
+### Shellshock — historical public research
+
+NVD and Red Hat identify CVE-2014-6271 as a GNU Bash parsing flaw involving function definitions conveyed in environment variables. Vulnerable parsing could cause unintended commands to run in certain contexts. Both records associate the issue with CWE-78. Consult the exact vendor package advisory rather than assuming upstream version numbers alone establish exposure.
+
+Sources checked November 26, 2026:
+- [NVD: CVE-2014-6271](https://nvd.nist.gov/vuln/detail/CVE-2014-6271)
+- [Red Hat: CVE-2014-6271](https://access.redhat.com/security/cve/cve-2014-6271)
+- [Red Hat Shellshock advisory](https://access.redhat.com/security/vulnerabilities/shellshock)
+- [CWE-78](https://cwe.mitre.org/data/definitions/78.html)
+- [FIRST CVSS](https://www.first.org/cvss/)
+
+The public classification is documented as general learning material; no separate assessment answer key, exploitation instructions or private lab data is included.
