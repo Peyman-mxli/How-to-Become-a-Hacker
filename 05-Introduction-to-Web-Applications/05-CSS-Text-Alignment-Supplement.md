@@ -26,6 +26,6 @@ For a multilingual application, the HTML dir attribute can specify text directio
 CSS is presentation, not authorization. Hiding or styling a protected control is not a substitute for server-side authorization. Never include private data in a page solely because CSS makes it invisible.
 
 ## Verification
-The learner supplied a standalone required CSS knowledge question identified as Section 5/17. The underlying concept was explained; no Pwnbox or live lab required. Full lesson content and answer acceptance have not been supplied. Examples are illustrative and were not executed. Section 4's full lesson also remains pending. No additional full section completion is claimed.
+The learner supplied a standalone required CSS knowledge question identified as Section 5/17. The underlying concept was explained; no Pwnbox or live lab required. The learner confirmed answer acceptance after including conventional declaration spacing and the terminating semicolon. Earlier formatting variants were rejected; the platform hint explicitly required the semicolon. The full lesson content has not been supplied. Examples are illustrative and were not executed. Section 4's full lesson also remains pending. No additional full section completion is claimed. The CSS knowledge question is confirmed accepted by the learner.
 
 Reference: [MDN — text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align).
