@@ -79,8 +79,11 @@ For a hypothetical school messaging interface, render plain-text messages using 
 ## Mandatory exercise
 The supplied lesson demonstrates displaying the JavaScript-readable cookie value locally in the assigned HTB training page. The exercise requires the actual target-specific value. The learner should use only the assigned lab instance, observe its local demonstration output and submit the value privately. No third-party account, external collection service or real user session is in scope. Do not publish the target address or cookie value.
 
+## Observed practical evidence (sanitized)
+The learner opened the assigned HTB instance in Chrome, selected the name-input button, entered the supplied training payload, and confirmed the prompt. The resulting browser alert displayed a cookie name-value pair. This demonstrates script execution and access to a JavaScript-readable lab cookie. To extract the requested value, distinguish the cookie name from the value following the first equals sign. Actual cookie contents and target address are redacted. No external data transfer or session reuse was attempted.
+
 ## Verification
-Section 9 theory documented; mandatory exercise pending. Target not yet supplied and no cookie value observed. Learner advanced from Section 8; individual acceptance was not separately shown. Full Sections 4–5 remain pending. Original examples are illustrative and unexecuted.
+Section 9 theory documented; mandatory lab output verified from learner screenshots. Cookie value identified; platform answer acceptance pending. Learner advanced from Section 8; individual acceptance was not separately shown. Full Sections 4–5 remain pending. Original examples are illustrative and unexecuted.
 
 ## References
 - [HTB Academy](https://academy.hackthebox.com/app/module/75)
