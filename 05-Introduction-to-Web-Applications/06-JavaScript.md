@@ -67,6 +67,24 @@ fetch sends a GET by default; await waits for the promise to resolve without blo
 
 The lesson groups them as frameworks in a broad sense; React and jQuery are more precisely libraries. TypeScript adds static type checking and is compiled to JavaScript. Frameworks do not automatically create secure authentication or authorization. Node.js is a runtime, not a frontend framework. Express is an example of a backend framework for Node.js.
 
+## Individual framework and library guides
+
+Read the four supplemental guides in order. Each explains architecture, core concepts, a comparable original attendance-counter example, expected behavior, use cases, security and official references.
+
+1. [Angular](JavaScript-Frameworks/01-Angular.md)
+2. [React](JavaScript-Frameworks/02-React.md)
+3. [Vue.js](JavaScript-Frameworks/03-Vue.md)
+4. [jQuery](JavaScript-Frameworks/04-jQuery.md)
+
+| Technology | Main approach | Typical fit |
+| --- | --- | --- |
+| Angular | Components, templates, signals and services | Structured applications |
+| React | JSX components and state | Interactive interfaces |
+| Vue | Reactive state and declarative templates | Progressive adoption and applications |
+| jQuery | Direct DOM manipulation and event handlers | Existing pages and targeted enhancements |
+
+All four are free and open-source. Examples are illustrative; no installations, execution or additional HTB completion are claimed.
+
 ## Security considerations
 Client-delivered JavaScript is inspectable, even when minified. Do not embed private API keys, passwords or privileged service credentials in browser bundles. Client-side input checks improve usability but do not replace server validation and authorization. Prefer safe DOM APIs such as textContent for plain text and context-appropriate sanitization when HTML is necessary. Review dependencies and apply an appropriate Content Security Policy (CSP); use integrity checks for suitable externally hosted static resources. Browser same-origin policy and CORS regulate cross-origin access but are not substitutes for API authorization.
 
