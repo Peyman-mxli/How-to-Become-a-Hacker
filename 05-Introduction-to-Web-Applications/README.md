@@ -100,3 +100,7 @@ Sections 1–3 studied and documented; learner advanced to Section 3. All three 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All notes are independently written; original examples are illustrative unless actual evidence is recorded.
 
 Source: [HTB Academy](https://academy.hackthebox.com/app/module/75).
+
+## Section 16 extended research resources
+
+[Eight vulnerability research resource tutorials](Public-Vulnerabilities/Research-Resources/README.md) — free installation where applicable, browser access, data download and terminal examples.
