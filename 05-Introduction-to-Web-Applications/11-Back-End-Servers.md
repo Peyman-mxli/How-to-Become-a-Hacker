@@ -34,6 +34,15 @@ Responses travel back through the appropriate components. This is an illustrativ
 
 PHP, C# and Java are languages, not frameworks. IIS means Internet Information Services. A reverse proxy receives requests on behalf of upstream services, and may terminate TLS. A database is not required for every static website.
 
+### Individual web server guides
+
+- [Apache HTTP Server](Web-Servers/01-Apache-HTTP-Server.md)
+- [NGINX](Web-Servers/02-NGINX.md)
+- [Microsoft IIS](Web-Servers/03-Microsoft-IIS.md)
+- [Comparison and reading index](Web-Servers/README.md)
+
+These English-only supplements expand architecture, configuration, commands, original local hosting examples, security, troubleshooting and project applications. They do not add HTB lesson credit or confirm exercise acceptance.
+
 ## 3. Common stacks
 
 | Stack | Operating environment | Web server | Data engine | Application technology |
