@@ -1,7 +1,7 @@
 # 05 — Introduction to Web Applications
 
 **Provider:** Hack The Box Academy | **Tier:** 0
-**Status:** In progress — 6/17 full lessons studied and documented; reached Section 8
+**Status:** In progress — 7/17 full lessons studied and documented; reached Section 9
 **Started:** November 24, 2026 (learner local date)
 
 ## Lessons
@@ -14,7 +14,7 @@
 6. [JavaScript](06-JavaScript.md) — theory documented; question area not supplied.
 7. [Sensitive Data Exposure](07-Sensitive-Data-Exposure.md) — theory documented; exposed-password retrieval verified from terminal output; answer acceptance pending.
 8. [HTML Injection](08-HTML-Injection.md) — theory and mandatory question reasoning documented; acceptance pending.
-9. Section 9 — awaiting lesson.
+9. [Cross-Site Scripting (XSS)](09-Cross-Site-Scripting-XSS.md) — theory documented; mandatory cookie exercise pending.
 10. Section 10 — awaiting lesson.
 11. Section 11 — awaiting lesson.
 12. Section 12 — awaiting lesson.
@@ -54,7 +54,7 @@ Understand web application architecture, browser and backend responsibilities, c
 
 ## Current checkpoint
 
-Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Learner subsequently reached Section 5 and supplied a CSS text alignment question; the concept is documented. Section 5 answer acceptance is now confirmed by the learner after correcting declaration formatting. Full Sections 4–5 and Section 4 answer acceptance remain pending. Learner advanced to Section 6; JavaScript theory documented, including DOM, AJAX and frameworks. Question area not supplied. Learner advanced to Section 7; sensitive data exposure theory documented. Learner retrieved the exposed credential from an HTML comment using cURL against the assigned Section 7 target. Learner advanced to Section 8; Section 7 acceptance was not separately shown. HTML Injection theory and mandatory answer reasoning documented from supplied code; no live test performed. Next: confirm Section 8 answer acceptance and continue to Section 9. Full Sections 4–5 remain pending.
+Sections 1–3 studied and documented; learner advanced to Section 3. All three supplied lessons have no mandatory questions. Section 3 covers frontend/backend development, assessment approaches, security mistakes and OWASP Top 10 (2021). No lab execution or separate platform completion confirmation. A standalone HTML image-element question was subsequently covered; acceptance and its section number were not supplied. Learner subsequently reached Section 5 and supplied a CSS text alignment question; the concept is documented. Section 5 answer acceptance is now confirmed by the learner after correcting declaration formatting. Full Sections 4–5 and Section 4 answer acceptance remain pending. Learner advanced to Section 6; JavaScript theory documented, including DOM, AJAX and frameworks. Question area not supplied. Learner advanced to Section 7; sensitive data exposure theory documented. Learner retrieved the exposed credential from an HTML comment using cURL against the assigned Section 7 target. Learner advanced to Section 8; Section 7 acceptance was not separately shown. HTML Injection theory and mandatory answer reasoning documented from supplied code; no live test performed. Learner advanced to Section 9; Section 8 acceptance was not separately shown. XSS theory documented; mandatory lab cookie value not yet observed. Next: spawn assigned Section 9 target and complete the exercise. Full Sections 4–5 remain pending.
 
 Follow the [permanent study workflow](../STUDY-WORKFLOW.md). All notes are independently written; original examples are illustrative unless actual evidence is recorded.
 
