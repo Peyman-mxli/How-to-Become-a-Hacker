@@ -53,7 +53,8 @@ The roadmap is a personal study plan, not a claim of completed training or profe
 | [05 — Introduction to Web Applications](05-Introduction-to-Web-Applications/README.md) | Web architecture, technologies and security fundamentals |
 | [06 — JavaScript Deobfuscation](06-JavaScript-Deobfuscation/README.md) | JavaScript analysis, obfuscation, decoding and defensive investigation |
 | [Browser source inspection guide](06-JavaScript-Deobfuscation/Tools/01-Browser-Source-Inspection.md) | Browser DevTools, cURL, setup and troubleshooting |
-| [JavaScript Obfuscator reference](06-JavaScript-Deobfuscation/Tools/02-JavaScript-Obfuscator.md) | Local setup, architecture, harmless example and troubleshooting |
+| [JavaScript Obfuscator reference](06-JavaScript-Deobfuscation/Tools/02-JavaScript-Obfuscator.md) | Official downloads, Windows/WSL2 setup, architecture, harmless example and troubleshooting |
+| [BeautifyTools JavaScript Obfuscator](06-JavaScript-Deobfuscation/Tools/03-BeautifyTools-JavaScript-Obfuscator.md) | Online access, usage, example and troubleshooting |
 | [JavaScript frameworks and libraries](05-Introduction-to-Web-Applications/06-JavaScript.md#individual-framework-and-library-guides) | Four separate Angular, React, Vue and jQuery guides with original examples and defensive considerations |
 | [Next Steps and secure development roadmap](05-Introduction-to-Web-Applications/17-Next-Steps.md) | Module recap, local reference application and recommended continuation |
 | [Public vulnerability research guides](05-Introduction-to-Web-Applications/Public-Vulnerabilities/README.md) | CVSS metrics, vulnerability research and remediation |
