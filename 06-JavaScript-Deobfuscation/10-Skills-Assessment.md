@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 10/11
 
-**Status:** Assessment in progress. Five required questions; no assessment answers verified yet. The previous Section 9 flag was recovered from learner terminal evidence; separate platform acceptance not supplied.
+**Status:** Assessment in progress. Five required questions; Question 1 answer identified from learner terminal evidence; submission acceptance pending. The previous Section 9 flag was recovered from learner terminal evidence; separate platform acceptance not supplied.
 
 ## Objective
 
@@ -42,4 +42,4 @@ Before considering execution, inspect the script as text and identify side effec
 
 ## Assessment checkpoint
 
-Question 1 pending: retrieve HTML and identify the actual external JavaScript filename. Questions 2–5 pending. Public documentation records general methodology and progress only; no private lab addresses, actual filenames, flags, secret keys or assessment-specific answer sequence will be published. No execution or platform acceptance claimed.
+Question 1: actual HTML retrieved by learner using cURL, and the external JavaScript filename identified from the script src attribute. Exact filename redacted. Submission acceptance not separately confirmed. Question 2 next: retrieve the referenced script as text and inspect its behavior before considering execution. Questions 3–5 pending. Public documentation records general methodology and progress only; no private lab addresses, actual filenames, flags, secret keys or assessment-specific answer sequence will be published. No execution or platform acceptance claimed.
