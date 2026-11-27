@@ -24,7 +24,8 @@ Recommended prerequisite: Web Requests (completed).
 
 - [Browser source inspection, DevTools and cURL](Tools/01-Browser-Source-Inspection.md) — setup, architecture, commands, examples, troubleshooting and defensive practices.
 
-- [JavaScript Obfuscator reference](Tools/02-JavaScript-Obfuscator.md) — local installation, architecture, harmless example and troubleshooting.
+- [JavaScript Obfuscator reference](Tools/02-JavaScript-Obfuscator.md) — official download links, Windows/WSL2 installation, architecture, harmless example and troubleshooting.
+- [BeautifyTools JavaScript Obfuscator](Tools/03-BeautifyTools-JavaScript-Obfuscator.md) — official online access, controls, example and troubleshooting; no standalone installer verified.
 
 ## Learning objectives
 
