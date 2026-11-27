@@ -5,7 +5,7 @@ This is the English-only continuity guide for the independent HTB Academy study 
 ## Active checkpoint — November 26, 2026
 
 - Current module: 06 — JavaScript Deobfuscation (11 sections; Easy). Section 1 Introduction studied and documented using the actual learner-supplied HTB lesson and earlier preview. No mandatory question or practical exercise; +15 reward displayed, completion not yet confirmed. English/Farsi in chat was explicitly requested for this section only; repository remains English and default chat language remains English.
-- Learner advanced to Section 2 Source Code (Section 1 completion not separately confirmed). Section 2 theory and supplemental browser source inspection guide documented in English. One mandatory flag question; initial cURL command prescribed, response and submission pending. Next action: inspect learner output, extract flag if supported, document sanitized methodology and verify acceptance. Do not repeat completed modules.
+- Learner advanced to Section 2 Source Code (Section 1 completion not separately confirmed). Section 2 theory and supplemental browser source inspection guide documented in English. One mandatory flag question; flag retrieval verified from learner cURL output and sanitized methodology documented. Next action: learner submits the extracted flag and confirms acceptance. Do not repeat completed modules.
 - Totals: five completed modules, 83 confirmed platform sections, 83 full lesson notes. Two prior partial documentation entries remain.
 - Module index: [06-JavaScript-Deobfuscation/README.md](06-JavaScript-Deobfuscation/README.md).
 - Official source: https://academy.hackthebox.com/course/preview/javascript-deobfuscation
