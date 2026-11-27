@@ -8,7 +8,7 @@ Recommended prerequisite: Web Requests (completed).
 
 ## Lessons
 
-1. [Introduction](01-Introduction.md) — theory documented from the official public introduction; no mandatory question visible in preview; platform completion pending.
+1. [Introduction](01-Introduction.md) — theory documented and expanded from the learner-supplied HTB Section 1; no mandatory question; platform completion pending.
 2. Source Code — pending.
 3. Code Obfuscation — pending.
 4. Basic Obfuscation — pending.
@@ -26,7 +26,7 @@ Locate JavaScript in web applications, distinguish obfuscation from encoding, en
 
 ## Current checkpoint
 
-Section 1 introduction documented with original examples, analysis terminology, static-first methodology, existing free tools and defensive recommendations for UniTrack and ProTrack-MX. No lab or new installation performed. No separate mandatory question visible in the public preview. Await learner's signed-in checkpoint; next lesson is Section 2, Source Code. Across the portfolio: five completed modules, 83 confirmed platform sections, 82 full lesson notes (including this introduction); two prior partial lessons remain documentation gaps.
+Section 1 introduction documented with original examples, analysis terminology, static-first methodology, existing free tools and defensive recommendations for UniTrack and ProTrack-MX. No lab or new installation performed. Learner supplied the actual Section 1 text and +15 reward indicator; no mandatory question or exercise is present. The reward is not yet verified as earned. Await learner's signed-in checkpoint; next lesson is Section 2, Source Code. Across the portfolio: five completed modules, 83 confirmed platform sections, 82 full lesson notes (including this introduction); two prior partial lessons remain documentation gaps.
 
 Follow the [study workflow](../STUDY-WORKFLOW.md). Supplements will be linked as relevant technologies are introduced. Do not publish private lab identifiers, credentials or restricted answers.
 
