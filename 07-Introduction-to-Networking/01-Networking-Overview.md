@@ -85,5 +85,285 @@ Ubuntu WSL2: ip -br address (brief addresses), ip route (routes), ip route get 1
 
 References: [DNS RFC 1034](https://www.rfc-editor.org/rfc/rfc1034), [URI syntax RFC 3986](https://www.rfc-editor.org/rfc/rfc3986), [CIDR RFC 4632](https://www.rfc-editor.org/rfc/rfc4632).
 
+## Expanded technical reference
+
+### Network components and communication
+
+| Component | Detailed function | Original example |
+| --- | --- | --- |
+| Host | A device participating in a network | Laptop or scanner |
+| NIC | Physical or virtual network interface | Ethernet or WSL2 virtual adapter |
+| Client | Requests a service | Browser requesting a student portal |
+| Server | Provides a service | UniTrack backend |
+| Switch | Learns source MAC addresses and forwards Ethernet frames on a local network | Office switch |
+| Router | Selects a next hop for IP packets using its routing table | Connects campus subnets |
+| Gateway | Next hop for traffic to other networks | Home router |
+| Access point | Connects wireless clients to a network | Campus Wi-Fi |
+| Firewall | Enforces communication policies | Allows HTTPS to a public service |
+| DNS resolver | Resolves DNS names and records | Looks up an application hostname |
+| ISP | Internet Service Provider | Broadband provider |
+
+A home router frequently combines routing, switching, wireless access, DHCP, NAT and firewall functions. These are distinct roles even when implemented in one appliance. A MAC address identifies a link-layer interface, an IP address is a logical network address, and a TCP/UDP port identifies a transport endpoint. Routers normally replace link-layer framing at each hop. Understanding these distinctions helps identify silent failures during security assessments.
+
+### Physical and logical topology diagrams
+
+```mermaid
+flowchart TD
+    S[Central switch] --- A[Computer]
+    S --- B[Laptop]
+    S --- C[Printer]
+    S --- D[Server]
+```
+
+Star topology: a failed endpoint usually affects itself, but the central switch can be a single point of failure.
+
+```mermaid
+flowchart TD
+    A[Node A] --- B[Node B]
+    A --- C[Node C]
+    A --- D[Node D]
+    B --- C
+    B --- D
+    C --- D
+```
+
+Full mesh topology: each node has a direct link to every other node. Partial mesh provides selected redundant paths. Greater resilience comes with increased management and routing complexity.
+
+```mermaid
+flowchart TD
+    C[Core] --- A[Distribution A]
+    C --- B[Distribution B]
+    A --- E[Access A1]
+    A --- F[Access A2]
+    B --- G[Access B1]
+    B --- H[Access B2]
+```
+
+Tree topology: hierarchical branches improve organization and scalability, while failures in upstream devices may affect downstream branches. Physical and logical topology may differ.
+
+### Communication media and protocol comparisons
+
+| Medium | Signal | Application | Security consideration |
+| --- | --- | --- | --- |
+| Twisted-pair copper Ethernet | Electrical | Office endpoints | Protect physical ports; consider interference and distance |
+| Optical fiber | Light | Building backbone | High capacity and electrical isolation; physical protection still necessary |
+| Coaxial | Electrical | Cable broadband and legacy networks | Shielding and shared infrastructure |
+| Wireless | Radio waves | Mobile clients | Shared radio medium; strong authentication and encryption |
+
+Ethernet can also operate over optical fiber.
+
+| Protocol | Full name | Example | Security consideration |
+| --- | --- | --- | --- |
+| TCP | Transmission Control Protocol | HTTPS over TCP | Reliability does not mean encryption |
+| UDP | User Datagram Protocol | DNS queries and voice | No built-in delivery or ordering guarantee |
+| IP | Internet Protocol | Routing | Addressing does not authenticate senders |
+| IPX | Internetwork Packet Exchange | Historical NetWare | Legacy, not ordinary modern internet routing |
+| DHCP | Dynamic Host Configuration Protocol | Automatic IP assignment | Unauthorized servers may misdirect clients |
+| DNS | Domain Name System | Hostname resolution | DNS results alone do not establish application authenticity |
+| HTTP | Hypertext Transfer Protocol | Web requests | Plain HTTP lacks TLS |
+| HTTPS | HTTP over TLS | Secure portals | Verify certificates; encryption does not replace authorization |
+
+### Flat versus segmented networks
+
+```mermaid
+flowchart TD
+    SW[Shared switch] --- P[Printer]
+    SW --- W[Workstation]
+    SW --- D[Database]
+    SW --- A[Admin PC]
+```
+
+A flat network is operationally convenient but can permit unnecessary reachability. A switch alone does not establish the full security policy; host firewalls and port isolation may still reduce access.
+
+```mermaid
+flowchart TD
+    FW[Router and firewall]
+    FW --- P[Printer VLAN 10]
+    FW --- W[Student VLAN 20]
+    FW --- D[Database VLAN 30]
+    FW --- A[Management VLAN 40]
+```
+
+Segmenting Layer 2 broadcast domains with VLANs and Layer 3 networks with subnets permits deliberate enforcement of inter-zone traffic policies. Segmentation is not encryption. Traffic within a VLAN may bypass inter-zone firewalls. Defense in depth combines segmentation, host policies, authentication, logging and secure service configuration.
+
+| House analogy | Security concept | Example investigation |
+| --- | --- | --- |
+| Fence and controlled gates | ACLs/firewalls | Why does a printer initiate HTTP toward an internal server? |
+| Lights | Inventory, documentation and monitoring | Why is a printer contacting the internet? |
+| Window deterrents | IDS/IPS | Why does a printer generate unusual connection attempts? |
+
+These are investigation prompts, not additional exercises. Unexpected traffic may have legitimate explanations; compare against the documented baseline before declaring compromise. Record asset owner, purpose, VLAN, subnet, DHCP assignment, allowed destinations, protocols and change approvals. Place IDS sensors where relevant traffic is visible. An IDS alerts; an inline IPS may block. Suricata and Snort both support rule-based detection and offline packet-capture analysis. Encrypted traffic and sensor placement limit visibility.
+
+### Worked IPv4 subnet calculations
+
+IPv4 has 32 bits, represented by four eight-bit octets. CIDR prefix length is the number of network bits. For ordinary broadcast subnets with h host bits, total addresses = 2^h and conventional usable hosts = 2^h - 2. /31 and /32 have special semantics.
+
+```text
+/24  11111111.11111111.11111111.00000000
+/25  11111111.11111111.11111111.10000000
+```
+
+The additional network bit in /25 has decimal value 128, producing two blocks of 128 addresses.
+
+| Property | Original /24 | First /25 | Second /25 |
+| --- | --- | --- | --- |
+| Network | 10.20.0.0 | 10.20.0.0 | 10.20.0.128 |
+| Mask | 255.255.255.0 | 255.255.255.128 | 255.255.255.128 |
+| First host | 10.20.0.1 | 10.20.0.1 | 10.20.0.129 |
+| Last host | 10.20.0.254 | 10.20.0.126 | 10.20.0.254 |
+| Broadcast | 10.20.0.255 | 10.20.0.127 | 10.20.0.255 |
+| Total addresses | 256 | 128 | 128 |
+| Usable hosts | 254 | 126 | 126 |
+
+```mermaid
+flowchart TD
+    R[Inter-network routing and policy]
+    R --- SG[Server gateway 10.20.0.1/25]
+    R --- CG[Client gateway 10.20.0.129/25]
+    SG --- DC[Domain controller 10.20.0.10/25]
+    CG --- WS[Workstation 10.20.0.200/25]
+    CG --- PT[Tester 10.20.0.252 incorrect /24]
+```
+
+| Field | Incorrect | Expected in the illustrated client network |
+| --- | --- | --- |
+| Host IP | 10.20.0.252 | 10.20.0.252 |
+| Prefix | /24 | /25 |
+| Mask | 255.255.255.0 | 255.255.255.128 |
+| Gateway | 10.20.0.1 | 10.20.0.129 |
+
+The destination .10 and tester .252 share the first 24 bits but not the first 25 bits. With /24 the tester believes .10 is on-link. With /25 the host normally selects a route via an appropriate gateway. ARP (Address Resolution Protocol) resolves local IPv4 next-hop addresses to link-layer addresses. Correct routing does not override ACLs or guarantee a service is reachable.
+
+Professional assessment methodology: confirm the assigned scope and configuration; inspect addresses, routes and gateway; distinguish DNS, local link, routing, firewall and service failures; document evidence and uncertainty. Report "unreachable from this vantage point" rather than "offline" when availability is not established. In the lesson, reaching a workstation using Impacket did not establish complete coverage. Never change production configuration without authorization.
+
+### End-to-end web request
+
+```mermaid
+flowchart TD
+    Phone[Smartphone] --- HR[Home router]
+    Laptop[Laptop] --- HR
+    PC[Computer] --- HR
+    HR --- ISP[ISP and Internet]
+    ISP -. DNS lookup .- DNS[DNS resolver]
+    ISP --- CF[Company router and firewall]
+    CF --- SW[Company switch]
+    SW --- WEB[Web server]
+    SW --- WS[Client hosts]
+    SW --- VOICE[IP phone]
+    SW --- PRINT[Printer]
+```
+
+This original diagram illustrates the lesson's home/company architecture, not the recommended secure design.
+
+1. The user enters a URL.
+2. The browser parses the scheme, hostname, path and query.
+3. The resolver obtains an IP address if not already cached.
+4. The operating system selects the route and next hop.
+5. Local link-layer delivery reaches the router when needed.
+6. Routers forward IP packets across interconnected networks.
+7. For HTTPS, TLS protects the HTTP exchange; HTTP/3 uses QUIC over UDP.
+8. The server processes the request and returns a response, potentially over a different route.
+9. The browser renders the content.
+
+| Postal analogy | Networking equivalent | Limitation |
+| --- | --- | --- |
+| Building address | FQDN | DNS names need not identify one physical building |
+| Floor and mailbox | URL path and query | Application interprets parameters |
+| Address book | DNS | Maps names to records, not precise geography |
+| Local post office | Router | Uses a routing table |
+| Postal network | ISP and internet | Traffic may traverse many networks |
+| Return address | Source IP | NAT or proxies may change the visible address |
+
+Original URL: `https://portal.example.com/students?id=17`. The scheme is https, the FQDN is portal.example.com, the path is /students and query is id=17. HTTPS normally uses default port 443. The URL is not itself an FQDN; the FQDN is one component. A hostname may resolve to multiple addresses. DNS need not be provided by the ISP, and an IP address is not an exact geographic coordinate.
+
+### Secure enterprise design
+
+```mermaid
+flowchart TD
+    I[Internet] --> F[Firewall and policy enforcement]
+    F --> DMZ[Public web DMZ]
+    F --> W[Workstations]
+    F --> A[Administration]
+    F --> V[Voice]
+    F --> P[Printers]
+    F --> DB[Optional database zone]
+```
+
+DMZ: permit only intended public services, protect backend resources from a compromised public host. Workstations: host firewalls restrict peer communication. Administration: isolate management-plane access; allow only authorized management hosts and secure protocols. OSPF (Open Shortest Path First) exchanges link-state routing data; unexpected routing advertisements can change paths if untrusted adjacencies are permitted. Restrict routing interfaces and authenticate neighbors where supported. Voice: VoIP (Voice over Internet Protocol) carries voice communications; QoS (Quality of Service) helps prioritize latency-sensitive traffic but does not encrypt or authenticate it. Printers: restrict unsolicited outbound and lateral traffic, protect stored job data, update firmware, change default credentials and verify procurement. The extra database zone is an original extension.
+
+| Source | Destination | Service | Policy example |
+| --- | --- | --- | --- |
+| Internet | DMZ web proxy | HTTPS 443 | Allow published service |
+| Student | Application | HTTPS 443 | Allow authorized access |
+| Student | Database | Any | Deny direct access |
+| Backend | Database | PostgreSQL 5432 if applicable | Allow approved application path only |
+| Administration | Router/switch | Approved SSH or HTTPS | Allow authorized management hosts |
+| Print server | Printer | Required printing protocol | Allow documented flow |
+| Printer | Internet | Any | Deny by default; approve necessary exceptions |
+| Printer | Workstation | New unsolicited connections | Deny |
+| Scanner | Approved mail server | Configured mail submission | Allow only if required |
+
+A reverse shell is an outbound connection providing remote command access. The supplied printer case illustrates trusted-looking hardware and social engineering risk. The relevant mitigations are procurement verification, inventory, quarantine, egress filtering, restricted authentication exposure and monitoring. SMB commonly uses TCP 445. Restrict unnecessary workstation-to-printer SMB, but validate legitimate print-management dependencies. NTLMv2 challenge-response data is not a plaintext password; it may create offline guessing or relay risk under certain conditions. Spoofing impersonates another identity or address; a man-in-the-middle/on-path attack interferes with communications. Authentication, encryption and segmentation are complementary defenses.
+
+### Command reference and output interpretation
+
+Windows PowerShell (built in):
+```powershell
+ipconfig /all
+route print -4
+Resolve-DnsName example.com
+```
+The first displays detailed adapter configuration; /all includes subnet mask, gateway, DHCP and DNS. The second displays IPv4 routing entries; -4 selects IPv4. The third resolves DNS records for the given name.
+
+Ubuntu WSL2:
+```bash
+ip -br address
+ip route
+ip route get 192.0.2.25
+getent ahosts example.com
+```
+-br produces brief interface/address output; ip route displays the routing table; route get calculates the selected route without transmitting a probe; getent consults the system name service.
+
+Illustrative fabricated Linux output, not actual learner evidence:
+```text
+eth0    UP    192.168.1.50/24
+default via 192.168.1.1 dev eth0
+192.0.2.25 via 192.168.1.1 dev eth0 src 192.168.1.50
+```
+The first line shows interface, link state and CIDR address; the second shows the default next hop and interface; the third gives the chosen route and source address for a documentation-only IP. Check unexpected prefixes, missing default routes, virtual adapters and resolver errors. WSL2 NAT and mirrored networking can differ from Windows host networking. Redact sensitive actual network output before public publication. No additional exercise is required.
+
+### Original project architecture
+
+```mermaid
+flowchart TD
+    S[Student or guest zone] --> API[HTTPS application entry point]
+    Q[Access-control scanner zone] --> API
+    A[Authorized administration zone] --> API
+    API --> DB[Private database]
+```
+
+UniTrack proposal: allow scanners to contact only required API services, authenticate scanner requests, enforce server-side authorization, limit administrative access and protect student data. Network isolation does not replace QR validation, role checks, session security or audit logs.
+
+ProTrack-MX proposal: clients reach an approved cloud API via TLS; authenticated users obtain appropriately scoped access; Supabase row-level security protects student and teacher records; service-role credentials remain on trusted backends. Do not assume a managed cloud service offers arbitrary VLAN configuration. Both are original design recommendations, not confirmed vulnerabilities or descriptions of existing deployments.
+
+### Official standards and learning references
+
+- [TCP RFC 9293](https://www.rfc-editor.org/rfc/rfc9293)
+- [UDP RFC 768](https://www.rfc-editor.org/rfc/rfc768)
+- [IPv4 RFC 791](https://www.rfc-editor.org/rfc/rfc791)
+- [ARP RFC 826](https://www.rfc-editor.org/rfc/rfc826)
+- [DHCP RFC 2131](https://www.rfc-editor.org/rfc/rfc2131)
+- [HTTP semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110)
+- [TLS 1.3 RFC 8446](https://www.rfc-editor.org/rfc/rfc8446)
+- [OSPFv2 RFC 2328](https://www.rfc-editor.org/rfc/rfc2328)
+- [NIST firewall guidance](https://csrc.nist.gov/pubs/sp/800/41/r1/final)
+- [Suricata downloads](https://suricata.io/download/) and [documentation](https://docs.suricata.io/)
+- [Snort downloads](https://www.snort.org/downloads) and [documentation](https://docs.snort.org/)
+- [Impacket source](https://github.com/fortra/impacket) and [releases](https://github.com/fortra/impacket/releases)
+
+## Documentation coverage
+
+All substantive chat concepts are retained in independent English explanations. Interactive diagrams are represented using original GitHub-compatible Mermaid source, with static subnet tables and worked calculations. Five separate technology guides complement the lesson. All example output is illustrative unless explicitly marked as observed; the original course prose is not copied verbatim. There are no mandatory questions or required installations in this section.
+
 ## Verification
 Full learner-supplied Section 1 studied and documented. No mandatory question or lab shown. +10 reward displayed, not yet verified as earned. No tool installed or executed by learner. Next: Mark Complete & Next in Academy; await next section and completion evidence.
