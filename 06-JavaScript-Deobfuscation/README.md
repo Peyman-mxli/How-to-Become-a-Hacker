@@ -9,7 +9,7 @@ Recommended prerequisite: Web Requests (completed).
 ## Lessons
 
 1. [Introduction](01-Introduction.md) — theory documented and expanded from the learner-supplied HTB Section 1; no mandatory question; platform completion pending.
-2. [Source Code](02-Source-Code.md) — theory documented; mandatory flag question pending learner output.
+2. [Source Code](02-Source-Code.md) — theory documented; mandatory flag retrieval verified from learner terminal output; submission acceptance pending.
 3. Code Obfuscation — pending.
 4. Basic Obfuscation — pending.
 5. Advanced Obfuscation — pending.
@@ -30,7 +30,7 @@ Locate JavaScript in web applications, distinguish obfuscation from encoding, en
 
 ## Current checkpoint
 
-Section 1 introduction documented with original examples, analysis terminology, static-first methodology, existing free tools and defensive recommendations for UniTrack and ProTrack-MX. No lab or new installation performed. Learner supplied the actual Section 1 text and +15 reward indicator; no mandatory question or exercise is present. The reward is not yet verified as earned. Learner advanced to Section 2; Section 1 completion not separately confirmed. Section 2 theory documented, including HTML, CSS, JavaScript, source inspection, sensitive comments and original examples. Mandatory flag question pending; initial static cURL inspection prescribed, output not yet supplied. Across the portfolio: five completed modules, 83 confirmed platform sections, 83 full lesson notes; two prior partial lessons remain documentation gaps.
+Section 1 introduction documented with original examples, analysis terminology, static-first methodology, existing free tools and defensive recommendations for UniTrack and ProTrack-MX. No lab or new installation performed. Learner supplied the actual Section 1 text and +15 reward indicator; no mandatory question or exercise is present. The reward is not yet verified as earned. Learner advanced to Section 2; Section 1 completion not separately confirmed. Section 2 theory documented, including HTML, CSS, JavaScript, source inspection, sensitive comments and original examples. Mandatory flag retrieved from an HTML comment in the assigned page, as verified in learner terminal output. Sanitized extraction methodology documented; submission acceptance pending. Across the portfolio: five completed modules, 83 confirmed platform sections, 83 full lesson notes; two prior partial lessons remain documentation gaps.
 
 Follow the [study workflow](../STUDY-WORKFLOW.md). Supplements will be linked as relevant technologies are introduced. Do not publish private lab identifiers, credentials or restricted answers.
 
