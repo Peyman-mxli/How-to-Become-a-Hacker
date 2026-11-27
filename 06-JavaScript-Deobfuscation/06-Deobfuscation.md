@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 6/11 | **Date:** November 26, 2026
 
-**Status:** Theory documented from learner-supplied HTB lesson. One mandatory flag question; live lab file and answer pending learner output. Displayed rewards +15 section and +30 question are not verified as earned. No tool installation or unknown-script execution claimed.
+**Status:** Theory documented from learner-supplied HTB lesson. One mandatory flag question; live lab response and static flag reconstruction verified from learner terminal output; HTB answer acceptance pending. Displayed rewards +15 section and +30 question are not verified as earned. No tool installation or unknown-script execution claimed.
 
 ## 1. Beautification, deobfuscation and reverse engineering
 
@@ -140,7 +140,7 @@ Question: recover the flag by deobfuscating secret.js from the assigned HTB lab.
 ~~~bash
 curl -fsS 'http://SERVER_IP:PORT/secret.js'
 ~~~
--f fails on HTTP error statuses, -s suppresses progress and ordinary error messages, -S restores errors with -s. Replace placeholder with the active assigned host and port. cURL retrieves response text and does not execute JavaScript. Inspect the returned wrapper, payload and dictionary; reconstruct the relevant string using evidence. Do not assume the lesson demonstration flag is the active lab answer. Do not send a POST to the demonstrated endpoint because the question does not require it. If curl fails, verify the lab timer, exact address and authorized connectivity. No actual lab response or submission is yet verified. Public notes omit the target address and assessment answer.
+-f fails on HTTP error statuses, -s suppresses progress and ordinary error messages, -S restores errors with -s. Replace placeholder with the active assigned host and port. cURL retrieves response text and does not execute JavaScript. Inspect the returned wrapper, payload and dictionary; reconstruct the relevant string using evidence. Do not assume the lesson demonstration flag is the active lab answer. Do not send a POST to the demonstrated endpoint because the question does not require it. If curl fails, verify the lab timer, exact address and authorized connectivity. The actual lab response and static reconstruction are now verified from learner-supplied terminal output; submission acceptance is not yet verified. Public notes omit the target address and assessment answer.
 
 ## References
 
@@ -152,4 +152,54 @@ curl -fsS 'http://SERVER_IP:PORT/secret.js'
 - https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
 
-Learner advanced to Section 6; Section 5 completion not separately confirmed. Next action: obtain actual secret.js output and recover flag, then update verified methodology.
+Learner advanced to Section 6; Section 5 completion not separately confirmed. Next action: learner submits the reconstructed flag and confirms acceptance.
+
+## 9. Verified practical exercise evidence
+
+The learner supplied the actual terminal response from the assigned secret.js resource after retrieving it with cURL in Ubuntu WSL2. It contained a dictionary-based wrapper with 17 entries. The assessment-specific string is deliberately redacted from public documentation; no target address is published.
+
+Observed packed program structure (token representation):
+
+```text
+g 4(){0 5="6{7!}";0 1=8 a();0 2="/9.c";1.d("e",2,f);1.b(3)}
+```
+
+The dictionary is split on the pipe character using split('|'). Indices are zero-based and the wrapper uses toString(36) for the tokens. The observed mapping, sanitized:
+
+| Decimal index | Base-36 token | Dictionary value |
+| --- | --- | --- |
+| 0 | 0 | var |
+| 1 | 1 | xhr |
+| 2 | 2 | url |
+| 3 | 3 | null |
+| 4 | 4 | generateSerial |
+| 5 | 5 | flag |
+| 6 | 6 | HTB |
+| 7 | 7 | [ASSESSMENT VALUE REDACTED] |
+| 8 | 8 | new |
+| 9 | 9 | serial |
+| 10 | a | XMLHttpRequest |
+| 11 | b | send |
+| 12 | c | php |
+| 13 | d | open |
+| 14 | e | POST |
+| 15 | f | true |
+| 16 | g | function |
+
+The packed declaration uses tokens 0, 5, 6 and 7. The punctuation in the packed text is literal: braces and the exclamation mark must be retained when extracting the actual value. The dictionary entry at index 7 is leetspeak (digits substitute for letters); its precise text and decoded message are excluded from the public repository. Static substitution of the observed tokens established the exact flag in the private study conversation. No wrapper execution or online submission of code was required.
+
+Reconstructed function, with assessment value redacted:
+
+```javascript
+function generateSerial() {
+    var flag = "[ASSESSMENT FLAG REDACTED]";
+    var xhr = new XMLHttpRequest();
+    var url = "/serial.php";
+    xhr.open("POST", url, true);
+    xhr.send(null);
+}
+```
+
+The original declaration uses var; the reconstruction adds formatting and equivalent constructor parentheses. The function prepares an asynchronous POST request to /serial.php without an explicit body, if called. No POST request was necessary or performed for this assessment. A declaration does not execute its function body.
+
+Security conclusion: client-delivered obfuscated JavaScript remains inspectable. Do not store actual secrets in it; enforce privileged operations on the server. The flag is intentionally included for this training exercise. Source retrieval and manual reconstruction are verified from the supplied evidence; acceptance, reward and platform completion remain pending.
