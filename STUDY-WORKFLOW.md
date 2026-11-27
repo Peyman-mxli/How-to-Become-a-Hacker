@@ -36,6 +36,8 @@ This is the English-only continuity guide for the independent HTB Academy study 
 
 9. Explain every important technology introduced in a lesson in English only in chat. For important technologies and tools introduced in each lesson, create separate comprehensive English-only guides with definitions, architecture, configuration, commands, original examples, troubleshooting, risks and defenses, and project applications. Link them to the numbered lesson, module and root index. Provide official download links, installation and run instructions, troubleshooting, and explicit project applications where relevant. Connect lessons to UniTrack and ProTrack-MX without asserting unverified vulnerabilities. Do not count supplements as additional HTB lessons. Before finalizing each lesson, compare the GitHub notes and supplements against the full chat explanation: preserve all substantive definitions, concepts, comparisons, command and code explanations, original examples, security controls, project applications, and references. Use static Markdown diagrams or tables for interactive chat material where appropriate. Do not substitute a short summary for the complete study material; omit private lab identifiers, credentials and separate assessment answer keys, and distinguish illustrative examples from verified tests.
 
+10. At the end of every completed HTB module or class, proactively offer to move to a fresh ChatGPT conversation. Do this automatically without waiting for the learner to request it. First commit and verify the final lesson, completion evidence, achievements and current checkpoint. Then provide simple instructions to open New chat and a complete copyable handoff containing the repository URL and branch, completed modules and section totals, the next module and section, relevant file paths, and the established study rules. Ask the new chat to read the GitHub checkpoint before proceeding. Do not claim to open a new chat on the learner's behalf. Within an ongoing module, continue section by section unless the learner requests a new chat or the conversation becomes too long.
+
 Section 11 has three separate web server guides (Apache HTTP Server, NGINX and Microsoft IIS) in 05-Introduction-to-Web-Applications/Web-Servers/, with a comparison index. Section 12 added Tomcat and Node.js guides. Section 13 adds relational, NoSQL and Firebase database guides; Section 14 adds five framework guides; Section 15 adds four web vulnerability guides; Section 16 adds two public vulnerability research guides; Section 17 adds the final development roadmap; 81 lessons documented. Supplements do not add lesson credit.
 
 ## GitHub procedure after each lesson
@@ -51,6 +53,8 @@ Section 11 has three separate web server guides (Apache HTTP Server, NGINX and M
 - Distinguish studied, documented, submitted, platform-completed and optional/not performed. Do not mark a module officially completed until the learner confirms it.
 
 ## Starting another chat
+
+At every module or class completion, automatically provide the new-chat handoff and instructions described in study rule 10. The learner opens New chat in the sidebar and pastes the handoff. The repository is the durable source of continuity.
 
 Paste this instruction:
 
