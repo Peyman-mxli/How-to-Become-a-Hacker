@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 9/11 | **Date:** November 27, 2026
 
-**Status:** Theory documented from learner-supplied HTB lesson. One mandatory question. The previous observed 32-character response was independently decoded as standard Base64; the decoded value and target are excluded from public documentation. Exact flag depends on the pending learner POST response. Displayed rewards +15 section and +30 question are not verified as earned.
+**Status:** Theory documented from learner-supplied HTB lesson. One mandatory question. The previous observed 32-character response was independently decoded as standard Base64; the decoded value and target are excluded from public documentation. The learner's POST response contained the assessment flag, verified from terminal evidence; submission acceptance remains pending. Displayed rewards +15 section and +30 question are not verified as earned.
 
 ## 1. Concepts
 
@@ -60,7 +60,7 @@ Sanitized reference:
 printf '%s' 'ENCODED_RESPONSE' | base64 -d
 curl -sS -X POST -d "serial=DECODED_OUTPUT" http://SERVER_IP:PORT/serial.php
 ~~~
-Use the actual decoded value, not the human-readable translation. -d supplies the form field, and normally selects POST; -X POST explicitly states the method. The live result is pending learner terminal output. Do not assume the response is a flag until observed. Avoid unnecessary repeat POSTs, and if the lab expires, retrieve the new assigned response rather than assuming it is unchanged. No target address or assessment answer published.
+Use the actual decoded value, not the human-readable translation. -d supplies the form field, and normally selects POST; -X POST explicitly states the method. The learner subsequently supplied terminal evidence showing the flag returned by the POST request. Avoid unnecessary repeat POSTs, and if the lab expires, retrieve the new assigned response rather than assuming it is unchanged. No target address or assessment answer published.
 
 ## 7. Defensive implications
 
@@ -76,4 +76,17 @@ UniTrack: encoded QR payloads are representations, not proof of authenticity; en
 - https://github.com/gchq/CyberChef
 - https://curl.se/docs/manpage.html
 
-Next action: learner sends the prescribed POST with actual decoded value and supplies response; verify flag and sanitize methodology. Section 8 acceptance not separately supplied; Section 9 platform completion and rewards pending.
+Next action: submit the observed flag and proceed to Section 10 Skills Assessment after acceptance. Section 8 acceptance not separately supplied; Section 9 platform completion and rewards pending.
+
+## Verified practical exercise evidence
+
+The learner used Ubuntu WSL2 and cURL to submit the decoded serial to the assigned training endpoint. The original 32-character Base64 response and decoded 24-byte ASCII value were verified in the study conversation. Sanitized reproduction:
+
+~~~bash
+printf '%s' 'ENCODED_RESPONSE' | base64 -d
+curl -sS -X POST -d "serial=DECODED_OUTPUT" http://SERVER_IP:PORT/serial.php
+~~~
+
+The actual learner terminal output showed an HTB-format flag directly followed by the shell prompt. The prompt is not part of the response. The assessment flag and both serial representations are deliberately omitted from public notes. The observed flag uses leetspeak; digits represent letters, and its exact wording is excluded to avoid publishing an answer key. The request was made by the learner, not the assistant. No response status code was captured and no vulnerability is established by this exercise alone.
+
+Workflow verified: inspect source, recover readable JavaScript, identify the endpoint and HTTP method, retrieve the encoded response, identify Base64, decode it as data, and submit the decoded serial as the specified form field. The returned flag confirms the intended training functionality. No execution of the original obfuscated wrapper was required. HTB answer acceptance, rewards and platform completion are still unverified.
