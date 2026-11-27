@@ -80,7 +80,7 @@ Internal CSS is placed in a style element; external CSS is loaded with a link el
 </style>
 ```
 
-The universal selector * matches elements; html selects the root element. A comma groups selectors. The declaration block contains property:value pairs separated by semicolons. margin is outer spacing, padding inner spacing, border the element border. font-size sets text size; px is a CSS pixel unit. h1 and p are element selectors. The reset is a design choice, not a security measure.
+The universal selector * matches elements; html selects the root element. A comma groups selectors. The declaration block contains property:value pairs separated by semicolons. margin is outer spacing, padding inner spacing, border the element border. font-size sets text size; px is a CSS pixel unit. h1 and p are element selectors. The reset is a design choice, not a security measure. The CSS box model consists of content, padding, border and margin from innermost to outermost.
 
 ```html
 <head>
@@ -126,11 +126,11 @@ button.addEventListener("click", () => {
 });
 ```
 
-getElementById retrieves an element by id; addEventListener registers a click handler; the arrow function runs on a click; textContent assigns plain text to the result element. Expected display after clicking: DEMO-123. This is a harmless demonstration, not a secure serial generator or observed lab output. Real privileged serial issuance must be authorized and validated server-side.
+const declares a constant binding; document represents the current HTML document; getElementById retrieves an element by id; addEventListener registers a click handler; the arrow function runs on a click; textContent assigns plain text to the result element. Expected display after clicking: DEMO-123. This is a harmless demonstration, not a secure serial generator or observed lab output. Real privileged serial issuance must be authorized and validated server-side.
 
 ## 7. Identifying obfuscated scripts
 
-The supplied HTB lesson shows a linked secret.js resource with a dense eval(function(p,a,c,k,e,d) ...) pattern. This resembles a JavaScript packer wrapper but the truncated excerpt is not enough to identify the exact tool or behavior conclusively. eval evaluates a string as JavaScript code; the anonymous function and short parameters are part of the wrapper. split('|') splits a string at pipe delimiters into an array. Obfuscation is deliberate reduction of readability, not proof of malware. Avoid eval and do not execute unknown scripts to reveal their behavior. Static formatting, inspection and later deobfuscation methods are preferred.
+The supplied HTB lesson shows a linked secret.js resource with a dense eval(function(p,a,c,k,e,d) ...) pattern. This resembles a JavaScript packer wrapper but the truncated excerpt is not enough to identify the exact tool or behavior conclusively. eval evaluates a string as JavaScript code; for a trusted illustrative expression, eval("2 + 3") produces 5. Avoid eval with untrusted input; the anonymous function and short parameters are part of the wrapper. split('|') splits a string at pipe delimiters into an array. For example, `"HTML|CSS|JavaScript".split("|")` returns `["HTML", "CSS", "JavaScript"]`. Obfuscation is deliberate reduction of readability, not proof of malware. Avoid eval and do not execute unknown scripts to reveal their behavior. Static formatting, inspection and later deobfuscation methods are preferred.
 
 ## 8. Source analysis in existing projects
 
