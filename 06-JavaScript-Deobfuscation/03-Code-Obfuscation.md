@@ -119,7 +119,7 @@ ProTrack-MX (React, Vite, Supabase): production bundles may be minified; browser
 
 ## 9. Tools and next section
 
-HTB references Beautify Tools JavaScript Obfuscator (https://beautifytools.com/javascript-obfuscator.php). It is a third-party online utility; use only non-sensitive examples and avoid uploading private code, credentials or lab data. The free open-source local javascript-obfuscator package is an alternative for owned benign code. See [JavaScript Obfuscator reference guide](Tools/02-JavaScript-Obfuscator.md) for setup, architecture, basic usage, validation and troubleshooting. No new installation or optional exercise is needed now. The actual HTB hands-on obfuscation activity belongs to Section 4.
+HTB references Beautify Tools JavaScript Obfuscator (https://beautifytools.com/javascript-obfuscator.php). It is a third-party online utility; use only non-sensitive examples and avoid uploading private code, credentials or lab data. The free open-source local javascript-obfuscator package is an alternative for owned benign code. See [BeautifyTools individual guide](Tools/03-BeautifyTools-JavaScript-Obfuscator.md) for official browser access, interface, example and troubleshooting. See [JavaScript Obfuscator reference guide](Tools/02-JavaScript-Obfuscator.md) for setup, architecture, basic usage, validation and troubleshooting. No new installation or optional exercise is needed now. The actual HTB hands-on obfuscation activity belongs to Section 4.
 
 ## 10. References
 
