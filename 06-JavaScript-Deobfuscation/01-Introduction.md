@@ -2,13 +2,13 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 1/11 | **Date:** November 26, 2026
 
-**Status:** Theory studied and documented from the official public HTB introduction. No mandatory question is visible in the public introduction; signed-in question area and platform completion have not been verified. Examples are original and illustrative, not observed lab results.
+**Status:** Theory studied and documented using the learner-supplied HTB Section 1 and earlier public introduction. No mandatory question appears in the supplied section; platform completion has not been verified. Examples are original and illustrative, not observed lab results.
 
 ## 1. Definition and learning objectives
 
 JavaScript deobfuscation transforms difficult-to-understand JavaScript into a more readable representation to understand behavior, purpose and security risks. Developers may deliberately obscure code; malicious actors can use similar techniques to conceal behavior. This skill supports authorized web assessments, reverse engineering, red/blue team exercises and defensive investigations, including phishing and suspicious scripts. A malicious script may conceal where it obtains another payload; understanding its behavior helps defenders identify what happened. Obfuscated code is not automatically malicious, and findings must be based on evidence.
 
-HTB's public module introduction establishes a progression: find scripts in HTML, understand basic and advanced obfuscation, recover readable behavior, analyze functionality, decode data and understand related HTTP requests. Web Requests is the recommended prerequisite and is already completed. The 11-section sequence is listed in the module index. The public introduction is the source for this section; all examples and explanatory text here are independently written.
+HTB's public module introduction establishes a progression: find scripts in HTML, understand basic and advanced obfuscation, recover readable behavior, analyze functionality, decode data and understand related HTTP requests. Web Requests is the recommended prerequisite and is already completed. The 11-section sequence is listed in the module index. The learner-supplied Section 1 and public introduction are the sources for this section; all examples and explanatory text here are independently written.
 
 ## 2. Original, obfuscated and reconstructed code
 
@@ -131,4 +131,91 @@ Keep sensitive data and privileged operations server-side; validate input and au
 - [Supabase Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security)
 - [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 
-No separate required question is visible in the public introduction. No lab execution, installation or platform completion is claimed. Next: Section 02 — Source Code, after the learner confirms the Section 01 platform checkpoint.
+No separate required question appears in the learner-supplied Section 1. No lab execution, installation or platform completion is claimed. Next: Section 02 — Source Code, after the learner confirms the Section 01 platform checkpoint.
+
+## 10. Expanded explanation of the supplied HTB Section 1
+
+The learner supplied the actual Section 1 introduction, showing the six learning topics, a +15 reward indicator and Mark Complete & Next. There is no mandatory question or practical exercise in the supplied section. The reward indicator is not proof that points were earned. This expansion preserves the earlier independent notes and adds the substantive bilingual chat explanation in English only.
+
+### Obfuscation and reverse engineering
+
+Analysis seeks to determine what code does, why it exists, what information it processes, whether it communicates with servers, and whether it contains suspicious behavior or exposes security risks. Ethical hackers, penetration testers, malware analysts, researchers and developers all benefit. Reverse engineering starts with an existing program, analyzes its internal structure and behavior, and develops an understanding of its implementation; conventional development starts with requirements, writes source code and produces an application. Deobfuscation is one reverse-engineering technique.
+
+Legitimate obfuscation can discourage casual copying, unauthorized modification or analysis of proprietary algorithms; malicious uses can conceal phishing, malware, suspicious destinations or unauthorized data collection. Neither purpose can be assumed solely from appearance.
+
+Original local example:
+```javascript
+let username = "Student";
+console.log(username);
+```
+Obfuscated equivalent:
+```javascript
+let _0x8a12 = "\x53\x74\x75\x64\x65\x6e\x74";
+console["\x6c\x6f\x67"](_0x8a12);
+```
+Expected output: `Student`. The identifier is intentionally uninformative; the string escapes encode each character, and the bracket notation resolves the log method. This is an illustrative example, not a learner-executed test.
+
+### Red Team and Blue Team
+
+| Red Team | Blue Team |
+| --- | --- |
+| Authorized adversary simulation, penetration testing, vulnerability discovery, reverse engineering and security assessment | Defensive monitoring, threat detection, malware analysis, incident response and remediation |
+
+A Red Team analyst may inspect application JavaScript to understand its security mechanisms within scope. A Blue Team analyst may inspect a suspicious attachment to understand its behavior and contain an incident. Both need evidence-based analysis.
+
+### Payload and staged malware terminology
+
+A payload is code or data intended to perform a particular action; it is not inherently malicious. Malware is malicious software. A loader loads another program or component; a dropper delivers or installs another component. An indicator of compromise (IOC) is an observable artifact associated with potential compromise. A conceptual staged-malware flow may consist of an initial JavaScript file, an obfuscated loader, a remote resource and a subsequent main payload. Not all malware follows this structure. Static inspection can identify suspicious references and guide containment without running the sample. Unknown code must not be executed on the host or in a normal browser console.
+
+### The six HTB learning topics
+
+1. Locating JavaScript: find inline scripts and external files, inspect source and browser developer tools.
+2. Code obfuscation: understand variable/function renaming, concealed strings, hexadecimal escapes, rearrangement and unnecessary complexity.
+3. JavaScript deobfuscation: improve formatting, decode strings and reconstruct understandable behavior.
+4. Decoding encoded messages: identify representations such as Base64 and hexadecimal; encoding is not encryption.
+5. Basic code analysis: trace variables, functions, conditions, loops, input, output, browser interactions and network requests.
+6. Basic HTTP requests: build on the completed Web Requests module to understand client-server communication.
+
+Inline script example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Application</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <script>
+        console.log("Application started");
+    </script>
+</body>
+</html>
+```
+External script example: `<script src="app.js"></script>`. The src attribute specifies a script URL, which can be relative to the document. Browser developer tools can help locate scripts.
+
+| Representation | Value |
+| --- | --- |
+| Plain text | Hello |
+| Base64 | SGVsbG8= |
+| Hexadecimal | 48656c6c6f |
+
+These represent the same ASCII/UTF-8 bytes. Base64 is reversible and provides no confidentiality.
+
+Original code-analysis example:
+```javascript
+function calculateTotal(price, quantity) {
+    return price * quantity;
+}
+console.log(calculateTotal(50, 3));
+```
+Expected output: `150`. The function receives price and quantity parameters, multiplies them, returns the result and passes it to console.log.
+
+Illustrative HTTP request to an owned local development server:
+```bash
+curl -i http://127.0.0.1:5000/
+```
+curl is the command-line HTTP client; -i includes response headers; 127.0.0.1 is the IPv4 loopback address; 5000 is the port; / is the root path. The request requires a running local server. No request or optional exercise is needed in this introductory section.
+
+### Checkpoint
+
+Section 1 has no mandatory assessment. The learner may select Mark Complete & Next and proceed to Section 2. Platform completion is not independently confirmed. No additional HTB lesson is counted for this expansion. The requested English/Farsi explanation is a chat-only exception; all repository documentation remains English.
