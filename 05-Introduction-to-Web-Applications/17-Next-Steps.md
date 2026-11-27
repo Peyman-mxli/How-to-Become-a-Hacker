@@ -1,7 +1,7 @@
 # Section 17 — Next Steps
 
 **Provider:** Hack The Box Academy  
-**Status:** Final lesson theory studied and documented. No mandatory question appears in the supplied text. Module completion awaits platform confirmation; full Sections 4 and 5 remain documentation gaps.
+**Status:** Final lesson theory studied and documented. No mandatory question appears in the supplied text. HTB module completion confirmed via learner share preview on November 26, 2026; full Sections 4 and 5 remain documentation gaps.
 
 ## 1. Lesson objective
 
@@ -202,7 +202,7 @@ The supplied HTB lesson recommends Web Requests and JavaScript Deobfuscation for
 
 ## 8. Module recap and documentation status
 
-Sections 1–3 and 6–17 are fully documented, totaling 15/17 supplied full lessons. Sections 4 and 5 have supplementary notes for HTML image elements and CSS text alignment but their full lesson texts have not been supplied. Four preceding modules contain 66 completed documented sections. The overall count is 81/83 full lessons documented across these five modules, or approximately 97.59%. Reaching the final section is not independently verified platform completion. Await the learner's completion screen or share preview before marking this module complete. Section 16 answer acceptance was not separately shown. Section 17 has no required question in the supplied text.
+Sections 1–3 and 6–17 are fully documented, totaling 15/17 supplied full lessons. Sections 4 and 5 have supplementary notes for HTML image elements and CSS text alignment but their full lesson texts have not been supplied. Four preceding modules contain 66 completed documented sections. The overall count is 81/83 full lessons documented across these five modules, or approximately 97.59%. HTB completion confirmed by the learner's share preview on November 26, 2026 (local date). All 17 platform sections are complete; 15 full lesson notes and two partial supplemental sections are documented. Full Sections 4–5 remain documentation gaps. Five completed modules now total 83 platform sections, with 81 full lesson notes. Section 16 answer acceptance was not separately shown. Section 17 has no required question in the supplied text.
 
 ## References
 
