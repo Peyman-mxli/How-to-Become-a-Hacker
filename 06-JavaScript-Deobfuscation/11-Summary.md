@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 11/11
 
-**Status:** Final lesson documented from the supplied HTB summary. No mandatory question. The displayed +15 reward and overall platform completion remain unconfirmed.
+**Status:** Final lesson documented from the supplied HTB summary. No mandatory question. Overall module completion confirmed by HTB share preview on November 27, 2026; exact earned point balance not separately recorded.
 
 ## Learning sequence
 
@@ -98,4 +98,4 @@ For [UniTrack](https://github.com/Peyman-mxli/unitrack), keep QR access decision
 - [Official module](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
 - [HTB publication guidelines](https://help.hackthebox.com/en/articles/5188925-streaming-writeups-walkthrough-guidelines)
 
-All eleven section records are now documented, consisting of ten full lesson notes and one assessment record with its separate question-and-answer supplement. The learner reached the final section; no additional practical task is required in the supplied summary. Next action: select Mark Complete in HTB and verify the module completion screen. No earned points or platform completion claimed.
+All eleven section records are now documented, consisting of ten full lesson notes and one assessment record with its separate question-and-answer supplement. The learner reached the final section; no additional practical task is required in the supplied summary. Completion confirmed by the learner's HTB share preview on November 27, 2026: all 11 platform sections completed. Portfolio total: six completed modules, 94 confirmed platform sections, 91 full lesson notes plus one assessment record; two earlier partial lessons remain. Recommended next module: Introduction to Networking (Tier 0, 21 sections), a prerequisite for Getting Started. Await learner opening Section 1 Networking Overview. Official course: https://academy.hackthebox.com/course/preview/introduction-to-networking.
