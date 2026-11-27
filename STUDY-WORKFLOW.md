@@ -46,6 +46,8 @@ Section 11 has three separate web server guides (Apache HTTP Server, NGINX and M
 
 ## GitHub procedure after each lesson
 
+Documentation quality requirement reaffirmed by the learner on November 27, 2026: the public GitHub lesson must be at least as complete as the chat explanation, with greater technical depth where useful. Include full explanations rather than abbreviated summaries, original diagrams (Mermaid or static Markdown), worked examples, command and output interpretation, security considerations, official references and separate linked technology guides. Preserve prior material and verify the committed files by reading them back. Do not copy HTB course prose verbatim or expose restricted material.
+
 - Read the current repository and module indexes before writing.
 - Create one numbered English Markdown file per section, following the existing naming style (for example, 03-Linux-Fundamentals/30-Shortcuts.md).
 - For the current module, use 07-Introduction-to-Networking/ and update its README after each lesson.
