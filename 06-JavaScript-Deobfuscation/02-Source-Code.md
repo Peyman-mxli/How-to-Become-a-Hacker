@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 2/11 | **Date:** November 26, 2026
 
-**Status:** Theory documented from the supplied HTB lesson. One mandatory flag question; assigned target exists but response and flag have not yet been supplied. Section reward +15 and question reward +30 are displayed, not verified as earned. All examples are independently written and illustrative.
+**Status:** Theory documented from the supplied HTB lesson. One mandatory flag question; flag retrieval verified from learner terminal output. Submission acceptance pending. Section reward +15 and question reward +30 are displayed, not verified as earned. All examples are independently written and illustrative.
 
 ## 1. Frontend architecture
 
@@ -147,7 +147,7 @@ curl -sS 'http://SERVER_IP:PORT/'
 
 Replace the placeholder with the active assigned target. curl retrieves the HTTP response body; -s suppresses the progress meter and routine errors, -S restores error messages when used with -s; the URL specifies HTTP, host, port and root path. Inspect the returned HTML for comments, flag-like strings and linked resources. If nothing relevant is visible, inspect referenced files in scope with the same static approach. Do not assume the flag is in a comment or secret.js until actual evidence is available. A successful HTTP response alone is not proof of a flag. If connection fails, verify the target timer, network access and assigned lab address; do not scan other targets.
 
-The exact target address and restricted answer are deliberately omitted from the public repository. No response, flag, accepted submission or lab execution has yet been verified. Update this file with sanitized methodology after the learner supplies output. Next action: learner runs the initial cURL command and provides the result.
+The exact target address and restricted answer are deliberately omitted from the public repository. Learner terminal output now verifies the HTML response and manual flag extraction. Submission acceptance remains pending. The actual flag and its decoded wording are intentionally omitted. Next action: submit the extracted flag and confirm acceptance.
 
 ## 10. Official references
 
@@ -162,3 +162,25 @@ The exact target address and restricted answer are deliberately omitted from the
 - [cURL manual](https://curl.se/docs/manpage.html)
 
 See the [Browser Source Inspection guide](Tools/01-Browser-Source-Inspection.md) for installation, architecture, workflows and troubleshooting. No optional lab required.
+
+## 11. Verified practical exercise evidence
+
+The learner entered Ubuntu WSL2 from Windows PowerShell and ran the prescribed static HTTP request against the active assigned target. The response contained the expected page title, an external JavaScript reference, and an HTML comment immediately following that reference in the head. Sanitized excerpt from observed output:
+
+```html
+<script src="secret.js"></script>
+<!-- [ASSESSMENT FLAG REDACTED] -->
+</head>
+```
+
+Manual extraction: locate the comment, isolate the complete HTB flag token including its braces, and omit the HTML comment delimiters and whitespace. The token uses leetspeak (substituting digits for letters); the exact assessment value and decoded wording are not published. No JavaScript execution or deobfuscation was required. Earlier terminal commands against other training targets are unrelated to this result and are not included.
+
+Optional reference technique, not executed by the learner:
+
+```bash
+curl -sS 'http://SERVER_IP:PORT/' | grep -oE 'HTB\{[^}]+\}'
+```
+
+The pipe passes the response body into grep. grep searches text; -o prints only matching portions; -E enables extended regular expressions. The escaped braces match literal braces; the negated character class [^}] matches characters other than a closing brace, and + means one or more. The expected result is only the flag token if present. This is an illustrative alternative to manual inspection, not independently observed output.
+
+Security classification: sensitive information in source comments, related to [CWE-615](https://cwe.mitre.org/data/definitions/615.html). The page was retrieved without supplying authentication in the observed command; no broader access-control conclusion is made. The training flag is deliberately exposed. In production, prevent secrets from being sent to clients, review deployed artifacts, remove sensitive comments, and revoke or rotate any exposed real credentials. Evidence: learner-supplied terminal output. Flag retrieval verified; HTB submission, earned points and section completion not yet confirmed.
