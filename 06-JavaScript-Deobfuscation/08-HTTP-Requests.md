@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 8/11
 
-**Status:** Theory documented from learner-supplied HTB lesson. One mandatory question; actual POST response pending learner terminal evidence. Displayed rewards +15 section and +30 question are not verified as earned. No new installation or live request performed by the assistant.
+**Status:** Theory documented from learner-supplied HTB lesson. One mandatory question; actual POST response verified from learner terminal evidence; HTB submission acceptance pending. Displayed rewards +15 section and +30 question are not verified as earned. No new installation or live request performed by the assistant.
 
 ## 1. Objective and previous analysis
 
@@ -121,7 +121,7 @@ Question: send POST to /serial.php and report the actual response. The recovered
 ~~~bash
 curl -sS -X POST http://SERVER_IP:PORT/serial.php
 ~~~
-Use the actual response body as evidence; do not assume a flag or decode the response until the next task requires it. If an error occurs, inspect it and check the timer, exact target and connectivity. A POST request can have side effects; avoid unnecessary repeats. The response is not yet supplied, so the exact answer remains pending. No live request is claimed by the assistant. Record sanitized evidence after the learner provides the output; do not publish the lab host or assessment answer.
+Use the actual response body as evidence; do not assume a flag or decode the response until the next task requires it. If an error occurs, inspect it and check the timer, exact target and connectivity. A POST request can have side effects; avoid unnecessary repeats. The learner has now supplied the actual response. Its exact value was identified in the private study conversation; submission acceptance remains pending. No live request is claimed by the assistant. Sanitized evidence is recorded below; the lab host and assessment answer are not published.
 
 ## 8. Project applications and defensive interpretation
 
@@ -136,4 +136,20 @@ UniTrack: use cURL to test explicitly authorized development APIs, including leg
 - [Dedicated cURL guide](Tools/15-cURL.md)
 - [XMLHttpRequest guide](Tools/14-XMLHttpRequest.md)
 
-Learner advanced to Section 8; separate Section 7 platform completion not supplied. Next action: obtain the actual POST response and answer the mandatory question. No additional section completion or earned points verified.
+Learner advanced to Section 8; separate Section 7 platform completion not supplied. Next action: submit the exact observed response and confirm acceptance, then proceed to Section 9 Decoding. No additional section completion or earned points verified.
+
+## Verified practical exercise evidence
+
+The learner used Ubuntu WSL2 to send an empty POST to the assigned HTB resource. Sanitized command:
+
+~~~bash
+curl -sS -X POST http://SERVER_IP:PORT/serial.php
+~~~
+
+Observed response, deliberately redacted:
+
+~~~text
+[ASSESSMENT RESPONSE REDACTED]
+~~~
+
+The returned body was a 32-character string consistent with standard Base64 syntax. The terminal prompt followed immediately on the same line, indicating no trailing newline in the displayed response. The shell prompt is not part of the answer. The question requests the original response, so it must be submitted verbatim rather than decoded or otherwise transformed. Decoding is reserved for Section 9. The command reproduced the HTTP method, path and lack of explicit body observed in the JavaScript analysis. This verifies that the assigned endpoint returned a body in response to the POST; no HTTP status code was captured and no security vulnerability was established. No further request or execution was necessary. HTB acceptance, rewards and section completion remain separately unverified.
