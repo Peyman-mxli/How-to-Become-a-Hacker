@@ -2,7 +2,7 @@
 
 **Module:** JavaScript Deobfuscation | **Section:** 10/11
 
-**Status:** Assessment in progress. Five required questions; Question 1 answer identified from learner terminal evidence; submission acceptance pending. The previous Section 9 flag was recovered from learner terminal evidence; separate platform acceptance not supplied.
+**Status:** Assessment in progress. Five required questions; Questions 1–3 answers identified from learner terminal evidence and static reconstruction; submission acceptance pending. The previous Section 9 flag was recovered from learner terminal evidence; separate platform acceptance not supplied.
 
 ## Objective
 
@@ -42,4 +42,4 @@ Before considering execution, inspect the script as text and identify side effec
 
 ## Assessment checkpoint
 
-Question 1: actual HTML retrieved by learner using cURL, and the external JavaScript filename identified from the script src attribute. Exact filename redacted. Submission acceptance not separately confirmed. Question 2 next: retrieve the referenced script as text and inspect its behavior before considering execution. Questions 3–5 pending. Public documentation records general methodology and progress only; no private lab addresses, actual filenames, flags, secret keys or assessment-specific answer sequence will be published. No execution or platform acceptance claimed.
+Question 1: actual HTML retrieved by learner using cURL, and the external JavaScript filename identified from the script src attribute. Exact filename redacted. Submission acceptance not separately confirmed. Questions 2–3: learner retrieved the script as text. Static dictionary substitution and literal concatenation recovered its console output and a function-local variable independently; empty dictionary entries preserve their tokens. No original wrapper execution was necessary. Question 4 next: analyze the recovered request and obtain the response from the assigned lab. Questions 4–5 pending. Public documentation records general methodology and progress only; no private lab addresses, actual filenames, flags, secret keys or assessment-specific answer sequence will be published. No execution or platform acceptance claimed.
