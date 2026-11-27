@@ -4,7 +4,7 @@ This is the English-only continuity guide for the independent HTB Academy study 
 
 ## Active checkpoint — November 26, 2026
 
-- Current module: 06 — JavaScript Deobfuscation (11 sections; Easy). Section 1 Introduction studied and documented from the official public preview. No mandatory question visible in that preview; signed-in completion not yet confirmed.
+- Current module: 06 — JavaScript Deobfuscation (11 sections; Easy). Section 1 Introduction studied and documented using the actual learner-supplied HTB lesson and earlier preview. No mandatory question or practical exercise; +15 reward displayed, completion not yet confirmed. English/Farsi in chat was explicitly requested for this section only; repository remains English and default chat language remains English.
 - Next: Section 2 Source Code after learner confirms the current HTB checkpoint. Do not repeat the completed modules.
 - Totals: five completed modules, 83 confirmed platform sections, 82 full lesson notes, including the new introduction. Two prior partial documentation entries remain.
 - Module index: [06-JavaScript-Deobfuscation/README.md](06-JavaScript-Deobfuscation/README.md).
