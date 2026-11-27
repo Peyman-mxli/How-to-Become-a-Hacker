@@ -13,4 +13,6 @@
 
 | 2026-11-24 | Web Requests, sections 1–8 | Completed — HTB completion share preview confirmed |
 
+| 2026-11-26 | Introduction to Web Applications, sections 1–17 | Completed — HTB completion share preview confirmed |
+
 Module completion badges are not professional certifications. No certification or bug bounty award is claimed here.
