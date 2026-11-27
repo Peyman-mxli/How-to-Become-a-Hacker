@@ -8,6 +8,8 @@
 ## Lessons
 1. [Networking Overview](01-Networking-Overview.md) — full learner-supplied lesson documented; no mandatory question; +10 reward displayed, not confirmed earned.
 
+The numbered lesson includes expanded technical explanations, original Mermaid network diagrams, worked subnet calculations, command output interpretation, security policy matrices, project architecture and official references.
+
 ## Supplemental guides
 - [Network diagnostics and DNS](Tools/01-Network-Diagnostics.md)
 - [Network segmentation, ACLs and firewalls](Tools/02-Network-Segmentation.md)
