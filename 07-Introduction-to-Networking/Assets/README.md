@@ -2,7 +2,9 @@
 
 Original English educational assets supplement the complete numbered lessons. They recreate the major visual concepts and interactive states from the chat as standalone SVG and offline HTML; not pixel-identical chat exports. All network examples are conceptual. Open SVG files directly to zoom. Download HTML and open locally in a browser; GitHub does not execute its scripts. No external scripts or live network actions are required.
 
-[Interactive study companion (13 demonstrations)](Networking-Interactive-Companion.html)
+[Interactive study companion (Sections 1–7, 13 demonstrations)](Networking-Interactive-Companion.html)
+
+[Layer 3 interactive companion (Section 8, 2 demonstrations)](08-Network-Layer-Interactive.html)
 
 | Lesson | Original visual atlas | Panels |
 |---|---|---:|
@@ -13,7 +15,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 | [05 Networking Models](../05-Networking-Models.md) | [SVG atlas](05-Networking-Models-Visual-Atlas.svg) | 10 |
 | [06 The OSI Model](../06-The-OSI-Model.md) | [SVG atlas](06-The-OSI-Model-Visual-Atlas.svg) | 8 |
 | [07 The TCP IP Model](../07-The-TCP-IP-Model.md) | [SVG atlas](07-The-TCP-IP-Model-Visual-Atlas.svg) | 11 |
-| Total | 7 original atlases | 78 |
+| [08 Network Layer](../08-Network-Layer.md) | [SVG atlas](08-Network-Layer-Visual-Atlas.svg) | 10 |
+| Total | 8 original atlases | 88 |
 
 [Standalone UniTrack TCP/IP architecture](07-UniTrack-Communication-Architecture.svg)
 
