@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="520" viewBox="0 0 680 520" role="img" aria-labelledby="title desc">
+<title id="title">UniTrack communication architecture</title>
+<desc id="desc">Four layers: browser or QR scanner, application endpoints, network infrastructure and local connectivity. Conceptual architecture, not a verified deployment.</desc>
+<rect width="680" height="520" rx="14" fill="#101010"/>
+<rect x="12" y="12" width="656" height="496" rx="14" fill="none" stroke="#414141"/>
+<text x="30" y="45" font-family="Arial,sans-serif" font-weight="bold" font-size="18" fill="#fff">UniTrack communication architecture</text>
+<g stroke="#71717a" stroke-width="3"><path d="M340 145V171 M340 247V273 M340 349V375"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#fff">
+<rect x="75" y="65" width="530" height="80" rx="10" fill="#191321" stroke="#a855f7" stroke-width="2"/>
+<text x="340" y="98" font-size="22" font-weight="bold">Browser or QR scanner</text><text x="340" y="124" font-size="18">HTTP / HTTPS</text>
+<rect x="75" y="171" width="530" height="76" rx="10" fill="#111827" stroke="#2563eb" stroke-width="2"/>
+<text x="340" y="203" font-size="22" font-weight="bold">Application endpoints</text><text x="340" y="229" font-size="18">TCP / UDP ports</text>
+<rect x="75" y="273" width="530" height="76" rx="10" fill="#0e2025" stroke="#0891b2" stroke-width="2"/>
+<text x="340" y="305" font-size="22" font-weight="bold">Network infrastructure</text><text x="340" y="331" font-size="18">IP addressing and routing</text>
+<rect x="75" y="375" width="530" height="76" rx="10" fill="#102019" stroke="#16a34a" stroke-width="2"/>
+<text x="340" y="407" font-size="22" font-weight="bold">Local connectivity</text><text x="340" y="433" font-size="18">Ethernet / Wi-Fi</text>
+<text x="340" y="480" font-size="13" fill="#b9bec8">Conceptual TCP/IP communication stack — educational illustration</text>
+</g></svg>
