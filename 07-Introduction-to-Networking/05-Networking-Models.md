@@ -314,3 +314,11 @@ P --> H[HTTP if recognized and plaintext]
 
 For actual software screenshots see [official Wireshark user guide](https://www.wireshark.org/docs/wsug_html/).
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/05-Networking-Models-Visual-Atlas.svg) — 10 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 5 original networking visual atlas](Assets/05-Networking-Models-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md). [Download offline interactive companion](Assets/Networking-Interactive-Companion.html) and open in a browser; relevant demonstrations: osi, encap, frame. GitHub does not execute scripts in the file preview.
+
