@@ -8,6 +8,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 
 [IP addressing interactive companion (Section 9, 3 demonstrations)](09-IP-Addresses-Interactive.html)
 
+[Subnetting interactive companion (Section 10, 2 demonstrations)](10-Subnetting-Interactive.html)
+
 | Lesson | Original visual atlas | Panels |
 |---|---|---:|
 | [01 Networking Overview](../01-Networking-Overview.md) | [SVG atlas](01-Networking-Overview-Visual-Atlas.svg) | 10 |
@@ -19,7 +21,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 | [07 The TCP IP Model](../07-The-TCP-IP-Model.md) | [SVG atlas](07-The-TCP-IP-Model-Visual-Atlas.svg) | 11 |
 | [08 Network Layer](../08-Network-Layer.md) | [SVG atlas](08-Network-Layer-Visual-Atlas.svg) | 10 |
 | [09 IP Addresses](../09-IP-Addresses.md) | [SVG atlas](09-IP-Addresses-Visual-Atlas.svg) | 10 |
-| Total | 9 original atlases | 98 |
+| [10 Subnetting](../10-Subnetting.md) | [SVG atlas](10-Subnetting-Visual-Atlas.svg) | 8 |
+| Total | 10 original atlases | 106 |
 
 [Standalone UniTrack TCP/IP architecture](07-UniTrack-Communication-Architecture.svg)
 
