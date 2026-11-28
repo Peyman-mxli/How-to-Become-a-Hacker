@@ -274,3 +274,43 @@ ProTrack-MX: clients use authenticated HTTPS cloud endpoints; Realtime may use W
 
 ## Verification
 Section 5 full learner-supplied content documented independently in English with layer-by-layer explanations, original diagrams, protocol comparisons, worked byte counts, diagnostic examples and three individual guides. No mandatory question or lab; +10 displayed not confirmed earned. Learner advanced beyond Section 4 without separate completion evidence. No new installations, captures, tests or commands executed. Next: Mark Complete & Next and provide Section 6.
+
+---
+
+## Additional visual reference from the chat
+
+### Seven-layer sender and receiver processing
+
+```mermaid
+flowchart LR
+subgraph Sender
+S7[7 Application] --> S6[6 Presentation] --> S5[5 Session] --> S4[4 Transport] --> S3[3 Network] --> S2[2 Data Link] --> S1[1 Physical]
+end
+S1 --> M[Physical medium]
+subgraph Receiver
+R1[1 Physical] --> R2[2 Data Link] --> R3[3 Network] --> R4[4 Transport] --> R5[5 Session] --> R6[6 Presentation] --> R7[7 Application]
+end
+M --> R1
+```
+
+### Frame composition
+
+```mermaid
+flowchart LR
+E[Ethernet header 14 B] --- I[IPv4 header 20 B] --- T[TCP 20 B or UDP 8 B] --- D[Application data] --- P[Padding if needed] --- F[FCS 4 B]
+```
+
+For ordinary untagged Ethernet II with no IPv4/TCP options, padding = max(0, 46 - (20 + transport header + payload)). Frame length = 14 + 20 + transport header + payload + padding + 4. The interactive calculator's static examples: 100 B TCP payload yields 158 B, UDP yields 146 B; a 1-byte TCP/UDP payload produces the 64-byte minimum MAC frame. Preamble/SFD/interframe gap excluded.
+### Wireshark protocol tree (illustrative)
+
+```mermaid
+flowchart TD
+P[Selected packet] --> F[Frame metadata]
+P --> E[Ethernet II / MAC fields]
+P --> I[IPv4 / addresses and TTL]
+P --> T[TCP / ports and flags]
+P --> H[HTTP if recognized and plaintext]
+```
+
+For actual software screenshots see [official Wireshark user guide](https://www.wireshark.org/docs/wsug_html/).
+
