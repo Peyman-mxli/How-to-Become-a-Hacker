@@ -352,3 +352,11 @@ API --> D[Private database]
 
 Access to API functions remains role-specific. For real-world visual references to undersea cables and IoT hardware, use [Submarine Cable Map](https://www.submarinecablemap.com/), [Bluetooth SIG](https://www.bluetooth.com/), [Zigbee](https://csa-iot.org/all-solutions/zigbee/), [Z-Wave Alliance](https://z-wavealliance.org/) and [Insteon](https://www.insteon.com/). Third-party photos are not copied without permission.
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/02-Network-Types-Visual-Atlas.svg) — 15 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 2 original networking visual atlas](Assets/02-Network-Types-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md). [Download offline interactive companion](Assets/Networking-Interactive-Companion.html) and open in a browser; relevant demonstrations: private, vpn. GitHub does not execute scripts in the file preview.
+
