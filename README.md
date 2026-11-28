@@ -186,3 +186,7 @@ Module 06 reference: [Mandatory Questions and Answers](06-JavaScript-Deobfuscati
 ## Networking visual documentation
 
 Sections 1–7 of Module 07 now include additional visual references, static equivalents of interactive examples and the embedded [UniTrack TCP/IP architecture SVG](07-Introduction-to-Networking/Assets/07-UniTrack-Communication-Architecture.svg). See the [module index](07-Introduction-to-Networking/README.md) and [study workflow](STUDY-WORKFLOW.md) for visual preservation requirements and audit scope.
+
+### Expanded visual library
+
+[Networking visual library](07-Introduction-to-Networking/Assets/README.md) — 78 original diagram panels in seven SVG atlases, embedded in the numbered lessons; 13 offline interactive demonstrations in a standalone HTML companion. All existing written notes and diagrams are retained.
