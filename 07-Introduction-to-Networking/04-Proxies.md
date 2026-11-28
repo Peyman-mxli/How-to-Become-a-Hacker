@@ -294,3 +294,11 @@ F --> D[Private database]
 
 WAF can be integrated into NGINX or another compatible component. This is conceptual, not a verified deployment.
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/04-Proxies-Visual-Atlas.svg) — 10 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 4 original networking visual atlas](Assets/04-Proxies-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md). [Download offline interactive companion](Assets/Networking-Interactive-Companion.html) and open in a browser; relevant demonstrations: proxy. GitHub does not execute scripts in the file preview.
+
