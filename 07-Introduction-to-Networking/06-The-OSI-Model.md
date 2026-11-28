@@ -261,3 +261,35 @@ ProTrack-MX: connection to Supabase can be healthy while a request is rejected d
 
 ## Verification
 Full learner-supplied Section 6 text explained independently in English, including all layer functions, upper/lower grouping, adjacent layer services, conceptual peer communication, both endpoint stacks and security/reliability/performance. Added original diagrams, JSON example and layered diagnostics. No mandatory question or practical exercise shown; reward and Mark Complete control absent from supplied excerpt, not independently verified. Learner advanced beyond Section 5 without separate completion evidence. No new installation, command execution, capture or live test performed. Next: if Academy has Mark Complete & Next, use it and provide Section 7.
+
+---
+
+## Additional visual reference from the chat
+
+### Service relationships and full peer model
+
+```mermaid
+flowchart TD
+A[Application services] <-->|Uses lower service / provides upper service| P[Presentation]
+P <--> S[Session]
+S <--> T[Transport]
+T <--> N[Network]
+N <--> L[Data Link]
+L <--> F[Physical]
+```
+
+The full endpoint diagram above and table preserve both states of the interactive sender/receiver demonstration. For each layer, process sender 7 to 1 and receiver 1 to 7. Dotted peer relationships are logical; actual transmission uses the medium.
+
+### Infrastructure device visual key
+
+```mermaid
+flowchart TD
+L1[Physical - repeater or hub]
+L2[Data Link - bridge or switch]
+L3[Network - router]
+L47[Transport and application - capable firewall or proxy]
+L1 --> L2 --> L3 --> L47
+```
+
+This is a classification, not a required physical device chain. Multilayer devices span functions. For hardware photos consult manufacturer documentation and [IEEE Ethernet](https://www.ieee802.org/3/). The interactive diagnostic selector is preserved by the troubleshooting table above and the separate guide.
+
