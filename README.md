@@ -182,3 +182,7 @@ Maintained by [Peyman-mxli](https://github.com/Peyman-mxli). Started November 23
 [Eight individual resource guides](05-Introduction-to-Web-Applications/Public-Vulnerabilities/Research-Resources/README.md) — CVE, NVD, SearchSploit, Rapid7, Vulnerability Lab, GitHub Advisories, CISA KEV and FIRST.
 
 Module 06 reference: [Mandatory Questions and Answers](06-JavaScript-Deobfuscation/Questions-and-Answers.md) (free Tier 0 module; publication allowed by [HTB guidelines](https://help.hackthebox.com/en/articles/5188925-streaming-writeups-walkthrough-guidelines)).
+
+## Networking visual documentation
+
+Sections 1–7 of Module 07 now include additional visual references, static equivalents of interactive examples and the embedded [UniTrack TCP/IP architecture SVG](07-Introduction-to-Networking/Assets/07-UniTrack-Communication-Architecture.svg). See the [module index](07-Introduction-to-Networking/README.md) and [study workflow](STUDY-WORKFLOW.md) for visual preservation requirements and audit scope.
