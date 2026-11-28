@@ -1,7 +1,7 @@
 # 07 — Introduction to Networking
 
 **Provider:** Hack The Box Academy
-**Status:** In progress — 8/21 full lessons documented; platform completion not separately confirmed.
+**Status:** In progress — 9/21 full lessons documented; platform completion not separately confirmed.
 **Sections:** 21
 **Started:** November 27, 2026
 
@@ -21,6 +21,8 @@
 7. [The TCP/IP Model](07-The-TCP-IP-Model.md) — four layers, addressing, routing, TCP reliability, ports, DNS and three technical guides; no mandatory question; +10 displayed.
 
 8. [Network Layer](08-Network-Layer.md) — addressing, routing, IPv4/IPv6, IPsec, ICMP, IGMP, RIP, OSPF; five guides and visual companion; +10 displayed.
+
+9. [IP Addresses](09-IP-Addresses.md) — IPv4, binary, subnet masks, network/gateway/broadcast and CIDR; two guides and visual companion; +10 displayed.
 
 The numbered lesson includes expanded technical explanations, original Mermaid network diagrams, worked subnet calculations, command output interpretation, security policy matrices, project architecture and official references.
 
@@ -74,6 +76,9 @@ The numbered lesson includes expanded technical explanations, original Mermaid n
 - [RIP](Tools/40-RIP.md)
 - [OSPF](Tools/41-OSPF.md)
 
+- [Binary IPv4 addressing](Tools/42-Binary-IPv4-Addressing.md)
+- [Subnet masks and CIDR calculation](Tools/43-Subnet-Masks-CIDR-Calculator.md)
+
 ## Current checkpoint
 Six prior modules completed, 94 platform sections confirmed, 91 prior full lesson notes plus one assessment record. Sections 1–2 of Module 07 are studied and documented, bringing full notes to 93. Learner advanced to Section 2; Section 1 platform completion not separately confirmed. Section 2 has nine additional guides (14 total for module), original diagrams, full explanations and technical corrections. No mandatory question, lab, installation or learner execution shown. +10 Section 2 reward displayed, not confirmed earned. Learner advanced to Section 3; Section 2 completion not separately confirmed.
 
@@ -87,7 +92,9 @@ Section 6 The OSI Model fully documented from learner-supplied content: interope
 
 Section 7 The TCP/IP Model fully documented from learner-supplied content: four-layer model, OSI mapping, logical addressing, CIDR and historical classes, longest-prefix routing, TCP error recovery/flow/congestion control, port multiplexing and DNS name resolution. Three new technical guides (36 total for Module 07), original diagrams, Python example and command references. Six completed modules and 94 previously confirmed HTB sections; 98 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–6 without separate completion evidence. No mandatory question or exercise; +10 displayed, not confirmed earned. No installation, live query or command execution performed. Learner advanced to Section 8; Section 7 completion not separately confirmed.
 
-Section 8 Network Layer fully documented: logical addressing, packet forwarding, TTL/Hop Limit, routing/control plane, IPv4/IPv6, IPsec, ICMP, IGMP, RIP, OSPF and worked path selection. Five new technical guides (41 total for Module 07), 10 new original SVG panels and two offline demonstrations (88 panels across eight atlases, 15 demonstrations in two HTML files overall). Six completed modules, 94 previously confirmed HTB sections, 99 full lesson notes plus one assessment record. Learner advanced beyond Section 7 without separate completion evidence. No mandatory question or lab; +10 displayed, not confirmed earned. No live execution or installation; assets read-back verification separate from browser testing. Await Mark Complete & Next and Section 9. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
+Section 8 Network Layer fully documented: logical addressing, packet forwarding, TTL/Hop Limit, routing/control plane, IPv4/IPv6, IPsec, ICMP, IGMP, RIP, OSPF and worked path selection. Five new technical guides (41 total for Module 07), 10 new original SVG panels and two offline demonstrations (88 panels across eight atlases, 15 demonstrations in two HTML files overall). Six completed modules, 94 previously confirmed HTB sections, 99 full lesson notes plus one assessment record. Learner advanced beyond Section 7 without separate completion evidence. No mandatory question or lab; +10 displayed, not confirmed earned. No live execution or installation; assets read-back verification separate from browser testing. Learner advanced to Section 9; Section 8 completion not separately confirmed.
+
+Section 9 IP Addresses fully documented: MAC/IP distinction, IPv4 structure, historical classes, binary conversion, masks, network and gateway addresses, broadcast, CIDR, AND calculations, /31 and /32 exceptions and equal subnet division. Two new technical guides (43 total in Module 07), 10 SVG panels and three offline demonstrations (98 panels in nine atlases and 18 demonstrations across three HTML files overall). Six completed modules, 94 previously confirmed HTB sections, 100 full lesson notes plus one assessment record. Learner advanced beyond Section 8 without separate completion evidence. No mandatory questions or lab; +10 displayed, not confirmed earned. No network tests or installation; file read-back is separate from browser testing. Await Mark Complete & Next and Section 10. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
 
 ## Visual coverage audit — November 27, 2026
 
@@ -95,4 +102,4 @@ Sections 1–7 of this module were read back and reviewed for visual coverage. T
 
 ## Complete visual learning library
 
-[Open original visual library](Assets/README.md): eight standalone SVG atlases with 88 panels, plus two offline HTML companions containing 15 interactive demonstrations. Each numbered lesson embeds its atlas; the existing Mermaid diagrams, detailed explanations and separate technical guides are preserved. These are original recreations, not exact exports of chat UI or external photos.
+[Open original visual library](Assets/README.md): nine standalone SVG atlases with 98 panels, plus three offline HTML companions containing 18 interactive demonstrations. Each numbered lesson embeds its atlas; the existing Mermaid diagrams, detailed explanations and separate technical guides are preserved. These are original recreations, not exact exports of chat UI or external photos.
