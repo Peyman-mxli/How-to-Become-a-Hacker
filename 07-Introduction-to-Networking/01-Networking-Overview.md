@@ -387,3 +387,10 @@ W-->>U: Response
 
 The request and response traverse network devices; DNS and HTTP are separate processes. For physical networking illustrations consult [IEEE Ethernet](https://www.ieee802.org/3/) and [Wi-Fi Alliance](https://www.wi-fi.org/).
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/01-Networking-Overview-Visual-Atlas.svg) — 10 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 1 original networking visual atlas](Assets/01-Networking-Overview-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md).
