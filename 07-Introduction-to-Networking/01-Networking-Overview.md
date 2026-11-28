@@ -367,3 +367,23 @@ All substantive chat concepts are retained in independent English explanations. 
 
 ## Verification
 Full learner-supplied Section 1 studied and documented. No mandatory question or lab shown. +10 reward displayed, not yet verified as earned. No tool installed or executed by learner. Next: Mark Complete & Next in Academy; await next section and completion evidence.
+
+---
+
+## Visual reference and diagram coverage
+
+The original diagrams above preserve the topology, segmentation, incorrect subnet mask, remote-working and security-zone concepts from this lesson. Additional visual reference for the relationship between the user, DNS, ISP and web application:
+
+```mermaid
+sequenceDiagram
+participant U as User
+participant D as DNS resolver
+participant W as Website
+U->>D: Resolve hostname
+D-->>U: IP address
+U->>W: HTTP or HTTPS through network
+W-->>U: Response
+```
+
+The request and response traverse network devices; DNS and HTTP are separate processes. For physical networking illustrations consult [IEEE Ethernet](https://www.ieee802.org/3/) and [Wi-Fi Alliance](https://www.wi-fi.org/).
+
