@@ -6,6 +6,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 
 [Layer 3 interactive companion (Section 8, 2 demonstrations)](08-Network-Layer-Interactive.html)
 
+[IP addressing interactive companion (Section 9, 3 demonstrations)](09-IP-Addresses-Interactive.html)
+
 | Lesson | Original visual atlas | Panels |
 |---|---|---:|
 | [01 Networking Overview](../01-Networking-Overview.md) | [SVG atlas](01-Networking-Overview-Visual-Atlas.svg) | 10 |
@@ -16,7 +18,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 | [06 The OSI Model](../06-The-OSI-Model.md) | [SVG atlas](06-The-OSI-Model-Visual-Atlas.svg) | 8 |
 | [07 The TCP IP Model](../07-The-TCP-IP-Model.md) | [SVG atlas](07-The-TCP-IP-Model-Visual-Atlas.svg) | 11 |
 | [08 Network Layer](../08-Network-Layer.md) | [SVG atlas](08-Network-Layer-Visual-Atlas.svg) | 10 |
-| Total | 8 original atlases | 88 |
+| [09 IP Addresses](../09-IP-Addresses.md) | [SVG atlas](09-IP-Addresses-Visual-Atlas.svg) | 10 |
+| Total | 9 original atlases | 98 |
 
 [Standalone UniTrack TCP/IP architecture](07-UniTrack-Communication-Architecture.svg)
 
