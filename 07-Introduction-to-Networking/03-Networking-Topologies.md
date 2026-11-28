@@ -250,3 +250,53 @@ ProTrack-MX: student and teacher clients access HTTPS cloud services through loc
 
 ## Verification
 All supplied Section 3 concepts documented independently with original Mermaid diagrams, failure scenarios, command explanations, calculations and additional references. No mandatory questions, required installs or labs. +10 displayed but not confirmed earned. Learner advanced to Section 3; separate prior platform completion not evidenced. No commands executed or tools installed by learner. Next: Mark Complete & Next; await Section 4.
+
+---
+
+## Additional visual reference from the chat
+
+The eight basic topologies are illustrated individually above. Interactive demonstrations are preserved below as static states and worked results.
+
+### STP normal operation and failover
+
+```mermaid
+flowchart TD
+A[Root switch A] ---|Forwarding| B[Switch B]
+A ---|Forwarding| C[Switch C]
+B -.-|Non-forwarding port| C
+```
+
+
+```mermaid
+flowchart TD
+A[Root switch A] -.-|Failed link| B[Switch B]
+A ---|Forwarding| C[Switch C]
+C ---|Forwarding after convergence| B
+```
+
+### Daisy chain failure
+
+```mermaid
+flowchart LR
+A[Host A] --- B[Host B]
+B -.- C[Host C - failed]
+C -.- D[Host D - isolated from A]
+D --- E[Host E - isolated from A]
+classDef failed fill:#fee2e2,stroke:#dc2626,color:#111
+class C,D,E failed
+```
+
+D and E may remain locally connected to each other. Failure isolates them from A through the broken chain, not necessarily from every network.
+
+### CAN shared bus
+
+```mermaid
+flowchart LR
+T1[120 ohm termination] --- X[Bus tap] --- Y[Bus tap] --- Z[Bus tap] --- T2[120 ohm termination]
+X --- C[Controller]
+Y --- S[Sensor]
+Z --- M[Monitor]
+```
+
+Typical high-speed CAN termination; consult hardware specification. Device images and hardware diagrams can be consulted in the [CAN physical implementation guide](https://www.analog.com/en/resources/app-notes/an-1123.html), [IEEE Ethernet](https://www.ieee802.org/3/) and [Wireshark user guide](https://www.wireshark.org/docs/wsug_html/). No unlicensed web photographs are copied.
+
