@@ -336,3 +336,11 @@ scheme    FQDN (hostname)    path
 ```
 A trailing dot denotes the DNS root. DNS queries concern names, not the URL path.
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/07-The-TCP-IP-Model-Visual-Atlas.svg) — 11 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 7 original networking visual atlas](Assets/07-The-TCP-IP-Model-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md). [Download offline interactive companion](Assets/Networking-Interactive-Companion.html) and open in a browser; relevant demonstrations: cidr, routes, windows. GitHub does not execute scripts in the file preview.
+
