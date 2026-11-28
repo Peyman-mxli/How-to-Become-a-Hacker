@@ -10,6 +10,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 
 [Subnetting interactive companion (Section 10, 2 demonstrations)](10-Subnetting-Interactive.html)
 
+[MAC and ARP interactive companion (Section 11, 2 demonstrations)](11-MAC-Addresses-Interactive.html)
+
 | Lesson | Original visual atlas | Panels |
 |---|---|---:|
 | [01 Networking Overview](../01-Networking-Overview.md) | [SVG atlas](01-Networking-Overview-Visual-Atlas.svg) | 10 |
@@ -22,7 +24,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 | [08 Network Layer](../08-Network-Layer.md) | [SVG atlas](08-Network-Layer-Visual-Atlas.svg) | 10 |
 | [09 IP Addresses](../09-IP-Addresses.md) | [SVG atlas](09-IP-Addresses-Visual-Atlas.svg) | 10 |
 | [10 Subnetting](../10-Subnetting.md) | [SVG atlas](10-Subnetting-Visual-Atlas.svg) | 8 |
-| Total | 10 original atlases | 106 |
+| [11 MAC Addresses](../11-MAC-Addresses.md) | [SVG atlas](11-MAC-Addresses-Visual-Atlas.svg) | 8 |
+| Total | 11 original atlases | 114 |
 
 [Standalone UniTrack TCP/IP architecture](07-UniTrack-Communication-Architecture.svg)
 
