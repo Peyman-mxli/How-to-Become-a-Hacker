@@ -1,7 +1,7 @@
 # 07 — Introduction to Networking
 
 **Provider:** Hack The Box Academy
-**Status:** In progress — 10/21 full lessons documented; platform completion not separately confirmed.
+**Status:** In progress — 11/21 full lessons documented; platform completion not separately confirmed.
 **Sections:** 21
 **Started:** November 27, 2026
 
@@ -25,6 +25,8 @@
 9. [IP Addresses](09-IP-Addresses.md) — IPv4, binary, subnet masks, network/gateway/broadcast and CIDR; two guides and visual companion; +10 displayed.
 
 10. [Subnetting](10-Subnetting.md) — network/host bits, equal division, mental subnetting and VLSM; one guide, eight visual panels, two interactive tools; four mandatory questions addressed in chat.
+
+11. [MAC Addresses](11-MAC-Addresses.md) — addressing, IEEE allocation, ARP and defensive analysis; three technical guides, eight panels, two offline demonstrations; +10 displayed.
 
 The numbered lesson includes expanded technical explanations, original Mermaid network diagrams, worked subnet calculations, command output interpretation, security policy matrices, project architecture and official references.
 
@@ -83,6 +85,10 @@ The numbered lesson includes expanded technical explanations, original Mermaid n
 
 - [Mental subnetting and VLSM](Tools/44-Mental-Subnetting-VLSM.md)
 
+- [MAC addressing and IEEE allocation](Tools/45-MAC-Addressing.md)
+- [ARP defensive analysis](Tools/46-ARP-Defensive-Analysis.md)
+- [TShark offline packet analysis](Tools/47-TShark.md)
+
 ## Current checkpoint
 Six prior modules completed, 94 platform sections confirmed, 91 prior full lesson notes plus one assessment record. Sections 1–2 of Module 07 are studied and documented, bringing full notes to 93. Learner advanced to Section 2; Section 1 platform completion not separately confirmed. Section 2 has nine additional guides (14 total for module), original diagrams, full explanations and technical corrections. No mandatory question, lab, installation or learner execution shown. +10 Section 2 reward displayed, not confirmed earned. Learner advanced to Section 3; Section 2 completion not separately confirmed.
 
@@ -100,7 +106,9 @@ Section 8 Network Layer fully documented: logical addressing, packet forwarding,
 
 Section 9 IP Addresses fully documented: MAC/IP distinction, IPv4 structure, historical classes, binary conversion, masks, network and gateway addresses, broadcast, CIDR, AND calculations, /31 and /32 exceptions and equal subnet division. Two new technical guides (43 total in Module 07), 10 SVG panels and three offline demonstrations (98 panels in nine atlases and 18 demonstrations across three HTML files overall). Six completed modules, 94 previously confirmed HTB sections, 100 full lesson notes plus one assessment record. Learner advanced beyond Section 8 without separate completion evidence. No mandatory questions or lab; +10 displayed, not confirmed earned. No network tests or installation; file read-back is separate from browser testing. Learner advanced to Section 10; Section 9 completion not separately confirmed.
 
-Section 10 Subnetting fully documented: network/host bits, network and broadcast boundaries, host capacity, equal subnet division, mental subnetting, cross-octet calculations and VLSM. One new technical guide (44 total in Module 07), eight SVG panels and two offline demonstrations (106 panels across ten atlases, 20 demonstrations across four HTML files). Six completed modules, 94 previously confirmed HTB sections, 101 full lesson notes plus one assessment record. Learner advanced beyond Section 9 without separately confirmed completion. Four mandatory questions solved in chat; exact assessment input and answers omitted from public documentation, equivalent independent examples included. +80 question points and +10 section reward displayed, not confirmed earned. No live tests or installations; browser functionality not independently verified. Await submission acceptance, Mark Complete & Next and Section 11. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
+Section 10 Subnetting fully documented: network/host bits, network and broadcast boundaries, host capacity, equal subnet division, mental subnetting, cross-octet calculations and VLSM. One new technical guide (44 total in Module 07), eight SVG panels and two offline demonstrations (106 panels across ten atlases, 20 demonstrations across four HTML files). Six completed modules, 94 previously confirmed HTB sections, 101 full lesson notes plus one assessment record. Learner advanced beyond Section 9 without separately confirmed completion. Four mandatory questions solved in chat; exact assessment input and answers omitted from public documentation, equivalent independent examples included. +80 question points and +10 section reward displayed, not confirmed earned. No live tests or installations; browser functionality not independently verified. Learner advanced to Section 11; Section 10 completion and answer acceptance not separately confirmed.
+
+Section 11 MAC Addresses fully documented: hexadecimal/binary representation, IEEE allocation, I/G and U/L flags, unicast/multicast/broadcast, switching, routed frames, ARP request/reply and cache, TShark interpretation and defensive controls. Three new technical guides (47 total in Module 07), eight SVG panels and two offline demonstrations (114 panels across eleven atlases, 22 demonstrations across five HTML files). Six completed modules, 94 previously confirmed HTB sections, 102 full lesson notes plus one assessment record. Learner advanced beyond Section 10; acceptance of prior four answers not separately confirmed. No mandatory questions or lab; +10 displayed not confirmed earned. No live network operations or installation; browser rendering/functionality not independently tested. Await Mark Complete & Next and Section 12. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
 
 ## Visual coverage audit — November 27, 2026
 
@@ -108,4 +116,4 @@ Sections 1–7 of this module were read back and reviewed for visual coverage. T
 
 ## Complete visual learning library
 
-[Open original visual library](Assets/README.md): ten standalone SVG atlases with 106 panels, plus four offline HTML companions containing 20 interactive demonstrations. Each numbered lesson embeds its atlas; the existing Mermaid diagrams, detailed explanations and separate technical guides are preserved. These are original recreations, not exact exports of chat UI or external photos.
+[Open original visual library](Assets/README.md): eleven standalone SVG atlases with 114 panels, plus five offline HTML companions containing 22 interactive demonstrations. Each numbered lesson embeds its atlas; the existing Mermaid diagrams, detailed explanations and separate technical guides are preserved. These are original recreations, not exact exports of chat UI or external photos.
