@@ -12,6 +12,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 
 [MAC and ARP interactive companion (Section 11, 2 demonstrations)](11-MAC-Addresses-Interactive.html)
 
+[IPv6 interactive companion (Section 12, 2 demonstrations)](12-IPv6-Addresses-Interactive.html)
+
 | Lesson | Original visual atlas | Panels |
 |---|---|---:|
 | [01 Networking Overview](../01-Networking-Overview.md) | [SVG atlas](01-Networking-Overview-Visual-Atlas.svg) | 10 |
@@ -25,7 +27,8 @@ Original English educational assets supplement the complete numbered lessons. Th
 | [09 IP Addresses](../09-IP-Addresses.md) | [SVG atlas](09-IP-Addresses-Visual-Atlas.svg) | 10 |
 | [10 Subnetting](../10-Subnetting.md) | [SVG atlas](10-Subnetting-Visual-Atlas.svg) | 8 |
 | [11 MAC Addresses](../11-MAC-Addresses.md) | [SVG atlas](11-MAC-Addresses-Visual-Atlas.svg) | 8 |
-| Total | 11 original atlases | 114 |
+| [12 IPv6 Addresses](../12-IPv6-Addresses.md) | [SVG atlas](12-IPv6-Addresses-Visual-Atlas.svg) | 8 |
+| Total | 12 original atlases | 122 |
 
 [Standalone UniTrack TCP/IP architecture](07-UniTrack-Communication-Architecture.svg)
 
