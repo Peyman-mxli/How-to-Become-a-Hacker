@@ -291,3 +291,48 @@ UniTrack: proposed staff/scanner/student network segmentation and private backen
 
 ## Verification
 Full learner-supplied Section 7 content independently documented in English with original diagrams, all five tasks, corrections, worked CIDR and routing examples, TCP sequence/control examples, port multiplexing and DNS resolution, plus three new technical guides. No mandatory question or exercise; +10 displayed not confirmed earned. Learner advanced beyond Section 6 without separate completion evidence. No installations, commands, queries or live tests performed. Next: Mark Complete & Next and provide Section 8.
+
+---
+
+## Additional visual reference from the chat
+
+### UniTrack communication architecture
+
+![UniTrack communication architecture — browser or QR scanner, application endpoints, network infrastructure and local connectivity](Assets/07-UniTrack-Communication-Architecture.svg)
+
+Original SVG recreated from the chat illustration, with the same four blocks and labels. Conceptual TCP/IP architecture, not a verified deployment.
+
+
+```mermaid
+flowchart TD
+A["Browser or QR scanner — HTTP / HTTPS"] --> B["Application endpoints — TCP / UDP ports"]
+B --> C["Network infrastructure — IP addressing and routing"]
+C --> D["Local connectivity — Ethernet / Wi-Fi"]
+classDef application fill:#9333ea,color:#fff
+classDef transport fill:#2563eb,color:#fff
+classDef internet fill:#0891b2,color:#fff
+classDef link fill:#15803d,color:#fff
+class A application
+class B transport
+class C internet
+class D link
+```
+
+### CIDR binary visualization
+```text
+192      168      20       34
+11000000 10101000 00010100 001|00010
+<--------- 27 network bits -------->|5 host bits
+```
+The first 27 bits are network prefix; the last 5 are host bits. Interactive calculator rules: total = 2^(32-prefix), conventional usable = total-2 for /0–/30; /31 point-to-point and /32 individual addresses differ.
+### Routing and TCP interactive states
+The longest-prefix table above preserves all four destination examples. The interactive window model uses min(rwnd,cwnd): (16,8) KiB -> 8 KiB; (4,16) KiB -> 4 KiB; (16,16) KiB -> 16 KiB. Actual outstanding data and implementation limits matter.
+### URL and FQDN visual breakdown
+```text
+https://  portal.example.com  /students
+scheme    FQDN (hostname)    path
+          portal | example | com
+          label    domain    TLD
+```
+A trailing dot denotes the DNS root. DNS queries concern names, not the URL path.
+
