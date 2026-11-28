@@ -5,6 +5,7 @@ This is the English-only continuity guide for the independent HTB Academy study 
 ## Active checkpoint — November 27, 2026
 
 - Current module: [07 — Introduction to Networking](07-Introduction-to-Networking/README.md), 21 sections. Section 1 Networking Overview fully documented from learner-supplied material, with five technology guides. No mandatory question or lab; +10 reward displayed, completion pending. Six completed modules, 94 confirmed platform sections, 92 full lesson notes plus one assessment record. Next: learner selects Mark Complete & Next and supplies next section. No installation or execution claimed. Official course: https://academy.hackthebox.com/course/preview/introduction-to-networking.
+- Section 2 continuation: Network Types fully studied and documented; nine additional technology guides and technical corrections committed. Sections 1–2 documented; 93 full lesson notes plus one assessment record, six completed modules and 94 previously confirmed platform sections. Section 1 advancement observed without separate completion evidence; Section 2 +10 reward displayed, no mandatory question or lab. Await Mark Complete & Next and Section 3. No tools installed or tests executed.
 
 ## Historical checkpoint — Module 06 (November 27, 2026)
 
