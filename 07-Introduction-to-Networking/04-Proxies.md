@@ -251,3 +251,46 @@ References: [HTTP RFC 9110](https://www.rfc-editor.org/rfc/rfc9110), [SOCKS5 RFC
 
 ## Verification
 All major concepts from supplied Section 4 explained independently in English, with diagrams, official links, original local examples, corrections and ten linked guides. No mandatory question or lab; +10 reward displayed, not confirmed earned. Learner advanced beyond Section 3 without separate completion evidence. No installation, live testing or connection performed. Next: Mark Complete & Next and provide Section 5.
+
+---
+
+## Additional visual reference from the chat
+
+### Forward vs reverse proxy trust boundary
+
+```mermaid
+flowchart LR
+subgraph ClientOrganization[Client organization]
+C[Client] --> P[Forward proxy]
+end
+P --> S[External server]
+```
+
+
+```mermaid
+flowchart LR
+C[External client] --> P
+subgraph ServerOrganization[Server organization]
+P[Reverse proxy] --> S[Protected server]
+end
+```
+
+### SSH encrypted channel
+
+```mermaid
+flowchart LR
+C[Authorized administrator / SSH client] <-->|Authenticated encrypted SSH channel| S[Authorized SSH server]
+```
+
+### UniTrack proposed reverse proxy and WAF
+
+```mermaid
+flowchart TD
+C[Students, teachers and administrators / HTTPS clients] --> N[NGINX reverse proxy / TLS and traffic management]
+N --> W[ModSecurity and OWASP CRS / integrated WAF]
+W --> F[Private UniTrack Flask backend / authentication and authorization]
+F --> D[Private database]
+```
+
+WAF can be integrated into NGINX or another compatible component. This is conceptual, not a verified deployment.
+
