@@ -82,3 +82,7 @@ Section 7 The TCP/IP Model fully documented from learner-supplied content: four-
 ## Visual coverage audit — November 27, 2026
 
 Sections 1–7 of this module were read back and reviewed for visual coverage. The existing Mermaid diagrams and written explanations were preserved; additional static visual references were added to each numbered lesson. Section 7 now embeds the repository-owned [UniTrack communication architecture SVG](Assets/07-UniTrack-Communication-Architecture.svg), recreated from the learner's screenshot with the same four blocks and labels. Interactive examples are represented by static states, formulae and worked results. External photographs are not copied without verified reuse rights. This is a Module 07 Sections 1–7 audit, not an exhaustive verification of exact chat images or the earlier six modules.
+
+## Complete visual learning library
+
+[Open original visual library](Assets/README.md): seven standalone SVG atlases with 78 panels, plus the offline HTML companion containing 13 interactive demonstrations. Each numbered lesson embeds its atlas; the existing Mermaid diagrams, detailed explanations and separate technical guides are preserved. These are original recreations, not exact exports of chat UI or external photos.
