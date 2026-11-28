@@ -1,7 +1,7 @@
 # 07 — Introduction to Networking
 
 **Provider:** Hack The Box Academy
-**Status:** In progress — 6/21 full lessons documented; platform completion not separately confirmed.
+**Status:** In progress — 7/21 full lessons documented; platform completion not separately confirmed.
 **Sections:** 21
 **Started:** November 27, 2026
 
@@ -17,6 +17,8 @@
 5. [Networking Models](05-Networking-Models.md) — OSI, TCP/IP, encapsulation, PDUs, packet analysis and three technology guides; no mandatory question; +10 displayed.
 
 6. [The OSI Model](06-The-OSI-Model.md) — layer services, peer communication, interoperability, reliability and layered diagnostics; no mandatory question shown.
+
+7. [The TCP/IP Model](07-The-TCP-IP-Model.md) — four layers, addressing, routing, TCP reliability, ports, DNS and three technical guides; no mandatory question; +10 displayed.
 
 The numbered lesson includes expanded technical explanations, original Mermaid network diagrams, worked subnet calculations, command output interpretation, security policy matrices, project architecture and official references.
 
@@ -60,6 +62,10 @@ The numbered lesson includes expanded technical explanations, original Mermaid n
 
 - [OSI layered troubleshooting](Tools/33-OSI-Layered-Troubleshooting.md)
 
+- [IPv4 addressing, CIDR and routing](Tools/34-IPv4-CIDR-Routing.md)
+- [TCP reliability and flow control](Tools/35-TCP-Reliability-Flow-Control.md)
+- [DNS name resolution and diagnostics](Tools/36-DNS-Name-Resolution.md)
+
 ## Current checkpoint
 Six prior modules completed, 94 platform sections confirmed, 91 prior full lesson notes plus one assessment record. Sections 1–2 of Module 07 are studied and documented, bringing full notes to 93. Learner advanced to Section 2; Section 1 platform completion not separately confirmed. Section 2 has nine additional guides (14 total for module), original diagrams, full explanations and technical corrections. No mandatory question, lab, installation or learner execution shown. +10 Section 2 reward displayed, not confirmed earned. Learner advanced to Section 3; Section 2 completion not separately confirmed.
 
@@ -69,4 +75,6 @@ Section 4 Proxies fully documented from learner-supplied content: forward/revers
 
 Section 5 Networking Models fully documented from learner-supplied content: seven OSI layers, four TCP/IP layers, PDU terminology, encapsulation/decapsulation, TCP handshake, worked frame-size and MTU/MSS examples, packet analysis and layered diagnostics. Three new individual technology guides (32 total in Module 07). Six completed modules and 94 previously confirmed HTB sections; 96 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–4 without separate completion evidence. No mandatory question, practical lab or required installation; +10 displayed, not confirmed earned. No installation, capture or command execution performed. Learner advanced to Section 6; Section 5 completion not separately confirmed.
 
-Section 6 The OSI Model fully documented from learner-supplied content: interoperability, seven layer responsibilities, application-oriented/transport-oriented grouping, adjacent-layer services and interfaces, peer communication, sender/receiver processing, reliability/security/performance and original layered diagnostic examples. One new technical guide (33 total for Module 07); existing OSI, transport and Wireshark guides cross-linked. Six completed modules and 94 previously confirmed HTB sections; 97 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–5 without separate completion evidence. No mandatory question or exercise in supplied text; reward and completion control not included in excerpt. No new installation, capture or command execution performed. Await Section 7. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
+Section 6 The OSI Model fully documented from learner-supplied content: interoperability, seven layer responsibilities, application-oriented/transport-oriented grouping, adjacent-layer services and interfaces, peer communication, sender/receiver processing, reliability/security/performance and original layered diagnostic examples. One new technical guide (33 total for Module 07); existing OSI, transport and Wireshark guides cross-linked. Six completed modules and 94 previously confirmed HTB sections; 97 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–5 without separate completion evidence. No mandatory question or exercise in supplied text; reward and completion control not included in excerpt. No new installation, capture or command execution performed. Learner advanced to Section 7; Section 6 completion not separately confirmed.
+
+Section 7 The TCP/IP Model fully documented from learner-supplied content: four-layer model, OSI mapping, logical addressing, CIDR and historical classes, longest-prefix routing, TCP error recovery/flow/congestion control, port multiplexing and DNS name resolution. Three new technical guides (36 total for Module 07), original diagrams, Python example and command references. Six completed modules and 94 previously confirmed HTB sections; 98 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–6 without separate completion evidence. No mandatory question or exercise; +10 displayed, not confirmed earned. No installation, live query or command execution performed. Await Mark Complete & Next and Section 8. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
