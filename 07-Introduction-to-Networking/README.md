@@ -1,7 +1,7 @@
 # 07 — Introduction to Networking
 
 **Provider:** Hack The Box Academy
-**Status:** In progress — 4/21 full lessons documented; platform completion not separately confirmed.
+**Status:** In progress — 5/21 full lessons documented; platform completion not separately confirmed.
 **Sections:** 21
 **Started:** November 27, 2026
 
@@ -13,6 +13,8 @@
 3. [Networking Topologies](03-Networking-Topologies.md) — all eight topologies, physical/logical paths, hardware, failure analysis, STP and CAN; no mandatory question; +10 displayed.
 
 4. [Proxies](04-Proxies.md) — forward, reverse and transparent proxies, TLS, HTTP/SOCKS, defensive monitoring and ten technology guides; no mandatory question; +10 displayed.
+
+5. [Networking Models](05-Networking-Models.md) — OSI, TCP/IP, encapsulation, PDUs, packet analysis and three technology guides; no mandatory question; +10 displayed.
 
 The numbered lesson includes expanded technical explanations, original Mermaid network diagrams, worked subnet calculations, command output interpretation, security policy matrices, project architecture and official references.
 
@@ -50,9 +52,15 @@ The numbered lesson includes expanded technical explanations, original Mermaid n
 - [sshuttle](Tools/28-sshuttle.md)
 - [Sysmon and DNS monitoring](Tools/29-Sysmon-DNS-Monitoring.md)
 
+- [OSI and TCP/IP models](Tools/30-OSI-TCP-IP-Models.md)
+- [TCP, UDP and ICMP](Tools/31-TCP-UDP-ICMP.md)
+- [Encapsulation and Wireshark packet analysis](Tools/32-Packet-Encapsulation-Wireshark.md)
+
 ## Current checkpoint
 Six prior modules completed, 94 platform sections confirmed, 91 prior full lesson notes plus one assessment record. Sections 1–2 of Module 07 are studied and documented, bringing full notes to 93. Learner advanced to Section 2; Section 1 platform completion not separately confirmed. Section 2 has nine additional guides (14 total for module), original diagrams, full explanations and technical corrections. No mandatory question, lab, installation or learner execution shown. +10 Section 2 reward displayed, not confirmed earned. Learner advanced to Section 3; Section 2 completion not separately confirmed.
 
 Section 3 Networking Topologies fully documented from learner-supplied lesson: physical/logical topology, connections and nodes, all eight topology types, mesh calculations, STP, CAN technical clarifications, original diagrams and five new technology guides (19 total for Module 07). Six modules and 94 previously confirmed HTB sections; 94 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–2 without separate completion evidence. No mandatory question, required lab or installation in Section 3. +10 displayed, not confirmed earned. Learner advanced to Section 4; Section 3 completion not separately confirmed.
 
-Section 4 Proxies fully documented from learner-supplied content: forward/reverse and explicit/interception proxies, HTTP CONNECT, SOCKS, TLS inspection, Burp Suite, Cloudflare, ModSecurity/OWASP CRS, proxy-aware applications, DNS/C2 defensive context, and SSH/Chisel/ptunnel/sshuttle concepts. Ten new individual technology guides (29 total in Module 07). Six completed modules and 94 previously confirmed HTB sections; 95 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–3 without separate completion evidence. No mandatory question or practical lab; +10 displayed, not confirmed earned. No tool installation, live testing or tunnel deployment performed. Await Mark Complete & Next and Section 5. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
+Section 4 Proxies fully documented from learner-supplied content: forward/reverse and explicit/interception proxies, HTTP CONNECT, SOCKS, TLS inspection, Burp Suite, Cloudflare, ModSecurity/OWASP CRS, proxy-aware applications, DNS/C2 defensive context, and SSH/Chisel/ptunnel/sshuttle concepts. Ten new individual technology guides (29 total in Module 07). Six completed modules and 94 previously confirmed HTB sections; 95 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–3 without separate completion evidence. No mandatory question or practical lab; +10 displayed, not confirmed earned. No tool installation, live testing or tunnel deployment performed. Learner advanced to Section 5; Section 4 completion not separately confirmed.
+
+Section 5 Networking Models fully documented from learner-supplied content: seven OSI layers, four TCP/IP layers, PDU terminology, encapsulation/decapsulation, TCP handshake, worked frame-size and MTU/MSS examples, packet analysis and layered diagnostics. Three new individual technology guides (32 total in Module 07). Six completed modules and 94 previously confirmed HTB sections; 96 full lesson notes plus one assessment record. Learner advanced beyond Sections 1–4 without separate completion evidence. No mandatory question, practical lab or required installation; +10 displayed, not confirmed earned. No installation, capture or command execution performed. Await Mark Complete & Next and Section 6. Official source: https://academy.hackthebox.com/course/preview/introduction-to-networking. Follow [study workflow](../STUDY-WORKFLOW.md).
