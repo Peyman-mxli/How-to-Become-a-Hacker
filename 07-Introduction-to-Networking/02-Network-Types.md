@@ -285,3 +285,70 @@ ProTrack-MX: teachers and students connect over LAN/WLAN/WAN to approved HTTPS c
 
 ## Verification and next action
 Section 2 learner-supplied content fully documented in English with original diagrams, technical clarifications, worked examples and separate guides. Section 1 was advanced past, but completion not separately evidenced. No mandatory question, required installation or live lab. +10 available reward displayed; not confirmed earned. Select Mark Complete & Next and supply the next section. Do not count guide files as additional HTB lessons.
+
+---
+
+## Additional visual reference from the chat
+
+### Network coverage (conceptual, not mandatory containment)
+
+```mermaid
+flowchart TD
+subgraph GAN[GAN - worldwide]
+subgraph WAN[WAN - regions and countries]
+subgraph MAN[MAN - city]
+subgraph LAN[LAN or WLAN - building]
+PAN[PAN or WPAN - personal devices]
+end
+end
+end
+end
+```
+
+### Separate wired and wireless LAN examples
+
+```mermaid
+flowchart TD
+R[Router 192.168.1.1] --- S[Ethernet switch]
+S --- A[PC 192.168.1.10]
+S --- B[Server 192.168.1.20]
+S --- C[Printer 192.168.1.30]
+```
+
+
+```mermaid
+flowchart TD
+AP[Campus-WiFi access point] -. radio .- L[Laptop 192.168.1.11]
+AP -. radio .- P[Phone 192.168.1.12]
+AP -. radio .- T[Tablet 192.168.1.13]
+```
+
+### University MAN
+
+```mermaid
+flowchart LR
+M[City fiber network] --- U[University]
+M --- H[Hospital]
+M --- G[Government]
+M --- L[Library]
+```
+
+Illustrative metropolitan connectivity, not a claim about an actual city network.
+### UniTrack network architecture
+
+```mermaid
+flowchart TD
+I[Internet / WAN] --> F[Router and firewall]
+F --> W[Student WLAN]
+F --> S[Isolated scanner LAN]
+F --> A[Private admin LAN]
+F --> V[Authorized staff VPN]
+W --> API[Approved HTTPS API]
+S --> API
+A --> API
+V --> API
+API --> D[Private database]
+```
+
+Access to API functions remains role-specific. For real-world visual references to undersea cables and IoT hardware, use [Submarine Cable Map](https://www.submarinecablemap.com/), [Bluetooth SIG](https://www.bluetooth.com/), [Zigbee](https://csa-iot.org/all-solutions/zigbee/), [Z-Wave Alliance](https://z-wavealliance.org/) and [Insteon](https://www.insteon.com/). Third-party photos are not copied without permission.
+
