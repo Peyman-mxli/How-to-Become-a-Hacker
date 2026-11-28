@@ -1,0 +1,9 @@
+# Sysmon — DNS and endpoint monitoring
+
+Microsoft Sysinternals System Monitor (Sysmon) is free, not open-source endpoint telemetry software; Windows availability/install method varies. It records process, connection and other security events depending on settings. Event 1 process creation; Event 3 network connections when enabled; Event 22 DNS queries. DNS telemetry can help correlate C2 concerns but does not guarantee visibility into all encrypted DNS or application behavior. [Official download and documentation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon), [event guide](https://learn.microsoft.com/en-us/windows/security/operating-system-security/sysmon/sysmon-events), [configuration](https://learn.microsoft.com/en-us/windows/security/operating-system-security/sysmon/sysmon-configuration-files).
+
+Windows authorized setup reference: determine supported Sysmon distribution and OS installation method, obtain Microsoft-signed package if necessary, review config and retention with administrator, enable approved monitoring. Traditional Sysinternals executable installation changes system service/config; no install today. On existing configured system:
+```powershell
+Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; Id=22} -MaxEvents 10
+```
+LogName selects event channel, Id filters DNS queries, MaxEvents limits result. QueryName and Image/ProcessGuid may help attribute an event. Example: ordinary browser query to example.com is benign unless other evidence suggests otherwise. If channel missing check install/config, permissions and OS; if no events verify policy and coverage. Do not publish raw logs or confidential DNS names. For investigation correlate DNS resolver, process and network logs; use approved egress/endpoint controls. UniTrack/ProTrack-MX service monitoring should protect personal records. No installation or execution.
