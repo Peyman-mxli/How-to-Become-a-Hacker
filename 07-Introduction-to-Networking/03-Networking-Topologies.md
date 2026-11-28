@@ -300,3 +300,11 @@ Z --- M[Monitor]
 
 Typical high-speed CAN termination; consult hardware specification. Device images and hardware diagrams can be consulted in the [CAN physical implementation guide](https://www.analog.com/en/resources/app-notes/an-1123.html), [IEEE Ethernet](https://www.ieee802.org/3/) and [Wireshark user guide](https://www.wireshark.org/docs/wsug_html/). No unlicensed web photographs are copied.
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/03-Networking-Topologies-Visual-Atlas.svg) — 14 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 3 original networking visual atlas](Assets/03-Networking-Topologies-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md). [Download offline interactive companion](Assets/Networking-Interactive-Companion.html) and open in a browser; relevant demonstrations: mesh, stp, chain. GitHub does not execute scripts in the file preview.
+
