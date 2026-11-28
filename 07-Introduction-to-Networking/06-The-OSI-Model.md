@@ -293,3 +293,11 @@ L1 --> L2 --> L3 --> L47
 
 This is a classification, not a required physical device chain. Multilayer devices span functions. For hardware photos consult manufacturer documentation and [IEEE Ethernet](https://www.ieee802.org/3/). The interactive diagnostic selector is preserved by the troubleshooting table above and the separate guide.
 
+## Original visual atlas and interactive learning companion
+
+[Open full-size SVG atlas](Assets/06-The-OSI-Model-Visual-Atlas.svg) — 8 labeled original illustrations with explanatory captions. The atlas supplements the detailed lesson above, rather than replacing it.
+
+![Section 6 original networking visual atlas](Assets/06-The-OSI-Model-Visual-Atlas.svg)
+
+[Complete visual library](Assets/README.md). [Download offline interactive companion](Assets/Networking-Interactive-Companion.html) and open in a browser; relevant demonstrations: osi, diagnostic. GitHub does not execute scripts in the file preview.
+
